@@ -1,0 +1,20 @@
+{
+  "name": "@robinhood-toolkit/example-hello-chain",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Connect to Robinhood Chain and print chain ID, head block, gas price, and client version.",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "robinhood-chain": "^0.1.0",
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT"
+}

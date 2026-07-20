@@ -1,0 +1,27 @@
+{
+  "name": "@robinhood-toolkit/site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pre-rendered monochrome documentation site for robinhood-toolkit.",
+  "type": "module",
+  "license": "MIT",
+  "author": "nirholas (https://github.com/nirholas)",
+  "homepage": "https://github.com/nirholas/robinhood-toolkit",
+  "scripts": {
+    "gen": "node scripts/build-content.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "lightweight-charts": "^5.2.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "wcag-contrast": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,20 @@
+name: Code sample does not run
+description: A snippet fails when copied and run as written
+labels: [broken-sample]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: File and section
+    validations: { required: true }
+  - type: textarea
+    id: error
+    attributes:
+      label: Command run and full error output
+      render: shell
+    validations: { required: true }
+  - type: input
+    id: versions
+    attributes:
+      label: Node version, and viem or foundry version if relevant
+    validations: { required: true }

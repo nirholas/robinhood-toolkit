@@ -1,0 +1,69 @@
+{
+  "name": "robinhood-chain",
+  "version": "0.1.0",
+  "description": "Chain SDK for Robinhood Chain (Arbitrum Orbit L2, 4663/46630): viem chain definitions with Multicall3, verified token constants, decimals-safe formatting, address verification against ticker collisions, and adaptive eth_getLogs scanning.",
+  "type": "module",
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:live": "RH_LIVE_TESTS=1 node --test test/live.test.js",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "peerDependencies": {
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "viem": "^2.21.0"
+  },
+  "keywords": [
+    "robinhood",
+    "robinhood-chain",
+    "arbitrum-orbit",
+    "viem",
+    "layer2",
+    "l2",
+    "ethereum",
+    "evm",
+    "multicall3",
+    "erc20",
+    "usdg",
+    "blockchain",
+    "web3"
+  ],
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT",
+  "homepage": "https://github.com/nirholas/robinhood-toolkit/tree/main/packages/robinhood-chain#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirholas/robinhood-toolkit.git",
+    "directory": "packages/robinhood-chain"
+  },
+  "bugs": {
+    "url": "https://github.com/nirholas/robinhood-toolkit/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@robinhood-toolkit/example-candles",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fetch OHLCV from GeckoTerminal and draw a candlestick chart in the terminal.",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "robinhood-chain": "^0.1.0",
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT"
+}

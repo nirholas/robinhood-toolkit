@@ -1,0 +1,20 @@
+{
+  "name": "@robinhood-toolkit/example-portfolio-reader",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read native ETH plus ERC-20 balances for any address in one Multicall3 round trip, with decimals read at call time.",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "robinhood-chain": "^0.1.0",
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT"
+}

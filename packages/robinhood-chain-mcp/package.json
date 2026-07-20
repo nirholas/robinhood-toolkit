@@ -1,0 +1,68 @@
+{
+  "name": "robinhood-chain-mcp",
+  "version": "1.0.0",
+  "description": "Read-only MCP server for Robinhood Chain. Lets any AI agent query chain state, ERC-20 tokens, DEX pairs, and verify token addresses against ticker-collision scams. Never signs or sends transactions.",
+  "type": "module",
+  "license": "MIT",
+  "author": "nirholas (https://github.com/nirholas)",
+  "homepage": "https://github.com/nirholas/robinhood-toolkit/tree/main/packages/robinhood-chain-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirholas/robinhood-toolkit.git",
+    "directory": "packages/robinhood-chain-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/nirholas/robinhood-toolkit/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "modelcontextprotocol",
+    "mcp-server",
+    "robinhood",
+    "robinhood-chain",
+    "ai-agent",
+    "blockchain",
+    "arbitrum-orbit",
+    "layer2",
+    "ethereum",
+    "erc20",
+    "viem",
+    "read-only",
+    "claude",
+    "dexscreener"
+  ],
+  "bin": {
+    "robinhood-chain-mcp": "./src/server.mjs"
+  },
+  "main": "./src/server.mjs",
+  "exports": {
+    ".": "./src/server.mjs",
+    "./chain": "./src/chain.mjs",
+    "./erc20": "./src/erc20.mjs",
+    "./dexscreener": "./src/dexscreener.mjs"
+  },
+  "files": [
+    "src/",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test \"test/*.test.mjs\"",
+    "test:live": "ROBINHOOD_MCP_LIVE=1 node --test \"test/*.test.mjs\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "viem": "^2.55.4",
+    "zod": "^4.4.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "mcpName": "io.github.nirholas/robinhood-chain-mcp"
+}

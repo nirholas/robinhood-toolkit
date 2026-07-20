@@ -1,0 +1,29 @@
+name: Inaccurate or stale fact
+description: A documented address, endpoint, chain parameter, or API shape is wrong or has changed
+labels: [accuracy]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Accuracy issues are the highest priority in this repo. Chain state changes and
+        this project documents live facts, so stale is expected over time.
+  - type: input
+    id: file
+    attributes:
+      label: File
+      placeholder: prompts/10-chain/05-query-stock-token-registry.md
+    validations: { required: true }
+  - type: textarea
+    id: claim
+    attributes:
+      label: What the file currently claims
+    validations: { required: true }
+  - type: textarea
+    id: actual
+    attributes:
+      label: What is actually true, and how you verified it
+      description: Include the command or request you ran and its raw output.
+      placeholder: |
+        $ cast call 0x... "decimals()(uint8)" --rpc-url https://rpc.mainnet.chain.robinhood.com
+        6
+    validations: { required: true }

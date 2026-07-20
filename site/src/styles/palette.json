@@ -1,0 +1,62 @@
+{
+  "_comment": "Single source of truth for every color in the site. Strict monochrome: the grey ramp carries all hierarchy. The state block is the one permitted exception (WCAG 1.4.1 requires it always be paired with an icon and a text label, never used alone). scripts/gen-tokens.mjs reads this file, emits src/styles/tokens.css, and fails the build if any declared pair misses its WCAG 2.2 contrast target.",
+  "grey": {
+    "0": "#ffffff",
+    "50": "#f7f7f7",
+    "100": "#ededed",
+    "200": "#dcdcdc",
+    "300": "#c4c4c4",
+    "400": "#a3a3a3",
+    "500": "#8a8a8a",
+    "600": "#676767",
+    "700": "#565656",
+    "800": "#333333",
+    "850": "#242424",
+    "900": "#171717",
+    "950": "#0d0d0d",
+    "1000": "#000000"
+  },
+  "state": {
+    "light": {
+      "error": "#a11208",
+      "success": "#155724",
+      "warning": "#6b4600"
+    },
+    "dark": {
+      "error": "#ff9b91",
+      "success": "#8fd79b",
+      "warning": "#e5b567"
+    }
+  },
+  "contrastTargets": [
+    { "label": "light body text", "fg": "grey.900", "bg": "grey.0", "min": 4.5 },
+    { "label": "light muted text", "fg": "grey.600", "bg": "grey.0", "min": 4.5 },
+    { "label": "light body on raised", "fg": "grey.900", "bg": "grey.50", "min": 4.5 },
+    { "label": "light muted on raised", "fg": "grey.600", "bg": "grey.50", "min": 4.5 },
+    { "label": "light muted on sunken", "fg": "grey.600", "bg": "grey.100", "min": 4.5 },
+    { "label": "light large text", "fg": "grey.700", "bg": "grey.0", "min": 3 },
+    { "label": "light ui border", "fg": "grey.500", "bg": "grey.0", "min": 3 },
+    { "label": "light focus ring", "fg": "grey.1000", "bg": "grey.0", "min": 3 },
+    { "label": "light inverted button text", "fg": "grey.0", "bg": "grey.900", "min": 4.5 },
+    { "label": "dark body text", "fg": "grey.50", "bg": "grey.950", "min": 4.5 },
+    { "label": "dark muted text", "fg": "grey.400", "bg": "grey.950", "min": 4.5 },
+    { "label": "dark body on raised", "fg": "grey.50", "bg": "grey.900", "min": 4.5 },
+    { "label": "dark muted on raised", "fg": "grey.400", "bg": "grey.900", "min": 4.5 },
+    { "label": "dark muted on sunken", "fg": "grey.400", "bg": "grey.850", "min": 4.5 },
+    { "label": "dark ui border", "fg": "grey.500", "bg": "grey.950", "min": 3 },
+    { "label": "dark focus ring", "fg": "grey.0", "bg": "grey.950", "min": 3 },
+    { "label": "dark inverted button text", "fg": "grey.950", "bg": "grey.50", "min": 4.5 },
+    { "label": "light error text", "fg": "state.light.error", "bg": "grey.0", "min": 4.5 },
+    { "label": "light error on sunken", "fg": "state.light.error", "bg": "grey.100", "min": 4.5 },
+    { "label": "light success text", "fg": "state.light.success", "bg": "grey.0", "min": 4.5 },
+    { "label": "light success on sunken", "fg": "state.light.success", "bg": "grey.100", "min": 4.5 },
+    { "label": "light warning text", "fg": "state.light.warning", "bg": "grey.0", "min": 4.5 },
+    { "label": "light warning on sunken", "fg": "state.light.warning", "bg": "grey.100", "min": 4.5 },
+    { "label": "dark error text", "fg": "state.dark.error", "bg": "grey.950", "min": 4.5 },
+    { "label": "dark error on sunken", "fg": "state.dark.error", "bg": "grey.850", "min": 4.5 },
+    { "label": "dark success text", "fg": "state.dark.success", "bg": "grey.950", "min": 4.5 },
+    { "label": "dark success on sunken", "fg": "state.dark.success", "bg": "grey.850", "min": 4.5 },
+    { "label": "dark warning text", "fg": "state.dark.warning", "bg": "grey.950", "min": 4.5 },
+    { "label": "dark warning on sunken", "fg": "state.dark.warning", "bg": "grey.850", "min": 4.5 }
+  ]
+}

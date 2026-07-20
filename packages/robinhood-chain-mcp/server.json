@@ -1,0 +1,38 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.nirholas/robinhood-chain-mcp",
+  "title": "Robinhood Chain",
+  "description": "Read-only Robinhood Chain: chain state, balances, tokens, transactions, DEX pairs, scam checks.",
+  "version": "1.0.0",
+  "websiteUrl": "https://github.com/nirholas/robinhood-toolkit/tree/main/packages/robinhood-chain-mcp",
+  "repository": {
+    "url": "https://github.com/nirholas/robinhood-toolkit",
+    "source": "github",
+    "subfolder": "packages/robinhood-chain-mcp"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "robinhood-chain-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ROBINHOOD_MAINNET_RPC_URL",
+          "description": "Optional. Overrides the public mainnet RPC endpoint (chain 4663) with your own provider URL. Leave unset to use https://rpc.mainnet.chain.robinhood.com.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ROBINHOOD_TESTNET_RPC_URL",
+          "description": "Optional. Overrides the public testnet RPC endpoint (chain 46630) with your own provider URL. Leave unset to use https://rpc.testnet.chain.robinhood.com.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

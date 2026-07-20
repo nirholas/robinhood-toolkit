@@ -1,0 +1,17 @@
+# robinhood-toolkit · Cloudflare Workers static asset deploy
+# Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+# License: MIT (c) 2026 nirholas
+#
+# Deploy:  npm run build && npx wrangler deploy
+#
+# not_found_handling is "404-page", NOT "single-page-application". This site
+# pre-renders one real file per route, so an unmatched path is genuinely a 404
+# and must return one. The SPA setting would rewrite every miss to index.html
+# with an HTTP 200 and hide broken links behind the landing page.
+
+name = "robinhood-toolkit-site"
+compatibility_date = "2026-01-01"
+
+[assets]
+directory = "./dist"
+not_found_handling = "404-page"
