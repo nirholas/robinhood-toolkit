@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
 /**
  * robinhood-toolkit · viewport-gated chart mounting
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -45,7 +42,4 @@ export function createLazyMounter({ mount, unmount, rootMargin = '200px' }) {
     },
   };
 }
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes

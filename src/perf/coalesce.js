@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
 /**
  * robinhood-toolkit · frame-coalesced chart updates
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -50,7 +47,4 @@ export function coalesceUpdates(apply) {
     },
   };
 }
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
