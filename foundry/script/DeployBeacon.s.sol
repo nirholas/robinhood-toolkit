@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
+// built by nirholas x.com/nichxbt
 
 import { Script, console } from "forge-std/Script.sol";
 import { Beacon } from "../src/Beacon.sol";
@@ -19,3 +20,4 @@ contract DeployBeacon is Script {
         console.log("chainid:", block.chainid);
     }
 }
+// built by nirholas x.com/nichxbt

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · site entry, loaded by every pre-rendered page
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -34,3 +35,4 @@ for (const name of (document.body.dataset.modules || '').split(/\s+/).filter(Boo
     })
   }
 }
+/* built by nirholas x.com/nichxbt */

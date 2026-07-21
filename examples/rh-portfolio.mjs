@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · print a portfolio snapshot
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -29,3 +30,4 @@ if (tier) {
     console.log('already in the top available fee tier');
   }
 }
+/* built by nirholas x.com/nichxbt */

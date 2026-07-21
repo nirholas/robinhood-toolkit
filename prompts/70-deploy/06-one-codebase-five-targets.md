@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: one codebase that deploys to all five targets
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -340,3 +341,4 @@ Then run the three checks the matrix cannot make for you:
 - Deploy all five from the same commit or the parity check is meaningless. A
   matrix run against mixed commits reports failures that are just staleness, and
   chasing those is how people stop running the check.
+<!-- built by nirholas x.com/nichxbt -->

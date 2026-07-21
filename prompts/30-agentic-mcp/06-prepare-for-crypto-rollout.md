@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: build the crypto adapter ahead of rollout
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -333,3 +334,4 @@ for a rollout whose naming you do not control.
   before the cap means anything. Extend the guard when the capability lands.
 - Robinhood does not supervise, monitor, or audit your agent on this rail either.
   The rollout does not change that.
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: Lightweight Charts setup and licensing
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -394,3 +395,4 @@ npm run dev
 - There is no built-in symbol search, indicator suite, or drawing toolbar. If a
   requirement needs those, decide now, because Advanced Charts cannot fill the
   gap in an open-source project.
+<!-- built by nirholas x.com/nichxbt -->

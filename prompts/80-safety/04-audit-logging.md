@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: the append-only decision journal
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -283,3 +284,4 @@ requires you to cross-reference a separate log file, the journal is incomplete.
   other) in the output header. A cost basis figure without its method is not a
   number anyone can act on, and changing the method between exports produces two
   contradictory filings from the same data.
+<!-- built by nirholas x.com/nichxbt -->

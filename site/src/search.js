@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · client-side search over the build-time static index
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -217,3 +218,4 @@ export function initSearch() {
     if (event.target === dialog) dialog.close()
   })
 }
+/* built by nirholas x.com/nichxbt */

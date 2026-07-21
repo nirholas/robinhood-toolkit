@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · order placement for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -160,3 +161,4 @@ export function assertStopSane({ side, stopPrice, limitPrice, lastPrice }) {
     }
   }
 }
+/* built by nirholas x.com/nichxbt */

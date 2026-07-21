@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · MCP tool definitions for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -518,3 +519,4 @@ export function registerTools(server) {
 
 /** Exported for the README generator and the test suite. */
 export const KNOWN_TOKEN_LIST = KNOWN_TOKENS;
+/* built by nirholas x.com/nichxbt */

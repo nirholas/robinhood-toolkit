@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · signer tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -46,3 +47,4 @@ test('array query params repeat the key', () => {
   assert.equal(buildQuery({}), '');
   assert.equal(buildQuery(undefined), '');
 });
+/* built by nirholas x.com/nichxbt */

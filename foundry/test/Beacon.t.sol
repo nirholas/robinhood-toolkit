@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
+// built by nirholas x.com/nichxbt
 
 import { Test } from "forge-std/Test.sol";
 import { Beacon } from "../src/Beacon.sol";
@@ -41,3 +42,4 @@ contract BeaconTest is Test {
         assertEq(beacon.note(), note);
     }
 }
+// built by nirholas x.com/nichxbt

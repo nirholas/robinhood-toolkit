@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · resolve Uniswap deployment addresses for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -68,3 +69,4 @@ export function resolveUniswap(chainId) {
   }
   return resolved;
 }
+/* built by nirholas x.com/nichxbt */

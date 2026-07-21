@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: real-time price updates
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -582,3 +583,4 @@ window.addEventListener('beforeunload', () => { feed.destroy(); adapter.destroy(
   `sqrtPriceX96` is token1-per-token0. When falling back between them, invert.
   Getting this wrong produces a chart that jumps by orders of magnitude at the
   exact moment of failover, which is a confusing bug to chase.
+<!-- built by nirholas x.com/nichxbt -->

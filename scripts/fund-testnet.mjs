@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · testnet funding helper
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -55,3 +56,4 @@ if (balance >= floor) {
   console.log(`explorer: ${chain.blockExplorers.default.url}/address/${account.address}`);
   process.exitCode = 1;
 }
+/* built by nirholas x.com/nichxbt */

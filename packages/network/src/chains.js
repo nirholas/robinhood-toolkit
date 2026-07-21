@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · network definitions (chains, lookup)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -48,3 +49,4 @@ export const byChainId = Object.fromEntries(CHAINS.map((c) => [c.id, c]));
 // Prompt 03's scripts import { publicClientFor, robinhoodMainnet, robinhoodTestnet }
 // straight from this module.
 export { publicClientFor, transportFor } from './client.js';
+/* built by nirholas x.com/nichxbt */

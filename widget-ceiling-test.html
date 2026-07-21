@@ -1,0 +1,39 @@
+<!doctype html>
+<!--
+  robinhood-toolkit · TradingView widget ceiling demonstration
+  Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+  License: All Rights Reserved (c) 2026 nirholas
+
+  Kept in the repo as evidence for the next person who asks whether a
+  TradingView widget can chart a Robinhood Chain DEX pair. It cannot. Open this
+  file: the first chart renders ETH from a CEX symbol, the second renders
+  TradingView's "Invalid symbol" state for a pool address. That is the ceiling.
+-->
+<html lang="en">
+  <head><meta charset="utf-8" /><title>widget ceiling</title></head>
+  <body style="background:#0a0a0a;color:#a1a1a1;font-family:ui-monospace,monospace">
+    <h3>Works: a CEX symbol</h3>
+    <div class="tradingview-widget-container" style="height:300px">
+      <div id="w-good" style="height:100%"></div>
+    </div>
+
+    <h3>Fails: a Robinhood Chain pool address</h3>
+    <div class="tradingview-widget-container" style="height:300px">
+      <div id="w-bad" style="height:100%"></div>
+    </div>
+
+    <script src="https://s3.tradingview.com/tv.js"></script>
+    <script>
+      new TradingView.widget({
+        container_id: 'w-good', symbol: 'COINBASE:ETHUSD',
+        interval: '60', theme: 'dark', autosize: true, hide_side_toolbar: true,
+      });
+      new TradingView.widget({
+        container_id: 'w-bad',
+        symbol: 'ROBINHOOD:0x95f9B0AF9282A22F7ef57058e65098db3f667f95',
+        interval: '60', theme: 'dark', autosize: true,
+      });
+    </script>
+  </body>
+</html>
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · Robinhood Crypto REST API overview page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -258,3 +259,4 @@ ${section(
 ${pager(base, { href: '/charts/', title: 'Live market view' }, { href: '/agents/', title: 'Agentic trading' })}
 `
 }
+/* built by nirholas x.com/nichxbt */

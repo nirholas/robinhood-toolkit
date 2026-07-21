@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 name: Inaccurate or stale fact
 description: A documented address, endpoint, chain parameter, or API shape is wrong or has changed
 labels: [accuracy]
@@ -27,3 +28,4 @@ body:
         $ cast call 0x... "decimals()(uint8)" --rpc-url https://rpc.mainnet.chain.robinhood.com
         6
     validations: { required: true }
+# built by nirholas x.com/nichxbt

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · head watcher tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -75,3 +76,4 @@ test('requires a client and a callback', () => {
   assert.throws(() => watchHead(null, () => {}), /requires a viem `client`/)
   assert.throws(() => watchHead(stubClient(), null), /requires an `onBlock` callback/)
 })
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · Beacon deploy script
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -55,3 +56,4 @@ main().catch((err) => {
   console.error(err);
   process.exitCode = 1;
 });
+/* built by nirholas x.com/nichxbt */

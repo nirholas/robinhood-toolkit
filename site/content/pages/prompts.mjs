@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · build prompt index page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -116,3 +117,4 @@ ${section(
 ${pager(base, { href: '/agents/', title: 'Agentic trading' }, { href: '/deploy/', title: 'Deploy to five targets' })}
 `
 }
+/* built by nirholas x.com/nichxbt */

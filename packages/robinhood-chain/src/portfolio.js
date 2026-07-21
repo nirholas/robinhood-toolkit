@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · batched portfolio reads over Multicall3
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -163,3 +164,4 @@ export async function readPortfolio(client, address, tokenAddresses = [], { mult
       : null,
   }
 }
+/* built by nirholas x.com/nichxbt */

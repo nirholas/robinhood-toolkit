@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · Robinhood Chain orientation overview
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -86,3 +87,4 @@ curl -s https://rpc.mainnet.chain.robinhood.com \
 
 Cross-check the head block against <https://robinhoodchain.blockscout.com>; the
 two should agree within a few seconds of drift.
+<!-- built by nirholas x.com/nichxbt -->

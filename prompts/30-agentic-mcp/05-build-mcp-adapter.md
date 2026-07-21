@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: schema-driven MCP adapter
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -358,3 +359,4 @@ account can do today, not a bug in the adapter, and should be handled by prompt 
 - **Guard checks belong inside the adapter.** If the guard lives only at the
   application layer, any other code path holding the client bypasses it. Putting
   it in `call()` means everything routed through the adapter is covered.
+<!-- built by nirholas x.com/nichxbt -->

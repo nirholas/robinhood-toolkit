@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 [profile.default]
 src = "src"
 out = "out"
@@ -20,3 +21,4 @@ rh_mainnet = "https://rpc.mainnet.chain.robinhood.com"
 [etherscan]
 rh_testnet = { key = "blockscout", chain = 46630, url = "https://explorer.testnet.chain.robinhood.com/api/" }
 rh_mainnet = { key = "blockscout", chain = 4663, url = "https://robinhoodchain.blockscout.com/api/" }
+# built by nirholas x.com/nichxbt

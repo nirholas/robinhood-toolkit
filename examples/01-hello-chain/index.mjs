@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 01: hello chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -104,3 +105,4 @@ console.log(
   `\n  At approximately ${BLOCK_TIME_MS} ms per block that is about ` +
     `${blocksPerDay.toLocaleString('en-US')} blocks per day.\n`,
 )
+/* built by nirholas x.com/nichxbt */

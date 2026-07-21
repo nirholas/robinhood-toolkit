@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: containerize and deploy to Google Cloud Run
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -181,3 +182,4 @@ gcloud run services update-traffic robinhood-toolkit-site \
 - Concurrency defaults to 80 requests per instance. A synchronous CPU-heavy
   handler at that concurrency queues badly. Lower it if your handler is not
   mostly I/O-bound.
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · portfolio and balance reads
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -90,3 +91,4 @@ export function concentration(snapshot, assetCode) {
   const position = snapshot.positions.find((p) => p.asset_code === assetCode);
   return (position?.value ?? 0) / snapshot.total;
 }
+/* built by nirholas x.com/nichxbt */

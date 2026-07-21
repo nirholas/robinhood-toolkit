@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · quick start page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -246,3 +247,4 @@ ${section(
 ${pager(base, { href: '/', title: 'Overview' }, { href: '/chain/', title: 'Robinhood Chain guide' })}
 `
 }
+/* built by nirholas x.com/nichxbt */

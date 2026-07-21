@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · landing page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -195,3 +196,4 @@ ${section(
 )}
 `
 }
+/* built by nirholas x.com/nichxbt */

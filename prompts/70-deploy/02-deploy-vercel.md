@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: deploy the site to Vercel with filesystem-routed functions
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -148,3 +149,4 @@ function. If a route 404s, look there before touching the rewrites.
   `head -1` of the changed files for `__defProp` and restore from git.
 - `process.env.VERCEL_URL` is the deployment-specific host, not your production
   domain. Use it for preview links only; never bake it into canonical URLs.
+<!-- built by nirholas x.com/nichxbt -->

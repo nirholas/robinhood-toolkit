@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: portfolio, holdings, and fee tiers
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -242,3 +243,4 @@ means placing orders on v2 will not benefit you. Record that in the README.
   your portfolio total quietly wrong.
 - Fee tier is per account and can change as volume rolls off a 30-day window.
   Re-read it rather than caching it for the life of the process.
+<!-- built by nirholas x.com/nichxbt -->

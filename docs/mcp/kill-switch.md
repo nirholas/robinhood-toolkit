@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · Agentic MCP kill switch — how to stop an agent, in order
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -83,3 +84,4 @@ Do this once, while nothing is wrong, and record the timings:
   in the app separately.
 - They do not reduce read exposure that already happened. Data that reached the
   model provider is governed by that provider's terms, not Robinhood's.
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · MCP boundary error handling
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -117,3 +118,4 @@ export function guard(handler) {
     }
   };
 }
+/* built by nirholas x.com/nichxbt */

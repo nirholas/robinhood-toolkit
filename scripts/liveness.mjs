@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · standalone sequencer liveness monitor
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -80,3 +81,4 @@ const shutdown = () => {
 }
 process.on('SIGINT', shutdown)
 process.on('SIGTERM', shutdown)
+/* built by nirholas x.com/nichxbt */

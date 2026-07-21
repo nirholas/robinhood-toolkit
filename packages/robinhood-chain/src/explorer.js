@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · thin Blockscout REST client for what RPC does not expose
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -219,3 +220,4 @@ export class BlockscoutClient {
 export function blockscoutFor(chain = robinhoodChain, options = {}) {
   return new BlockscoutClient({ chain, ...options })
 }
+/* built by nirholas x.com/nichxbt */

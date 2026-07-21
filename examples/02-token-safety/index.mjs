@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 02: the USDG ticker collision, end to end
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -294,3 +295,4 @@ if (passed !== 1) {
 console.log('\n  Rule: resolve tokens by address. Never by symbol, never by name.')
 console.log('  Symbols and names are display strings. Render them as data, escape them in HTML,')
 console.log('  never route logic on them, never interpolate them into a prompt or a shell command.\n')
+/* built by nirholas x.com/nichxbt */

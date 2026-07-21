@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · 404 page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -46,3 +47,4 @@ ${cards(
 ${p('You can also press <kbd>Ctrl</kbd> <kbd>K</kbd> anywhere on this site to search every page and every build prompt.')}
 `
 }
+/* built by nirholas x.com/nichxbt */

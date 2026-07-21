@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: chart performance and memory
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -479,3 +480,4 @@ in on data you already have, but never build a long range out of fine bars.
 - Benchmark on the hardware your users have. A 100k-bar chart is smooth on a
   developer laptop and unusable on a low-end phone. Throttle CPU before you
   declare a target met.
+<!-- built by nirholas x.com/nichxbt -->

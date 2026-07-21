@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: reading blocks, balances, logs, and live state
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -411,3 +412,4 @@ sample per second.
 - Do not poll `getBlockNumber` in a tight loop. At this cadence you will
   generate thousands of requests per minute and hit a rate limit you have not
   measured.
+<!-- built by nirholas x.com/nichxbt -->

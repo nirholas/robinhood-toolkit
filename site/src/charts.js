@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · live Robinhood Chain market view
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -425,3 +426,4 @@ export function initCharts() {
 
   load(DEFAULT_PAIR)
 }
+/* built by nirholas x.com/nichxbt */

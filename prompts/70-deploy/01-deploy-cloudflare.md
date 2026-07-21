@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: deploy the site to Cloudflare Workers with static assets
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -165,3 +166,4 @@ misspelled. That is the failure mode to check first, every time.
   geolocation headers. Verify anything origin-sensitive with `--remote`.
 - Secrets set with `wrangler secret put` are per Worker per environment. Adding
   a named environment later means setting them again for that environment.
+<!-- built by nirholas x.com/nichxbt -->

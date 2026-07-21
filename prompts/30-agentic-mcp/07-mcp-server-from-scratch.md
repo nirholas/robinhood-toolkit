@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: your own crypto MCP server
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -435,3 +436,4 @@ credential appears in them.
 - **Keep the tool surface small and legible.** Every extra write tool is another
   path a confused model can take. Eight tools with one confirmation gate is easier
   to reason about than thirty convenience wrappers.
+<!-- built by nirholas x.com/nichxbt -->

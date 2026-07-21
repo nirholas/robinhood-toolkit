@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · notice when agentic crypto lights up on this account
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -22,3 +23,4 @@ if (became) {
 } else {
   console.log(`crypto available: ${assessment.available}`);
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · network · offline unit tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -85,3 +86,4 @@ test('publicClientFor builds a client bound to the chain', () => {
   assert.equal(typeof client.getBlockNumber, 'function');
   assert.equal(typeof client.multicall, 'function');
 });
+/* built by nirholas x.com/nichxbt */

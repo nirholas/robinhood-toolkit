@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · schema-driven adapter tests (offline, no network)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -249,3 +250,4 @@ test('every declared capability has a predicate', () => {
     assert.equal(typeof predicate, 'function', `${name} must be a predicate`);
   }
 });
+/* built by nirholas x.com/nichxbt */

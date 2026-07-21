@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · error types
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -86,3 +87,4 @@ export class LogScanError extends RobinhoodChainError {
     this.chunkSize = chunkSize
   }
 }
+/* built by nirholas x.com/nichxbt */

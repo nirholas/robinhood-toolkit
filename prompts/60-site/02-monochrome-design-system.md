@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: strict monochrome design system and theme tokens
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -406,3 +407,4 @@ export function bindChartTheme(chart, series) {
   focus ring. Omitting it leaves light-mode widgets on a dark page.
 - Do not add hover states that introduce a hue. Hover in this system is a change
   in background step, border weight, or underline, never a color.
+<!-- built by nirholas x.com/nichxbt -->

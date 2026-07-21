@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · document shell for every pre-rendered page
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -156,3 +157,4 @@ ${searchDialog()}
 </html>
 `
 }
+/* built by nirholas x.com/nichxbt */

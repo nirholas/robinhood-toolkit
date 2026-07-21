@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: the tutorial page template and content contract
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -329,3 +330,4 @@ function announce(button, message) {
   build but not the index publishes the title and the URL of unpublished work.
 - The lede paragraph and the meta description drift apart the moment they are
   authored separately. Render both from the one `description` field.
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · decimals-safety tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -122,3 +123,4 @@ test('known tokens resolve by address, and the impostor is flagged', () => {
   assert.equal(isKnownImpostor(impostor.address), true)
   assert.equal(isKnownImpostor(USDG.address), false)
 })
+/* built by nirholas x.com/nichxbt */

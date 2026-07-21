@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · deploy record for Beacon on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -96,3 +97,4 @@ cast call "$BEACON" 'pings()(uint256)' --rpc-url https://rpc.testnet.chain.robin
 
 Same commands with `--rpc-url https://rpc.mainnet.chain.robinhood.com`,
 `--chain-id 4663`, and `--verifier-url https://robinhoodchain.blockscout.com/api/`.
+<!-- built by nirholas x.com/nichxbt -->

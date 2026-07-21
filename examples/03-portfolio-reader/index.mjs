@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 03: portfolio reader
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -230,3 +231,4 @@ console.log('  Decimals came from the contracts, not from a constant:')
 console.log(`    ${WETH.symbol} ${holdings.find((h) => h.address === WETH.address)?.decimals ?? '?'}, ` +
   `${USDG.symbol} ${holdings.find((h) => h.address === USDG.address)?.decimals ?? '?'} ` +
   `(assuming 18 for USDG understates it by 10^12)\n`)
+/* built by nirholas x.com/nichxbt */

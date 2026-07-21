@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · resolve Morpho deployment addresses for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -84,3 +85,4 @@ export function loadVerifiedDeployments(chainId, { override = false } = {}) {
   }
   return { loaded, record }
 }
+/* built by nirholas x.com/nichxbt */

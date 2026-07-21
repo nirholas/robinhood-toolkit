@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · Uniswap deployment audit trail for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -149,3 +150,4 @@ There is no `v3-robinhood-testnet` docs page and no `46630` row in the v4
 deployments table. `resolveUniswap(46630)` therefore throws by design — do not
 invent testnet addresses. Rehearse on a **mainnet fork** instead — see
 [dex/REHEARSAL.md](REHEARSAL.md) for a transcript.
+<!-- built by nirholas x.com/nichxbt -->

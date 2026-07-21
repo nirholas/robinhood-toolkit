@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 08: Morpho lending on Robinhood Chain, read-only
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -93,10 +94,12 @@ console.log(`  verified at         ${proof.verifiedAt}`)
 heading('Discovering markets and proving the id encoding')
 
 const head = await client.getBlockNumber()
-// Deployment was near block 287; a full scan is enormous. Default to a recent
-// window so the demo is quick, and --full to walk from deployment.
-const fromBlock = FULL ? 0n : head - 2_000_000n > 0n ? head - 2_000_000n : 0n
-console.log(`  Scanning CreateMarket logs, blocks ${fromBlock}..${head}${FULL ? '  (full history)' : '  (recent window; --full for all)'}`)
+// CreateMarket is sparse, so we scan the whole history with a wide chunk (see
+// discoverMarkets). Start from the recorded deployment block, not 0 — it saves
+// the empty pre-deployment ranges. --full forces from block 0.
+const deployBlock = FULL ? 0n : BigInt(loaded.record?.deploymentBlockApprox ?? 0)
+console.log(`  Scanning CreateMarket logs, blocks ${deployBlock}..${head} (sparse event, wide chunks)`)
+const fromBlock = deployBlock
 
 let markets = []
 try {
@@ -180,3 +183,4 @@ if (addrs.vault) {
 
 console.log('\n  Read-only run complete. To actually supply, rehearse on a fork first:')
 console.log('  node fork-rehearse.mjs   (needs anvil; see README).\n')
+/* built by nirholas x.com/nichxbt */

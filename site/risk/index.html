@@ -1,0 +1,266 @@
+<!doctype html>
+<!--
+  robinhood-toolkit · generated page: /risk/
+  Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+  License: All Rights Reserved (c) 2026 nirholas
+
+  GENERATED FILE. Do not edit. Source: content/pages/risk.mjs
+  Regenerate with: npm run gen
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trust assumptions and risk · robinhood-toolkit</title>
+<meta name="description" content="What you trust when you transact on Robinhood Chain: a single centralized sequencer and proposer, a fraud-challenger set of fewer than five external actors, a ~7 day canonical exit, upgradeable token proxies, and the entity separation between on-chain and brokerage balances. Rendered from the machine-readable trust model.">
+<meta name="site-base" content="/robinhood-toolkit/">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trust assumptions and risk">
+<meta property="og:description" content="What you trust when you transact on Robinhood Chain: a single centralized sequencer and proposer, a fraud-challenger set of fewer than five external actors, a ~7 day canonical exit, upgradeable token proxies, and the entity separation between on-chain and brokerage balances. Rendered from the machine-readable trust model.">
+<meta property="og:site_name" content="robinhood-toolkit">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23171717'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' fill='%23ffffff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<script>(function(){try{var m=localStorage.getItem('rht-theme');if(m==='light'||m==='dark'){document.documentElement.setAttribute('data-theme',m);document.documentElement.style.colorScheme=m;}}catch(e){}})();</script>
+<script type="module" src="/src/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="page site-header__inner">
+    <a class="brand" href="/robinhood-toolkit/">
+      robinhood-toolkit
+      <span class="brand__mark">4663</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+      <li><a href="/robinhood-toolkit/">Overview</a></li>
+      <li><a href="/robinhood-toolkit/start/">Quick start</a></li>
+      <li><a href="/robinhood-toolkit/chain/">Chain</a></li>
+      <li><a href="/robinhood-toolkit/risk/" aria-current="page">Risk</a></li>
+      <li><a href="/robinhood-toolkit/charts/">Charts</a></li>
+      <li><a href="/robinhood-toolkit/api/">REST API</a></li>
+      <li><a href="/robinhood-toolkit/agents/">Agents</a></li>
+      <li><a href="/robinhood-toolkit/prompts/">Prompts</a></li>
+      <li><a href="/robinhood-toolkit/deploy/">Deploy</a></li>
+    </ul>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="search-trigger" data-search-trigger aria-label="Search the site">
+        <span aria-hidden="true">⌕</span>
+        <span class="search-trigger__label">Search</span>
+        <kbd>Ctrl K</kbd>
+      </button>
+      <button type="button" class="btn btn--icon" data-theme-toggle aria-label="Switch theme">
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" />
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Primary, compact">
+  <div><ul>
+      <li><a href="/robinhood-toolkit/">Overview</a></li>
+      <li><a href="/robinhood-toolkit/start/">Quick start</a></li>
+      <li><a href="/robinhood-toolkit/chain/">Chain</a></li>
+      <li><a href="/robinhood-toolkit/risk/" aria-current="page">Risk</a></li>
+      <li><a href="/robinhood-toolkit/charts/">Charts</a></li>
+      <li><a href="/robinhood-toolkit/api/">REST API</a></li>
+      <li><a href="/robinhood-toolkit/agents/">Agents</a></li>
+      <li><a href="/robinhood-toolkit/prompts/">Prompts</a></li>
+      <li><a href="/robinhood-toolkit/deploy/">Deploy</a></li>
+    </ul></div>
+</nav>
+<main id="main" class="page" tabindex="-1">
+
+<div class="page-head">
+  <p class="eyebrow">Risk</p>
+  <h1>Trust assumptions and risk</h1>
+  <p class="lede">
+    Robinhood Chain is an Arbitrum Orbit L2 that publishes its transaction data to Ethereum, so its
+    history is reconstructible by anyone. That is data availability. Execution validity is a separate
+    guarantee, and it currently rests on a single operator and a small set of fraud challengers. The
+    difference matters, and it is why "secured by Ethereum" is only half true here.
+  </p>
+</div>
+
+<section id="model">
+  <h2>What you are trusting</h2>
+  <p>Every item below is an assumption you accept when you transact on this chain. High-severity items come first, and nothing is hidden behind a click. This list is generated from the same <code>TRUST_MODEL</code> the app uses to gate value-moving actions, so it stays in sync with the code by construction.</p>
+<div class="risk-list">
+<article class="risk-item risk-item--high" id="risk-centralized-sequencer">
+  <div class="risk-item__head">
+    <span class="risk-item__sev"><span aria-hidden="true">▲</span> High severity</span>
+    <span class="risk-badge">Verified</span>
+  </div>
+  <p class="risk-item__statement">Robinhood operates both the sequencer and the proposer. One party orders transactions and posts state roots.</p>
+  <p class="risk-item__affects"><strong>Affects:</strong> transaction inclusion, censorship resistance, liveness</p>
+  <p class="risk-item__mitigation"><strong>What you can do:</strong> Monitor sequencer liveness and disable submission when stalled. Do not design flows that assume guaranteed inclusion within a deadline.</p>
+</article>
+<article class="risk-item risk-item--high" id="risk-permissioned-fraud-proofs">
+  <div class="risk-item__head">
+    <span class="risk-item__sev"><span aria-hidden="true">▲</span> High severity</span>
+    <span class="risk-badge">Verified</span>
+  </div>
+  <p class="risk-item__statement">Fewer than five external actors can submit fraud challenges. L2BEAT classifies the risk profile as &quot;Other&quot; for this reason.</p>
+  <p class="risk-item__affects"><strong>Affects:</strong> state validity, withdrawal correctness</p>
+  <p class="risk-item__mitigation"><strong>What you can do:</strong> Do not describe this chain as inheriting Ethereum security without qualification. Size positions to the operator trust you are extending.</p>
+</article>
+<article class="risk-item risk-item--high" id="risk-proxy-upgrade-control">
+  <div class="risk-item__head">
+    <span class="risk-item__sev"><span aria-hidden="true">▲</span> High severity</span>
+    <span class="risk-badge risk-badge--unverified">Unverified — confirm from a primary source</span>
+  </div>
+  <p class="risk-item__statement">UNVERIFIED: who controls proxy upgrades, and under what multisig or timelock. Confirm at https://docs.robinhood.com/chain/contracts/ before making any claim.</p>
+  <p class="risk-item__affects"><strong>Affects:</strong> token behavior, user funds</p>
+  <p class="risk-item__mitigation"><strong>What you can do:</strong> Verify from primary sources (https://docs.robinhood.com/chain/contracts/ and the block explorer) before publishing. Do not guess.</p>
+</article>
+<article class="risk-item risk-item--high" id="risk-escape-hatch">
+  <div class="risk-item__head">
+    <span class="risk-item__sev"><span aria-hidden="true">▲</span> High severity</span>
+    <span class="risk-badge risk-badge--unverified">Unverified — confirm from a primary source</span>
+  </div>
+  <p class="risk-item__statement">UNVERIFIED: whether users can force-include a transaction or exit without sequencer cooperation, and on what delay.</p>
+  <p class="risk-item__affects"><strong>Affects:</strong> censorship resistance, worst-case exit</p>
+  <p class="risk-item__mitigation"><strong>What you can do:</strong> Confirm from the chain docs (https://docs.robinhood.com/chain/) and the L2BEAT page for this chain. This determines the worst case, so it is the highest-value fact to resolve.</p>
+</article>
+<article class="risk-item risk-item--medium" id="risk-withdrawal-latency">
+  <div class="risk-item__head">
+    <span class="risk-item__sev"><span aria-hidden="true">■</span> Medium severity</span>
+    <span class="risk-badge">Verified</span>
+  </div>
+  <p class="risk-item__statement">Canonical withdrawals take approximately 7 days, the optimistic challenge period. Deposits take approximately 10 minutes.</p>
+  <p class="risk-item__affects"><strong>Affects:</strong> exit, liquidity planning</p>
+  <p class="risk-item__mitigation"><strong>What you can do:</strong> Surface the 7 day period before the user signs. Offer partner routes as a labeled alternative with their own trust model, not as a default.</p>
+</article>
+<article class="risk-item risk-item--medium" id="risk-upgradeable-token-proxies">
+  <div class="risk-item__head">
+    <span class="risk-item__sev"><span aria-hidden="true">■</span> Medium severity</span>
+    <span class="risk-badge">Verified</span>
+  </div>
+  <p class="risk-item__statement">Core bridged tokens (WETH, USDG) are proxy contracts whose implementations can change.</p>
+  <p class="risk-item__affects"><strong>Affects:</strong> token behavior, integration stability</p>
+  <p class="risk-item__mitigation"><strong>What you can do:</strong> Interact through the proxy, never a cached implementation address. Monitor upgrade events on addresses you depend on.</p>
+</article>
+<article class="risk-item risk-item--medium" id="risk-entity-separation">
+  <div class="risk-item__head">
+    <span class="risk-item__sev"><span aria-hidden="true">■</span> Medium severity</span>
+    <span class="risk-badge">Verified</span>
+  </div>
+  <p class="risk-item__statement">Self-custody wallet services run through Robinhood Non-Custodial Ltd (Cayman), a separate entity from Robinhood Financial LLC and Robinhood Crypto LLC. An on-chain balance is not a brokerage balance and carries no brokerage account protections. The entities are related, not unaffiliated.</p>
+  <p class="risk-item__affects"><strong>Affects:</strong> custody, user expectations, account protections</p>
+  <p class="risk-item__mitigation"><strong>What you can do:</strong> State both halves in UI copy. Never imply app funds and chain funds are one pool, and never imply the products are unrelated.</p>
+</article>
+<article class="risk-item risk-item--low" id="risk-blob-data-availability">
+  <div class="risk-item__head">
+    <span class="risk-item__sev"><span aria-hidden="true">●</span> Low severity</span>
+    <span class="risk-badge">Verified</span>
+  </div>
+  <p class="risk-item__statement">Transaction data is posted to Ethereum via blobs, so chain history is reconstructible independently of the operator.</p>
+  <p class="risk-item__affects"><strong>Affects:</strong> data availability, history reconstruction</p>
+  <p class="risk-item__mitigation"><strong>What you can do:</strong> This is a strength, not a risk. Do not let it be read as covering execution validity, which it does not.</p>
+</article>
+<article class="risk-item risk-item--low" id="risk-network-age">
+  <div class="risk-item__head">
+    <span class="risk-item__sev"><span aria-hidden="true">●</span> Low severity</span>
+    <span class="risk-badge">Verified</span>
+  </div>
+  <p class="risk-item__statement">Mainnet launched 2026-07-01. Operational history is short.</p>
+  <p class="risk-item__affects"><strong>Affects:</strong> operational confidence</p>
+  <p class="risk-item__mitigation"><strong>What you can do:</strong> Rehearse on testnet. Size early mainnet exposure accordingly.</p>
+</article>
+</div>
+</section>
+
+<section id="da-vs-execution">
+  <h2>Data availability is not execution validity</h2>
+  <p>Transaction data is posted to Ethereum via blobs, so anyone can reconstruct the chain's history even if the operator stops cooperating. That is a real strength. It does not mean an invalid state root would be caught: that depends on the fraud-proof system, and <a href="https://l2beat.com/scaling/projects/robinhood" rel="noopener noreferrer">L2BEAT</a> classifies this chain's risk profile as "Other" because fewer than five external actors can submit challenges. Do not read data availability as covering execution correctness. It does not.</p>
+</section>
+
+<section id="custody">
+  <h2>On-chain balances are not brokerage balances</h2>
+  <p>Self-custody wallet services run through Robinhood Non-Custodial Ltd, a Cayman Islands entity that is separate from Robinhood Financial LLC and from Robinhood Crypto LLC. An on-chain balance is not held by the broker-dealer and does not carry brokerage account protections. These are related entities offering related products — not one pool of funds, and not unaffiliated third parties. Both halves are true at once; state both.</p>
+</section>
+
+<section id="liveness">
+  <h2>When the sequencer stalls</h2>
+  <p>A single sequencer orders every transaction. At ~101 ms blocks, ten seconds of silence is already anomalous. The toolkit ships a liveness monitor (<code>packages/risk</code>) that watches head advancement and cross-checks it against the sequencer feed; when it reports a stall, a well-built app disables submission and points you at the canonical exit rather than letting you broadcast into silence.</p>
+<aside class="callout">
+  <span class="callout__icon" aria-hidden="true">↩</span>
+  <div class="callout__body">
+    <strong class="callout__label">The exit that does not depend on the sequencer</strong>
+    <p>The canonical bridge withdrawal to Ethereum settles over the ~7 day optimistic challenge period. It is slow by construction, but it does not require the sequencer to accept a new transaction. Partner bridges (LayerZero and Stargate, Chainlink CCIP, Relay, Across, LiFi) exit in minutes by fronting liquidity and add their own trust model on top of the chain's. Faster is not safer.</p>
+  </div>
+</aside>
+</section>
+
+<section id="open">
+  <h2>Open questions we have not verified</h2>
+  <p>These are the highest-value facts to confirm from primary sources, because they determine the worst case. They are listed here marked unverified rather than omitted: silence would read as safety.</p>
+<ul>
+  <li><strong>who controls proxy upgrades, and under what multisig or timelock. Confirm at https://docs.robinhood.com/chain/contracts/ before making any claim.</strong> Verify from primary sources (https://docs.robinhood.com/chain/contracts/ and the block explorer) before publishing. Do not guess.</li>
+  <li><strong>whether users can force-include a transaction or exit without sequencer cooperation, and on what delay.</strong> Confirm from the chain docs (https://docs.robinhood.com/chain/) and the L2BEAT page for this chain. This determines the worst case, so it is the highest-value fact to resolve.</li>
+</ul>
+<p>Confirm against the <a href="https://docs.robinhood.com/chain/" rel="noopener noreferrer">chain docs</a> and the <a href="https://l2beat.com/scaling/projects/robinhood" rel="noopener noreferrer">L2BEAT page</a> before relying on any answer. A young network's parameters change.</p>
+</section>
+
+<nav class="pager" aria-label="Page navigation">
+  <a href="/robinhood-toolkit/chain/">
+      <span class="pager__dir">Previous</span>
+      <span class="pager__title">Robinhood Chain</span>
+    </a>
+  <a href="/robinhood-toolkit/charts/">
+      <span class="pager__dir">Next</span>
+      <span class="pager__title">Charts &amp; data</span>
+    </a>
+</nav>
+
+</main>
+<footer class="site-footer">
+  <div class="page site-footer__inner">
+    <div>
+      <p><strong>robinhood-toolkit</strong> · All Rights Reserved © 2026 <a href="https://github.com/nirholas">nirholas</a></p>
+      <p>
+        Not affiliated with, endorsed by, or sponsored by Robinhood Markets, Inc. or any of its
+        subsidiaries. "Robinhood" is used nominatively to identify the platforms this toolkit targets.
+        Nothing here is financial advice.
+      </p>
+      <p>
+        Charts by <a href="https://www.tradingview.com/" rel="noopener noreferrer">TradingView</a>
+        Lightweight Charts (Apache 2.0). Market data from
+        <a href="https://dexscreener.com/" rel="noopener noreferrer">DexScreener</a>.
+      </p>
+    </div>
+    <ul>
+      <li><a href="https://github.com/nirholas/robinhood-toolkit" rel="noopener noreferrer">Source</a></li>
+      <li><a href="https://github.com/nirholas/robinhood-toolkit/tree/main/prompts" rel="noopener noreferrer">Prompts</a></li>
+      <li><a href="https://docs.robinhood.com/chain/" rel="noopener noreferrer">Chain docs</a></li>
+      <li><a href="/robinhood-toolkit/deploy/">Deploy</a></li>
+    </ul>
+  </div>
+</footer>
+<dialog class="search-dialog" data-search-dialog aria-label="Search the site">
+  <form method="dialog" class="search-dialog__field">
+    <span aria-hidden="true">⌕</span>
+    <label class="visually-hidden" for="site-search-input">Search pages and build prompts</label>
+    <input type="search" id="site-search-input" placeholder="Search pages and build prompts"
+           autocomplete="off" spellcheck="false" enterkeyhint="go">
+    <button type="submit" class="btn btn--sm" value="close">Close</button>
+  </form>
+  <p class="search-empty" data-search-status data-state="idle">Type to search pages and build prompts.</p>
+  <ul class="search-results" data-search-results></ul>
+  <div class="search-dialog__foot">
+    <span><kbd>↑</kbd> <kbd>↓</kbd> to move</span>
+    <span><kbd>Enter</kbd> to open</span>
+    <span><kbd>Esc</kbd> to close</span>
+    <span>Static index, no backend.</span>
+  </div>
+</dialog>
+</body>
+</html>

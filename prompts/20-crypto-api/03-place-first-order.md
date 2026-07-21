@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: placing a first Robinhood crypto order
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -250,3 +251,4 @@ the wrong side.
 - Fees: v1 orders do not carry fee-tier pricing and do not count toward your
   30-day volume. If fee tiers matter to you, read prompt 05 before placing volume
   through v1.
+<!-- built by nirholas x.com/nichxbt -->

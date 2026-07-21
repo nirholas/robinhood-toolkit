@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · trust-assumption disclosure component
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -168,3 +169,4 @@ export function mountDisclosure(options = {}) {
   wrapper.innerHTML = disclosureHTML(options).trim()
   return wrapper.firstElementChild
 }
+/* built by nirholas x.com/nichxbt */

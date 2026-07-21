@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · robinhood-chain-mcp stdio round-trip tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -219,3 +220,4 @@ describe('signing surface', () => {
     }
   });
 });
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · Morpho rate reader
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -56,3 +57,4 @@ function marketTuple(state) {
     state.fee,
   ]
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: orient on Robinhood Chain and verify its stack claims
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -210,3 +211,4 @@ Expected: `{"jsonrpc":"2.0","id":1,"result":"0x1237"}`.
 - Block explorer hostnames differ in shape between the two networks
   (`robinhoodchain.blockscout.com` versus `explorer.testnet.chain.robinhood.com`).
   Do not pattern-match one from the other.
+<!-- built by nirholas x.com/nichxbt -->

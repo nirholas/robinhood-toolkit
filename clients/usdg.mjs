@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · USDG transfers on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -121,3 +122,4 @@ export async function transferUsdg({ rpcUrl, chainId, privateKey, to, amount, dr
     recipientBalance: recipientAfter.formatted,
   };
 }
+/* built by nirholas x.com/nichxbt */

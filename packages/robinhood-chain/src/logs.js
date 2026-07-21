@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · eth_getLogs scanning that survives the mainnet caps
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -263,3 +264,4 @@ export async function scanLogs({ maxChunks, ...options } = {}) {
     },
   }
 }
+/* built by nirholas x.com/nichxbt */

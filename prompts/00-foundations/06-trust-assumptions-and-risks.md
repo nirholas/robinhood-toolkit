@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: trust assumptions, risk disclosure, and liveness monitoring
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -348,3 +349,4 @@ same pool, or implies the entities are unaffiliated, rewrite it.
   unreachable branches in CI with a stubbed transport.
 - Recheck this file's unverified items on a schedule. A young chain's parameters
   change, and a risk doc that was accurate at launch quietly becomes wrong.
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · Claude Code MCP setup
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -40,3 +41,4 @@ claude mcp remove robinhood-trading
 - Transport: Streamable HTTP.
 - Auth: OAuth 2.1 authorization code + PKCE, public client, no secret.
 - Tokens live in Claude Code's own credential store, never in any config file.
+<!-- built by nirholas x.com/nichxbt -->

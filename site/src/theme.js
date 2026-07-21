@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · theme controller
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -97,3 +98,4 @@ export function initTheme() {
 export function token(name) {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim()
 }
+/* built by nirholas x.com/nichxbt */

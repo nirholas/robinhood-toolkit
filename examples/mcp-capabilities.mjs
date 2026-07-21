@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · report which capabilities the live MCP surface satisfies
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -18,3 +19,4 @@ for (const capability of Object.keys(CAPABILITIES)) {
 
 console.log(`\nclassified as writes: ${[...adapter.writeTools].join(', ') || 'none'}`);
 await adapter.close();
+/* built by nirholas x.com/nichxbt */

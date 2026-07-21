@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 # Attribution convention
 
 Every source and documentation file in this repository carries an authorship
@@ -47,3 +48,4 @@ attribution-stripping a visible, deliberate act rather than an accident. They do
 not technically prevent copying. The enforceable protection is the All Rights
 Reserved license in LICENSE plus the public commit history on this repository.
 Any reuse of a derivative work requires the copyright holder's written consent.
+<!-- built by nirholas x.com/nichxbt -->

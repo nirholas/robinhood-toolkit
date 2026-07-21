@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · route registry
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -27,3 +28,4 @@ export const routes = modules.map((mod) => mod.route)
 
 /** Route metadata plus its render function. Used by the pre-renderer. */
 export const pages = modules.map((mod) => ({ ...mod.route, render: mod.render }))
+/* built by nirholas x.com/nichxbt */

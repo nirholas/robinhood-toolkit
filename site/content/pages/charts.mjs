@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · live market view page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -289,3 +290,4 @@ ${section(
 ${pager(base, { href: '/chain/', title: 'Robinhood Chain guide' }, { href: '/api/', title: 'Robinhood Crypto REST API' })}
 `
 }
+/* built by nirholas x.com/nichxbt */

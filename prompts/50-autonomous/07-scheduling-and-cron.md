@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: scheduling, single-instance leases, restart safety
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -229,3 +230,4 @@ to zero.
 - If you run a canary and a production instance, they need different lease keys
   and different accounts, or the canary will simply never trade and you will
   learn nothing from it.
+<!-- built by nirholas x.com/nichxbt -->

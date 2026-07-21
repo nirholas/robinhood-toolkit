@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 05: pool price from sqrtPriceX96, in BigInt
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -358,3 +359,4 @@ if (impostor) {
 }
 
 console.log('')
+/* built by nirholas x.com/nichxbt */

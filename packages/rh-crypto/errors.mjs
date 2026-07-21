@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · typed errors for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -125,3 +126,4 @@ export function logError(error) {
   };
   console.error(JSON.stringify(record));
 }
+/* built by nirholas x.com/nichxbt */

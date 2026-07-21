@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: an honest backtesting harness
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -253,3 +254,4 @@ strategy that underperforms holding, after costs, is not a strategy.
 - Fees change. A report from six months ago with a stale fee assumption is not
   comparable to today's run. That is why the assumptions block is part of the
   output rather than a comment in the code.
+<!-- built by nirholas x.com/nichxbt -->

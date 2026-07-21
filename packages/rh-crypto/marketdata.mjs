@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · market data reads for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -63,3 +64,4 @@ export function slippageBps({ topOfBook, sized, side }) {
   const delta = side === 'ask' ? sized.price - reference : reference - sized.price;
   return (delta / reference) * 10_000;
 }
+/* built by nirholas x.com/nichxbt */

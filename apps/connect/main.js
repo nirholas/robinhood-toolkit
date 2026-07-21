@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · browser connect flow logic
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -85,3 +86,4 @@ connectBtn.addEventListener('click', connect);
 // Re-render on chain/account changes the user makes in the wallet directly.
 window.ethereum?.on?.('chainChanged', () => setStatus('Network changed in wallet. Reconnect to refresh.'));
 window.ethereum?.on?.('accountsChanged', () => setStatus('Account changed in wallet. Reconnect to refresh.'));
+/* built by nirholas x.com/nichxbt */

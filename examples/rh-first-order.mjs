@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · place one minimum-size market order
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -37,3 +38,4 @@ if (live) {
   const final = await waitForTerminal(rh, result.id);
   console.log(`state=${final.state} filled=${final.filled_asset_quantity} avg=${final.average_price}`);
 }
+/* built by nirholas x.com/nichxbt */

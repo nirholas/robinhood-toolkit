@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: static search index and site navigation
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -335,3 +336,4 @@ function render(listbox, input, results) {
   the site and most readers never search.
 - `fuzzy: 0.2` on very short queries returns noise. The two-character minimum is
   what keeps the dropdown useful.
+<!-- built by nirholas x.com/nichxbt -->

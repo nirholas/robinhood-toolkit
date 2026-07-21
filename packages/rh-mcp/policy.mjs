@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · client-side policy guard for agent-initiated writes
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -124,3 +125,4 @@ export function guardClient(client, guard, { writeTools }) {
   };
   return client;
 }
+/* built by nirholas x.com/nichxbt */

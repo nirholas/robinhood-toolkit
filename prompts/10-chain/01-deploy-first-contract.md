@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: first contract deploy on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -193,3 +194,4 @@ A `rh-first-deploy/` project containing:
   rerun rather than trying to match by hand.
 - Never paste a private key into a shell command or a `.env` that gets committed.
   `cast wallet import` stores it encrypted in `~/.foundry/keystores`.
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: connect the Robinhood Trading MCP to Claude Code
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -177,3 +178,4 @@ tools it has; it should name them without you supplying the list.
   Do not go looking for a credential that the protocol does not use.
 - Fund the Agentic account deliberately. It is the blast radius. Guardrails
   belong there, not in a prompt asking the model to be careful.
+<!-- built by nirholas x.com/nichxbt -->

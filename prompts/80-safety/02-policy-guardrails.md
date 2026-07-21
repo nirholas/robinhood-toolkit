@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: a fail-closed policy engine for agent orders
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -325,3 +326,4 @@ quantity and confirm every order is blocked with
 - Policy changes are production changes. Version the policy file, log the
   version in every verdict, and review changes the way you would review the
   execution engine.
+<!-- built by nirholas x.com/nichxbt -->

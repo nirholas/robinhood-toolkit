@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · client-side token bucket
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -87,3 +88,4 @@ export class BucketRegistry {
     return bucket;
   }
 }
+/* built by nirholas x.com/nichxbt */

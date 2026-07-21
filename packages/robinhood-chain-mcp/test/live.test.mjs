@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · robinhood-chain-mcp live-chain tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -201,3 +202,4 @@ describe('live chain reads', { skip: LIVE ? false : 'set ROBINHOOD_MCP_LIVE=1 to
     assert.match(result.content[0].text, /was not found/);
   });
 });
+/* built by nirholas x.com/nichxbt */

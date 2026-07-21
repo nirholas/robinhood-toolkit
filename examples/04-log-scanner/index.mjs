@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 04: adaptive log scanning and resumable cursors
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -331,3 +332,4 @@ await rm(CURSOR_FILE, { force: true })
 console.log(`\n  At approximately ${BLOCK_TIME_MS} ms per block, ${DEFAULT_CHUNK} blocks is about`)
 console.log(`  ${(blocksToMs(DEFAULT_CHUNK) / 1000).toFixed(0)} seconds of history, not hours. Range intuition`)
 console.log('  carried over from a 12-second L1 is off by two orders of magnitude here.\n')
+/* built by nirholas x.com/nichxbt */

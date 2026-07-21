@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · on-chain verification of resolved Uniswap addresses
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -95,3 +96,4 @@ export async function findPools(client, factory, tokenA, tokenB, fees = [100, 50
   }
   return found.sort((a, b) => (b.liquidity > a.liquidity ? 1 : b.liquidity < a.liquidity ? -1 : 0));
 }
+/* built by nirholas x.com/nichxbt */

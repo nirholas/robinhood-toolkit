@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: indexing Robinhood Chain events
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -486,3 +487,4 @@ the exponent is never baked into storage.
 - If you index Stock Tokens, resolve their addresses from the runtime registry
   (prompt 05). A hardcoded address in an indexer config is the same mistake as a
   hardcoded address in a trade path, just slower to notice.
+<!-- built by nirholas x.com/nichxbt -->

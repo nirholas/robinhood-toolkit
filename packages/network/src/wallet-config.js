@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · EIP-3085 wallet_addEthereumChain payloads
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -23,3 +24,4 @@ export const addChainParams = {
     blockExplorerUrls: ['https://explorer.testnet.chain.robinhood.com'],
   },
 };
+/* built by nirholas x.com/nichxbt */

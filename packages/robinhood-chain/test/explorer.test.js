@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · Blockscout client tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -111,3 +112,4 @@ test('appends an api key when provided', async () => {
   await c.get('/x')
   assert.match(urls[0], /[?&]apikey=k3y/)
 })
+/* built by nirholas x.com/nichxbt */

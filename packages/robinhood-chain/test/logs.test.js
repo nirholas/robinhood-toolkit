@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · adaptive log scanner tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -273,3 +274,4 @@ test('an unrecognized error still halves, because caps are not identified by str
   // The classifier had no idea what this was. The scanner did not need it to.
   assert.equal(classifyScanError(new Error('some future cap nobody has documented yet')), 'unknown')
 })
+/* built by nirholas x.com/nichxbt */

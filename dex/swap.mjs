@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · Uniswap v3 exactInputSingle on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -118,3 +119,4 @@ export async function swapExactInputSingle({
 
   return { ...plan, dryRun: false, hash, gasUsed: receipt.gasUsed.toString(), balanceOut: formatUnits(outBalance, decOut) };
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · Uniswap v3 quote
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -29,3 +30,4 @@ export function applySlippage(amountOut, slippageBps) {
   if (slippageBps < 0 || slippageBps > 10_000) throw new Error("slippageBps out of range");
   return (amountOut * BigInt(10_000 - slippageBps)) / 10_000n;
 }
+/* built by nirholas x.com/nichxbt */

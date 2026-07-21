@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · Robinhood Chain network definitions and read-only clients
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -100,3 +101,4 @@ export function explorerUrl(network, kind, value) {
   const base = chainFor(network).blockExplorers.default.url;
   return `${base}/${kind}/${value}`;
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · ChatGPT and Grok MCP setup (hosted UI)
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -47,3 +48,4 @@ only the menu path differs.
 
 Ask the agent to list its Robinhood tools and read your portfolio. The same tool
 names appear here as on every other host, because the server is the same.
+<!-- built by nirholas x.com/nichxbt -->

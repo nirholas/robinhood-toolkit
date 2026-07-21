@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · security policy
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -61,3 +62,4 @@ Nothing here has been audited. It is teaching material that happens to work.
 Read [prompts/80-safety](prompts/80-safety/) before anything of yours places an
 order unattended, cap what a hot wallet can hold, and assume your strategy has a
 bug you have not found yet.
+<!-- built by nirholas x.com/nichxbt -->

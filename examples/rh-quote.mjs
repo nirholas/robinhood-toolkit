@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · print a size-aware quote for a symbol
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -20,3 +21,4 @@ const size = Number(pair.min_order_size) * 10;
 const quote = await estimatedPrice(rh, { symbol, side: 'ask', quantities: [size] });
 const sized = quote.results[0];
 console.log(`buying ${size}: price=${sized.price} slippage=${slippageBps({ topOfBook: top, sized, side: 'ask' }).toFixed(1)}bps`);
+/* built by nirholas x.com/nichxbt */

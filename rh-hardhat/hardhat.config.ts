@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · Hardhat config for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -57,3 +58,4 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: WCAG 2.2 AA conformance and responsive layout
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -383,3 +384,4 @@ export function addChartKeyboardControls(chart, container) {
   the fix, and they also give mouse users a precise alternative.
 - `prefers-reduced-motion` must not disable functionality. Cutting transitions is
   correct; removing chart interactivity is a different failure.
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · live smoke test
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -73,3 +74,4 @@ console.log(
   `\nlog scan            ${logs.length} WETH logs over 2001 blocks in ${stats.elapsedMs}ms, ` +
     `${stats.chunksScanned} chunks, ${stats.halvings} halvings`,
 )
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · live head watcher with a deliberate polling interval
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -77,3 +78,4 @@ export function watchHead(client, onBlock, options = {}) {
     onError,
   })
 }
+/* built by nirholas x.com/nichxbt */

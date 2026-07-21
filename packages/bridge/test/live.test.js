@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · live on-chain verification of the seeded registry
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -36,3 +37,4 @@ test('an address with no code throws rather than becoming a registry entry', { s
     /No contract deployed/,
   )
 })
+/* built by nirholas x.com/nichxbt */

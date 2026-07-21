@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: order types and lifecycle
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -281,3 +282,4 @@ least one change event and returns `filled` with a non-null `averageFill`.
   `ordersSince` on startup rather than assuming your in-memory state survived.
 - **Do not poll one order per second forever.** Prompt 07 covers the rate budget.
   Back off once an order has been open and unchanged for a while.
+<!-- built by nirholas x.com/nichxbt -->

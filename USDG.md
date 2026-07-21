@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · USDG on Robinhood Chain — verified facts
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -104,3 +105,4 @@ reliable dry run — see [fork-rehearsal.txt](fork-rehearsal.txt).
   (`symbol`, `name`, `decimals`, `totalSupply`, EIP-1967 storage slots), 2026-07-21.
 - Implementation ABI: Blockscout verified source for
   `0x68184c449e1A8F34fa18d289737129Fd27b66F8f`.
+<!-- built by nirholas x.com/nichxbt -->

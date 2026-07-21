@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · ticker-collision verification tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -136,3 +137,4 @@ test('verifyToken reports instead of throwing', async () => {
   assert.ok(bad.error instanceof NotCanonicalTokenError)
   assert.equal(bad.metadata.name, 'Useless Stupid Degen Gamblers')
 })
+/* built by nirholas x.com/nichxbt */

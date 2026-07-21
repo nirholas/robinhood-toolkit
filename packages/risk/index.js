@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · robinhood-risk public surface
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -54,3 +55,4 @@ export {
 } from './src/gate.js'
 
 export { bindLivenessToSubmit, livenessMessage } from './src/liveness-ui.js'
+/* built by nirholas x.com/nichxbt */

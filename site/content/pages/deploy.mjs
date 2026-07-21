@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · deploy targets page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -271,3 +272,4 @@ ${section(
 ${pager(base, { href: '/prompts/', title: 'Build prompts' }, { href: '/', title: 'Overview' })}
 `
 }
+/* built by nirholas x.com/nichxbt */

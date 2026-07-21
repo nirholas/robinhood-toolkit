@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · chain fact prober
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -83,3 +84,4 @@ for (const chain of [robinhoodMainnet, robinhoodTestnet]) {
 await mkdir('reports', { recursive: true });
 await writeFile('reports/chain-facts.json', JSON.stringify(results, null, 2));
 console.table(results);
+/* built by nirholas x.com/nichxbt */

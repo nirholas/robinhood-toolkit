@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · attribution header linter
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -43,3 +44,4 @@ if (missing.length) {
 }
 
 console.log(`Attribution headers present in all ${tracked().length} checked files.`)
+/* built by nirholas x.com/nichxbt */

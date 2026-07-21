@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · pre-renderer
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -156,3 +157,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     await buildContent()
   }
 }
+/* built by nirholas x.com/nichxbt */

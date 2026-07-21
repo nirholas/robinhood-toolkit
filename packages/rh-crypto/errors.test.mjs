@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · tests for typed Robinhood Crypto errors
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -82,3 +83,4 @@ test('401 is auth, not validation', () => {
   assert.equal(error.isValidation, false);
   assert.equal(triage(error).action, 'fix-auth');
 });
+/* built by nirholas x.com/nichxbt */

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# built by nirholas x.com/nichxbt
 # robinhood-toolkit · deploy Beacon to Robinhood Chain testnet (chain 46630)
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
 #
@@ -54,3 +55,4 @@ forge verify-contract "$BEACON" src/Beacon.sol:Beacon \
 echo
 echo "Explorer: https://explorer.testnet.chain.robinhood.com/address/$BEACON"
 echo "Now fill in DEPLOY.md with the address, tx hash, and gas above."
+# built by nirholas x.com/nichxbt

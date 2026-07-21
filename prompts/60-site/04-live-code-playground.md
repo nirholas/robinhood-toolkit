@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: read-only live code playground against Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -359,3 +360,4 @@ await fetch('https://rpc.mainnet.chain.robinhood.com', {
   supplies, and wei amounts. Block numbers are fine either way today.
 - The output pane renders untrusted strings from RPC responses. Insert with
   `textContent`, never `innerHTML`.
+<!-- built by nirholas x.com/nichxbt -->

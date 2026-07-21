@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · enumerate the Robinhood Trading MCP tool surface
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -153,3 +154,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`\n${tools.length} tools written to docs/mcp/tools-snapshot.json`);
   await client.close();
 }
+/* built by nirholas x.com/nichxbt */

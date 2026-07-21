@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · copy-to-clipboard for code blocks
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -52,3 +53,4 @@ export function initCopyButtons(root = document) {
     })
   }
 }
+/* built by nirholas x.com/nichxbt */

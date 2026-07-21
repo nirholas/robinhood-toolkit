@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: live execution engine, REST and on-chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -314,3 +315,4 @@ two disagree, stop and reconcile before scaling size.
   expensive.
 - Rate limits are venue policy and can change. Treat 429 as backpressure and
   slow the whole loop, not just the one call.
+<!-- built by nirholas x.com/nichxbt -->

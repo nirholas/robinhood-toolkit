@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 # robinhood-toolkit · Foundry task runner
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
 # License: All Rights Reserved (c) 2026 nirholas
@@ -44,3 +45,4 @@ addresses-testnet:
 
 addresses-mainnet:
 	@jq -r '.transactions[] | select(.transactionType=="CREATE") | {name: .contractName, address: .contractAddress, tx: .hash}' broadcast/DeployBeacon.s.sol/4663/run-latest.json
+# built by nirholas x.com/nichxbt

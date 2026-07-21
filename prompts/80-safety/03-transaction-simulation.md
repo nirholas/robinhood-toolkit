@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: simulate before you send
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -314,3 +315,4 @@ why before pointing anything at 4663.
 - Preview versus fill divergence is a leading indicator that your cost model is
   wrong. Record both and chart the difference. It is the cheapest calibration
   data you will get, and it directly corrects the backtester.
+<!-- built by nirholas x.com/nichxbt -->

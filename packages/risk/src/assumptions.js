@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · trust assumption model
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -174,3 +175,4 @@ export const gateAssumptions = () =>
 /** Whole model, high severity first, for a rendered disclosure. */
 export const bySeverity = () =>
   [...TRUST_MODEL].sort((a, b) => SEVERITY_RANK[a.severity] - SEVERITY_RANK[b.severity])
+/* built by nirholas x.com/nichxbt */

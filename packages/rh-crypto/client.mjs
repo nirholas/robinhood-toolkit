@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · authenticated client for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -133,3 +134,4 @@ export function buildQuery(query) {
   }
   return parts.length ? `?${parts.join('&')}` : '';
 }
+/* built by nirholas x.com/nichxbt */

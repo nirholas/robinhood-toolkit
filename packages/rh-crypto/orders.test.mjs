@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · unit tests for order-building helpers
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -238,3 +239,4 @@ test('assertStopSane flags a stop-limit whose limit can never fill', () => {
   // A protective limit on the correct side of the stop is fine.
   assert.doesNotThrow(() => assertStopSane({ side: 'sell', stopPrice: '90', limitPrice: '89', lastPrice: '100' }));
 });
+/* built by nirholas x.com/nichxbt */

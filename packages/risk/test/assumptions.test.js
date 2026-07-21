@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · trust model completeness tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -87,3 +88,4 @@ test('assumptionById throws on an unknown id', () => {
   assert.throws(() => assumptionById('does-not-exist'), /unknown assumption id/)
   assert.equal(assumptionById('centralized-sequencer').severity, 'high')
 })
+/* built by nirholas x.com/nichxbt */

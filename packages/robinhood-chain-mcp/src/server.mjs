@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · robinhood-chain-mcp entry point
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -74,3 +75,4 @@ if (isDirectRun()) {
     process.exit(1);
   });
 }
+/* built by nirholas x.com/nichxbt */

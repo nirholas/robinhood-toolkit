@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · pre-transaction disclosure gate
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -197,3 +198,4 @@ function injectGateStyles(doc) {
   style.textContent = GATE_CSS
   doc.head.appendChild(style)
 }
+/* built by nirholas x.com/nichxbt */

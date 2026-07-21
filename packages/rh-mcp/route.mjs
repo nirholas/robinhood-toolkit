@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · route crypto orders to whichever rail is available
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -53,3 +54,4 @@ export function mapToSchema(schema, canonical) {
   }
   return args;
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · verified network constants used across the site
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -63,3 +64,4 @@ export const SELECTORS = {
   decimals: '0x313ce567',
   totalSupply: '0x18160ddd'
 }
+/* built by nirholas x.com/nichxbt */

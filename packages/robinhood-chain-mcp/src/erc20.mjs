@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · ERC-20 reads on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -183,3 +184,4 @@ export async function readTokenBalance(network, token, holder) {
     formatted: formatUnits(balance.result, dec),
   };
 }
+/* built by nirholas x.com/nichxbt */

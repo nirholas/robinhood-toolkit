@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · resolve + prove Uniswap addresses, then scan WETH/USDG pools
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -40,3 +41,4 @@ for (const p of pools) {
   console.log(`  fee ${p.fee}: pool ${p.pool}  liquidity ${p.liquidity}  token0 ${p.token0} token1 ${p.token1}`);
 }
 if (!pools.length) console.log("  (none — Uniswap may be deployed but this pair may have no pool)");
+/* built by nirholas x.com/nichxbt */

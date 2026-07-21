@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · discover Morpho markets and vaults on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -40,8 +41,14 @@ const createMarketEvent = parseAbiItem(
  * ~101 ms blocks the range is enormous, so `fromBlock` should be the block
  * Morpho was deployed at, which you can read off Blockscout — never 0 in
  * production. The scanner halves its chunk on any RPC cap and resumes.
+ *
+ * CreateMarket is a SPARSE event — a couple dozen logs across all of history —
+ * so the matched-log cap that forces a 1000-block chunk for Transfer scans never
+ * bites here. A very wide chunk turns a multi-million-block history into a few
+ * dozen requests. The scanner still halves on any error, so an over-wide default
+ * costs nothing but a retry in the worst case.
  */
-export async function discoverMarkets(client, morphoBlue, { fromBlock = 0n, toBlock, onProgress } = {}) {
+export async function discoverMarkets(client, morphoBlue, { fromBlock = 0n, toBlock, chunkSize = 1_000_000n, onProgress } = {}) {
   const head = toBlock ?? (await client.getBlockNumber())
   const { logs, stats } = await scanLogs({
     client,
@@ -49,6 +56,7 @@ export async function discoverMarkets(client, morphoBlue, { fromBlock = 0n, toBl
     event: createMarketEvent,
     fromBlock,
     toBlock: head,
+    chunkSize,
     onChunk: onProgress,
   })
   const markets = logs.map((log) => ({
@@ -88,6 +96,29 @@ export async function loanMarkets(client, morphoBlue, loanToken, markets) {
 /** Named alias kept for the USDG-specific path the toolkit cares about. */
 export const usdgMarkets = loanMarkets
 
+// Morpho's SharesMathLib virtual amounts. Supply shares convert to assets as
+// shares * (totalSupplyAssets + VIRTUAL_ASSETS) / (totalSupplyShares + VIRTUAL_SHARES),
+// rounded down. These constants are part of the protocol, not a tunable.
+const VIRTUAL_SHARES = 1_000_000n
+const VIRTUAL_ASSETS = 1n
+
+/**
+ * The USDG a supplier's position is currently worth in a market. Reads
+ * position() and market(); call Morpho.accrueInterest(params) first if you need
+ * the value to include interest since the market's lastUpdate.
+ */
+export async function supplyAssetsOf(client, morphoBlue, id, account) {
+  const [pos, state] = await Promise.all([
+    client.readContract({ address: morphoBlue, abi: morphoAbi, functionName: 'position', args: [id, account] }),
+    readMarketState(client, morphoBlue, id),
+  ])
+  const supplyShares = pos[0]
+  return {
+    supplyShares,
+    assets: (supplyShares * (state.totalSupplyAssets + VIRTUAL_ASSETS)) / (state.totalSupplyShares + VIRTUAL_SHARES),
+  }
+}
+
 /** Read one market's live accounting and derive utilization. */
 export async function readMarketState(client, morphoBlue, id) {
   const state = await client.readContract({
@@ -108,3 +139,4 @@ export async function readMarketState(client, morphoBlue, id) {
       totalSupplyAssets === 0n ? 0 : Number((totalBorrowAssets * 10_000n) / totalSupplyAssets) / 10_000,
   }
 }
+/* built by nirholas x.com/nichxbt */

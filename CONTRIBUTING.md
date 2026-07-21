@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · contributing guide
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -82,3 +83,4 @@ any policy evaluation error, and never automate flattening positions. See
 
 Do not open a public issue for a vulnerability in code that handles keys or
 signs transactions. Open a GitHub security advisory on the repository instead.
+<!-- built by nirholas x.com/nichxbt -->

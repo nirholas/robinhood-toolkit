@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: ERC-20 deploy on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -392,3 +393,4 @@ Rerun step 4 with `--rpc-url rh_mainnet` and the mainnet verifier URL. Set
   transaction indexed. Retry the read before concluding the deploy failed.
 - Your ERC-20 is not a Stock Token and gives no exposure to any equity. Do not
   name or brand it in a way that implies otherwise.
+<!-- built by nirholas x.com/nichxbt -->

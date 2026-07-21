@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: multi-pair charting dashboard
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -710,3 +711,4 @@ window.addEventListener('beforeunload', () => { grid.destroy(); store.destroy();
 - The store polls DexScreener directly from the client. That is within their
   terms. Do not add a shared proxy to "fix CORS" for other people, which is
   redistribution. See prompt 01.
+<!-- built by nirholas x.com/nichxbt -->

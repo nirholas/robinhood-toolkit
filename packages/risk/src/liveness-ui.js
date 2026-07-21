@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · liveness-to-UI wiring
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -107,3 +108,4 @@ ${exitHTML(msg.exit, escText)}`.trim()
 }
 
 export { canSubmitIn }
+/* built by nirholas x.com/nichxbt */

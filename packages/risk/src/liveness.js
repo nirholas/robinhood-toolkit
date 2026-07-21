@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · sequencer liveness monitor
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -296,3 +297,4 @@ export function monitorLiveness(onStatus, options = {}) {
 function isoAt(ms) {
   return new Date(ms).toISOString()
 }
+/* built by nirholas x.com/nichxbt */

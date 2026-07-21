@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: publish the static site to GitHub Pages
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -203,3 +204,4 @@ exposes any missing pre-rendered page.
   the run succeeds while nothing changes. Confirm the source is GitHub Actions.
 - Commercial use is prohibited. If the site monetizes, use one of the other four
   targets.
+<!-- built by nirholas x.com/nichxbt -->

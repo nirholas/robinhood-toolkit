@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · tests for the bridged token registry and resolver
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -58,3 +59,4 @@ test('unknown chain id throws rather than resolving', () => {
 test('mainnet registry contains exactly the two verified tokens', () => {
   assert.deepEqual(Object.keys(TOKENS[ROBINHOOD_MAINNET_ID]).sort(), ['USDG', 'WETH'])
 })
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · prove a token address is what it claims to be
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -161,3 +162,4 @@ export async function verifyToken(client, address, expected, options) {
     return { ok: false, metadata: error instanceof NotCanonicalTokenError ? error.actual : null, error }
   }
 }
+/* built by nirholas x.com/nichxbt */

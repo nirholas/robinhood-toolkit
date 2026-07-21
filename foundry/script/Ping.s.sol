@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
+// built by nirholas x.com/nichxbt
 
 import { Script, console } from "forge-std/Script.sol";
 
@@ -14,3 +15,4 @@ contract Ping is Script {
         console.log("timestamp ", block.timestamp);
     }
 }
+// built by nirholas x.com/nichxbt

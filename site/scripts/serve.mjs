@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · static file server for the process-model targets
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -127,3 +128,4 @@ for (const signal of ['SIGTERM', 'SIGINT']) {
     setTimeout(() => process.exit(0), 10_000).unref()
   })
 }
+/* built by nirholas x.com/nichxbt */

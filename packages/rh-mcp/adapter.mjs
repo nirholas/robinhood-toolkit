@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · schema-driven adapter for the Robinhood Trading MCP
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -217,3 +218,4 @@ export function textOf(result) {
     .join('\n')
     .trim();
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · TypeScript declarations
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -397,3 +398,4 @@ export declare class LogScanError extends RobinhoodChainError {
   cursor?: ScanCursor
   chunkSize?: bigint
 }
+/* built by nirholas x.com/nichxbt */

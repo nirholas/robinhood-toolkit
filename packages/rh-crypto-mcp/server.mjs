@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · MCP server exposing the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -237,3 +238,4 @@ server.registerTool(
 
 await server.connect(new StdioServerTransport());
 process.stderr.write('robinhood-crypto MCP server 1.0.0 ready on stdio\n');
+/* built by nirholas x.com/nichxbt */

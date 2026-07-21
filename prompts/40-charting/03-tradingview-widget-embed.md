@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: TradingView widget embeds and their hard ceiling
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -420,3 +421,4 @@ mountChart(document.querySelector('#context'), {
 - One iframe per pair is fine. A grid of twelve is not: each one loads a full
   third-party page. For multi-pair views use prompt 07, which draws real series
   and stays responsive.
+<!-- built by nirholas x.com/nichxbt -->

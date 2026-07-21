@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · Vite configuration
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -82,3 +83,4 @@ export default defineConfig(async ({ command }) => {
     ]
   }
 })
+/* built by nirholas x.com/nichxbt */

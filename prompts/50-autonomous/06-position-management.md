@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: position tracking, reconciliation, and exits
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -251,3 +252,4 @@ kill switch when drift exceeds the threshold.
   because it felt arbitrary.
 - Correlated positions are one position. Cap total crypto exposure, not just
   per-symbol exposure.
+<!-- built by nirholas x.com/nichxbt -->

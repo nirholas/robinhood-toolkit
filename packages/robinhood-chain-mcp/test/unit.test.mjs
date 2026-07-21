@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · robinhood-chain-mcp unit tests (no network)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -209,3 +210,4 @@ describe('dexscreener normalisation', () => {
     assert.notEqual(winner.baseTokenAddress, canonicalUsdg.baseTokenAddress);
   });
 });
+/* built by nirholas x.com/nichxbt */

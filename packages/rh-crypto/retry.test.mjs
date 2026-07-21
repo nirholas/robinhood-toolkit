@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · retry policy tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -57,3 +58,4 @@ test('retryAfterMs parses an HTTP-date', () => {
   const ms = retryAfterMs(headers);
   assert.ok(ms > 0 && ms <= 10_000, `expected ~10s, got ${ms}`);
 });
+/* built by nirholas x.com/nichxbt */

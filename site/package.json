@@ -18,6 +18,10 @@
     "lightweight-charts": "^5.2.0"
   },
   "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.3.0",
+    "markdown-it-anchor": "^9.2.1",
+    "shiki": "^4.3.1",
     "vite": "^6.0.0",
     "wcag-contrast": "^3.0.0"
   },

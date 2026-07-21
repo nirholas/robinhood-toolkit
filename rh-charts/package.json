@@ -1,0 +1,15 @@
+{
+  "name": "rh-charts",
+  "version": "0.1.0",
+  "description": "Lightweight Charts data adapter and OHLCV utilities for Robinhood Chain pairs.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "author": "nirholas (https://github.com/nirholas)",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  }
+}

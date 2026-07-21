@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · token bucket tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -52,3 +53,4 @@ test('query strings do not fork the bucket key', () => {
     BucketRegistry.keyFor('/api/v1/crypto/trading/orders/?symbol=ETH-USD'),
   );
 });
+/* built by nirholas x.com/nichxbt */

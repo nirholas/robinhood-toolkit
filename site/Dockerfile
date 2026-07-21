@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 # robinhood-toolkit · container image for Google Cloud Run and Railway
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
 # License: All Rights Reserved (c) 2026 nirholas
@@ -24,3 +25,4 @@ COPY --from=build /app/dist ./dist
 COPY --from=build /app/scripts/serve.mjs ./scripts/serve.mjs
 EXPOSE 8080
 CMD ["node", "scripts/serve.mjs"]
+# built by nirholas x.com/nichxbt

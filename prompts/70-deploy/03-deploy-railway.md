@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: deploy the Node server to Railway with Railpack
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -200,3 +201,4 @@ live, `healthcheckPath` is not wired.
   is dead.
 - Memory is what you pay for. Set an explicit limit in the service settings
   rather than leaving it to default, or a leak turns into an invoice.
+<!-- built by nirholas x.com/nichxbt -->

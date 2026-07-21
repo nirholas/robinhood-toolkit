@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: Hardhat configured for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -279,3 +280,4 @@ network names. Attribution header on every file.
   Ethereum settlement.
 - Keep the private key out of the repo. If you fall back to `.env`, confirm it is
   gitignored before the first commit, not after.
+<!-- built by nirholas x.com/nichxbt -->

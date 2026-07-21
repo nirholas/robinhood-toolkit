@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: wallet setup, key handling, and testnet funding
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -198,3 +199,4 @@ rerun and confirm the balance changed on both the script and the explorer.
 - Nonce management: with approximately 101 ms blocks, back-to-back sends race.
   For any batch, track the nonce locally and increment it yourself rather than
   refetching per transaction.
+<!-- built by nirholas x.com/nichxbt -->

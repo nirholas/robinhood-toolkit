@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · request signer for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -42,3 +43,4 @@ export function authHeaders({ apiKey, privateKey, method, path, body = '', times
     'x-timestamp': String(ts),
   };
 }
+/* built by nirholas x.com/nichxbt */

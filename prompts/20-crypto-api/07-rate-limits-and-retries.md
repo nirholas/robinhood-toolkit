@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: rate limiting and retry policy
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -343,3 +344,4 @@ handler backs off rather than retrying immediately.
   100 requests per minute. Client-side buckets in separate processes do not know
   about each other. If you run more than one, either give each a fixed share of
   the budget or put them behind one shared gateway process.
+<!-- built by nirholas x.com/nichxbt -->

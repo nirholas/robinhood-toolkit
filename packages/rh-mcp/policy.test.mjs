@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · policy guard rule tests (offline)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -54,3 +55,4 @@ test('rejects excessive concentration', () => {
   const guard = new PolicyGuard(policy, { auditLog() {} });
   assert.throws(() => guard.check({ ...ok, notionalUsd: 49, portfolioValueUsd: 100 }), /concentration/);
 });
+/* built by nirholas x.com/nichxbt */

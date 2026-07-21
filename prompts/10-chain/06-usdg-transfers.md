@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: USDG transfers on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -361,3 +362,4 @@ contract you did not deploy and have not read.
 - The testnet USDG address is not verified. Do not copy the mainnet address to
   testnet and assume it works. The fork rehearsal is the reliable dry run.
 - Do not approve unlimited allowance by reflex. Exact amounts, revoked after use.
+<!-- built by nirholas x.com/nichxbt -->

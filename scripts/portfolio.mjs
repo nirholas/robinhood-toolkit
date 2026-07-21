@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · portfolio CLI over the read layer
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -116,3 +117,4 @@ console.log('')
 console.log(`  decimals read on-chain:  WETH ${wethRow?.decimals ?? '?'}, USDG ${usdgRow?.decimals ?? '?'}`)
 console.log('  (assuming 18 for USDG would understate it by a factor of 10^12)')
 console.log(`\n  ${portfolio.explorer}\n`)
+/* built by nirholas x.com/nichxbt */

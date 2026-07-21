@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · unit tests for order lifecycle helpers
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -70,3 +71,4 @@ test('fillRatio returns null for a quote_amount order with no asset target', () 
   };
   assert.equal(fillRatio(order), null);
 });
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: custom data adapter for Lightweight Charts
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -606,3 +607,4 @@ node --test test/
 - Keep `resample` on the client for interval switching, but do not build a 1d
   view by resampling 1m bars. Fetch the coarse interval from the source. You
   would need 500k bars to cover a year at 1m.
+<!-- built by nirholas x.com/nichxbt -->

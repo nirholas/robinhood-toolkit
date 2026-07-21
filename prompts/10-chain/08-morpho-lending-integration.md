@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: Morpho lending integration on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -455,3 +456,4 @@ Then re-read `convertToAssets(shares)` and confirm it increased.
   Blockscout, and use the chunked pattern in prompt 10.
 - Lending is a spend. Testnet or fork first, always, and print the plan before
   setting `dryRun: false`.
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · server-side HTML helpers for the pre-renderer
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -174,3 +175,4 @@ export function pager(base, prev, next) {
   ${link(next, 'Next')}
 </nav>`
 }
+/* built by nirholas x.com/nichxbt */

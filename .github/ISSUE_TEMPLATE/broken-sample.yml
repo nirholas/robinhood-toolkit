@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 name: Code sample does not run
 description: A snippet fails when copied and run as written
 labels: [broken-sample]
@@ -18,3 +19,4 @@ body:
     attributes:
       label: Node version, and viem or foundry version if relevant
     validations: { required: true }
+# built by nirholas x.com/nichxbt

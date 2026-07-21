@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · trust & risk page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -146,3 +147,4 @@ ${pager(
 )}
 `
 }
+/* built by nirholas x.com/nichxbt */

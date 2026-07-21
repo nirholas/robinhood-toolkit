@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · design token generator and WCAG contrast gate
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -241,3 +242,4 @@ export function generateTokens({ quiet = false } = {}) {
 if (import.meta.url === `file://${process.argv[1]}`) {
   generateTokens()
 }
+/* built by nirholas x.com/nichxbt */

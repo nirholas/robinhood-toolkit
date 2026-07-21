@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: resolving Stock Token addresses at runtime
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -376,3 +377,4 @@ grep -rnoiE '0x[0-9a-f]{40}' --include='*.mjs' --include='*.js' --include='*.ts'
 - Corporate actions such as splits, ticker changes, and delistings can change
   what a ticker maps to. Runtime resolution is what keeps you correct through
   those events. Drift detection in step 6 is what tells you one happened.
+<!-- built by nirholas x.com/nichxbt -->

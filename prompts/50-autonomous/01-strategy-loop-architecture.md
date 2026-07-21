@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: the autonomous strategy loop skeleton
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -275,3 +276,4 @@ to run.
   the top of the tick so a halt takes effect even if the market data call hangs.
 - `Infinity` as `maxTicks` is deliberate. Do not replace it with a large integer
   and assume the loop will stop on its own.
+<!-- built by nirholas x.com/nichxbt -->

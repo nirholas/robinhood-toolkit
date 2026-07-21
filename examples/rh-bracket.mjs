@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · resting limit buy that arms a stop-loss on fill
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -117,3 +118,4 @@ const stop = buildOrder({
 console.log(`filled ${stopQuantity} @ ~${fillPrice}; arming stop-loss sell @ ${stopPrice}`);
 const stopResult = await placeOrder(rh, stop, { dryRun: false });
 console.log(stopResult);
+/* built by nirholas x.com/nichxbt */

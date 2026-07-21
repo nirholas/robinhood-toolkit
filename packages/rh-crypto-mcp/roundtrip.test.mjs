@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · MCP round-trip test for the crypto server
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -55,3 +56,4 @@ test('server advertises its tools and enforces confirmation', { skip: haveCreds 
 
   await client.close();
 });
+/* built by nirholas x.com/nichxbt */

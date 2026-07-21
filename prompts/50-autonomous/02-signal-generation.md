@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: signal generation from chain and REST market data
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -246,3 +247,4 @@ shows `state: "idle"` for the warm-up period rather than immediate trades.
 - Confidence values are useful for sizing but only if calibrated. Do not wire
   `confidence` to position size until you have checked in a backtest that high
   confidence signals actually outperform low ones.
+<!-- built by nirholas x.com/nichxbt -->

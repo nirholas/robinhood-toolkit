@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: Robinhood Crypto API authentication
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -349,3 +350,4 @@ creation time.
 - Keys are scoped at creation time. If you did not tick the order-placement
   permission, reads succeed and writes return 403. Re-create the credential to
   change scope.
+<!-- built by nirholas x.com/nichxbt -->

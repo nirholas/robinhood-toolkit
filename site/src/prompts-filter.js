@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · client-side filter for the prompt index
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -57,3 +58,4 @@ export function initPromptsFilter() {
 
   apply()
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · batched portfolio read tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -145,3 +146,4 @@ test('batchRead returns [] for an empty contract list without touching the netwo
   assert.deepEqual(await batchRead(client, []), [])
   assert.equal(client.seen.multicall, 0)
 })
+/* built by nirholas x.com/nichxbt */

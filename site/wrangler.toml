@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 # robinhood-toolkit · Cloudflare Workers static asset deploy
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
 # License: All Rights Reserved (c) 2026 nirholas
@@ -15,3 +16,4 @@ compatibility_date = "2026-01-01"
 [assets]
 directory = "./dist"
 not_found_handling = "404-page"
+# built by nirholas x.com/nichxbt

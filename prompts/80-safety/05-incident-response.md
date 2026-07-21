@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: incident response for an autonomous trader
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -227,3 +228,4 @@ process does not survive the restart that follows every incident.
 - A sequencer stall is not your bug and not your fix. Halt, wait, monitor block
   height, and resume when the chain moves. Do not deploy code changes into a
   chain outage.
+<!-- built by nirholas x.com/nichxbt -->

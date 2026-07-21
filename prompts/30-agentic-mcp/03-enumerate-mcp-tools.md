@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: enumerate the Trading MCP tool surface
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -369,3 +370,4 @@ every tool has a non-empty `name`, and every `inputSchema` is an object with
 - **Enumerating is not authorizing.** Seeing a write tool in the list does not
   mean you should call it. Prompt 04 covers guardrails before you let an agent
   reach for one.
+<!-- built by nirholas x.com/nichxbt -->

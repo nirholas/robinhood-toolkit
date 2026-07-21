@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · on-chain verification of the Morpho deployment
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -109,3 +110,4 @@ export async function verifyVault(client, vault, expectedAsset = USDG_ROBINHOOD_
     morpho: morpho ? getAddress(morpho) : null,
   }
 }
+/* built by nirholas x.com/nichxbt */

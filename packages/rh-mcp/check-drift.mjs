@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · fail if the MCP tool surface changed since the snapshot
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -32,3 +33,4 @@ if (added.length || removed.length || changed.length) {
 } else {
   console.log(`No drift since ${snapshot.captured_at}. ${live.length} tools.`);
 }
+/* built by nirholas x.com/nichxbt */

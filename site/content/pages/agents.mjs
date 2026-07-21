@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · agentic trading over MCP page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -176,3 +177,4 @@ ${section(
 ${pager(base, { href: '/api/', title: 'Robinhood Crypto REST API' }, { href: '/prompts/', title: 'Build prompts' })}
 `
 }
+/* built by nirholas x.com/nichxbt */

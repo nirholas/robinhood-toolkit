@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · viem chain definitions for Robinhood Chain mainnet and testnet
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -146,3 +147,4 @@ export async function hasMulticall3(client) {
   const code = await client.getCode({ address: MULTICALL3_ADDRESS })
   return Boolean(code) && code !== '0x'
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: Agentic account setup and guardrails
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -323,3 +324,4 @@ Agentic account is rejected by Robinhood.
 - **Crypto is not live on this rail yet.** Do not build an Agentic crypto policy
   and assume it is being enforced against real crypto orders today. Prompt 06
   covers detecting the rollout at runtime.
+<!-- built by nirholas x.com/nichxbt -->

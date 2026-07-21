@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · DexScreener client for Robinhood Chain pairs
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -199,3 +200,4 @@ export async function distinctTokensBySymbol(symbol, { fetchImpl } = {}) {
 
   return [...byAddress.values()];
 }
+/* built by nirholas x.com/nichxbt */

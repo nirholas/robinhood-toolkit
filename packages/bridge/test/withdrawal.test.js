@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · tests for the withdrawal cost model and route builder
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -62,3 +63,4 @@ test('estimateDeposit reminds the caller to bridge ETH first', () => {
   assert.equal(est.challengePeriodDays, 0)
   assert.match(est.note, /Bridge ETH before you bridge tokens/)
 })
+/* built by nirholas x.com/nichxbt */

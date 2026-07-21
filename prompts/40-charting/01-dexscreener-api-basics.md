@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: DexScreener API basics for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -391,3 +392,4 @@ node scripts/demo-dexscreener.mjs
   Convert at the boundary and label your variables with the unit.
 - A brand-new pool can return `null` for `fdv`, `marketCap`, and even
   `priceUsd`. Guard before formatting or you will render `$NaN`.
+<!-- built by nirholas x.com/nichxbt -->

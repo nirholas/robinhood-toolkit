@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · Robinhood Chain definitions for the client modules
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -35,3 +36,4 @@ export const robinhoodTestnet = defineChain({
   contracts: { multicall3: { address: MULTICALL3 } },
   testnet: true,
 });
+/* built by nirholas x.com/nichxbt */

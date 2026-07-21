@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: bridging ETH and ERC-20s to Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -234,3 +235,4 @@ and L2 confirmation is in the range you documented.
   a broken exit flow while holding real value is the worst time to discover it.
 - Fees on every route are live and market-driven. Quote at request time. A
   cached fee estimate in a UI is a misquote.
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: fetching Robinhood crypto market data
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -218,3 +219,4 @@ the wrong field.
   points at, not blindly `fetch` it, because the signature covers the path.
 - Quotes are point-in-time and carry a `timestamp`. Treat anything older than a
   few seconds as stale in a fast market rather than acting on it.
+<!-- built by nirholas x.com/nichxbt -->

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · public client factory with transport failover
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -45,3 +46,4 @@ export function transportFor(chain = robinhoodMainnet) {
 export function publicClientFor(chain = robinhoodMainnet) {
   return createPublicClient({ chain, transport: transportFor(chain) });
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · build-time reader for the ../prompts tree
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -115,3 +116,4 @@ export function readPrompts(dir = PROMPTS_DIR) {
 
   return { tracks, total }
 }
+/* built by nirholas x.com/nichxbt */

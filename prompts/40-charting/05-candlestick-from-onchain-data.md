@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: sourcing OHLCV candles for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -611,3 +612,4 @@ node scripts/validate-candles.mjs
 - Do not present on-chain aggregated candles as exchange-grade OHLCV. They are
   swap-execution prices from one pool, so a single large trade can print a wick
   that exists nowhere else. Label the source in the UI.
+<!-- built by nirholas x.com/nichxbt -->

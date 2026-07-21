@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: Chainlink price feeds on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -383,3 +384,4 @@ are proven.
   Whether the feeds you resolved update outside US market hours is UNVERIFIED.
   Check the feed page, and design for the answer, because a weekend-stale equity
   feed will trip your staleness guard by design.
+<!-- built by nirholas x.com/nichxbt -->

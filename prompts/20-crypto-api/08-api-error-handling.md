@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: API error handling
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -349,3 +350,4 @@ to POST (403), and hammer an endpoint past the budget (429).
 - **An empty or non-JSON body on a 5xx is normal.** Gateways return HTML. The
   client must tolerate a `payload` of `null`, which is why `toRobinhoodError`
   defaults `errors` to an empty array rather than indexing into it.
+<!-- built by nirholas x.com/nichxbt -->

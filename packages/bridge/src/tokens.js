@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · bridged token registry and on-chain verifier
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -179,3 +180,4 @@ export async function verifyToken(address, chain = robinhoodChain) {
     readAt: new Date().toISOString(),
   }
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · amount formatting that never guesses decimals
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -118,3 +119,4 @@ export async function readBalance(client, { token, account, cache } = {}) {
 
   return { token: tokenAddress, account: owner, raw, decimals, formatted: formatToken(raw, decimals) }
 }
+/* built by nirholas x.com/nichxbt */

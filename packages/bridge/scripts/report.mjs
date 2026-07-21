@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · regenerate reports/bridge-tokens.json from the live chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -47,3 +48,4 @@ const report = {
 mkdirSync(dirname(outPath), { recursive: true })
 writeFileSync(outPath, JSON.stringify(report, null, 2) + '\n')
 console.log(`\nWrote ${outPath}`)
+/* built by nirholas x.com/nichxbt */

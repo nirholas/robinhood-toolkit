@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · verified Morpho deployment record for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -114,3 +115,4 @@ supply APY; the machine-readable twin of this file is
 - The Morpho Blue address is **not** the canonical mainnet
   `0xBBBB...` address — this is a fresh deployment. Do not copy an address from an
   Ethereum-mainnet tutorial.
+<!-- built by nirholas x.com/nichxbt -->

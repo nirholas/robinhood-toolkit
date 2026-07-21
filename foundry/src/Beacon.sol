@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
+// built by nirholas x.com/nichxbt
 
 /// robinhood-toolkit · Beacon
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -41,3 +42,4 @@ contract Beacon {
         emit NoteUpdated(msg.sender, note_);
     }
 }
+// built by nirholas x.com/nichxbt

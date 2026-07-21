@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · public entry point
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -63,3 +64,4 @@ export {
   RobinhoodChainError,
   UnsupportedChainError,
 } from './src/errors.js'
+/* built by nirholas x.com/nichxbt */

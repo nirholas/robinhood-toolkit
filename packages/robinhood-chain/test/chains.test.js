@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · chain definition tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -70,3 +71,4 @@ test('EIP-3085 payloads use hex string chain IDs matching the numeric ones', () 
   assert.equal(Number(addChainParams.mainnet.chainId), robinhoodChain.id)
   assert.equal(Number(addChainParams.testnet.chainId), robinhoodTestnet.id)
 })
+/* built by nirholas x.com/nichxbt */

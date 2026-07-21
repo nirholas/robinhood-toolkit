@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: streaming market and order data
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -297,3 +298,4 @@ node --env-file=.env examples/rh-stream.mjs BTC-USD ETH-USD
 - **`setInterval` is the wrong primitive here.** If one poll takes longer than
   the interval, `setInterval` stacks overlapping requests and blows the budget.
   This implementation schedules the next poll only after the previous completes.
+<!-- built by nirholas x.com/nichxbt -->

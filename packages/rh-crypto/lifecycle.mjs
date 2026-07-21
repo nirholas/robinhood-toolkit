@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · order lifecycle tracking
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -73,3 +74,4 @@ export async function ordersSince(rh, isoTimestamp, { symbol, state } = {}) {
   }
   return out;
 }
+/* built by nirholas x.com/nichxbt */

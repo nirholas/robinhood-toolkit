@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · supply and withdraw USDG via a Morpho vault (ERC-4626)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -154,3 +155,28 @@ export async function supplyToMarket({ publicClient, rpcUrl, privateKey, morphoB
   if (receipt.status !== 'success') throw new Error(`supply reverted: ${hash}`)
   return { ...plan, dryRun: false, hash }
 }
+
+/**
+ * Withdraw from a Morpho Blue market. Withdraw the FULL position by passing the
+ * supply shares (assets pinned to 0n) — the mirror of supplyToMarket. Same rule:
+ * exactly one of assets/shares must be zero. Withdrawing by shares avoids a
+ * dust remainder that withdrawing an assets estimate would leave behind.
+ */
+export async function withdrawFromMarket({ publicClient, rpcUrl, privateKey, morphoBlue, marketParams, shares, dryRun = true }) {
+  const account = privateKeyToAccount(privateKey)
+  const plan = { morphoBlue, loanToken: marketParams.loanToken, shares: shares.toString() }
+  if (dryRun) return { ...plan, dryRun: true }
+
+  const wallet = createWalletClient({ account, chain: publicClient.chain, transport: http(rpcUrl) })
+  const hash = await wallet.writeContract({
+    address: morphoBlue,
+    abi: morphoAbi,
+    functionName: 'withdraw',
+    // assets pinned to 0n, withdraw the whole share position to the account.
+    args: [marketParams, 0n, shares, account.address, account.address],
+  })
+  const receipt = await publicClient.waitForTransactionReceipt({ hash, confirmations: 1 })
+  if (receipt.status !== 'success') throw new Error(`withdraw reverted: ${hash}`)
+  return { ...plan, dryRun: false, hash }
+}
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: paper trading broker, the default mode
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -239,3 +240,4 @@ that would have cost real money to learn later.
   runs the same assertions against both brokers.
 - Never let the paper broker skip the policy engine. The point of paper mode is
   to exercise the whole pipeline, including its refusals.
+<!-- built by nirholas x.com/nichxbt -->

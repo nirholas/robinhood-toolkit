@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · liveness monitor tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -136,3 +137,4 @@ test('livenessMessage copy blocks and surfaces the exit on stall/unreachable', (
   const unknown = livenessMessage({ status: 'weird' })
   assert.equal(unknown.canSubmit, false)
 })
+/* built by nirholas x.com/nichxbt */

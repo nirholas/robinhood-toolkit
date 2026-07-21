@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: monitoring, heartbeats, and alerting
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -262,3 +263,4 @@ finished.
 - Alert thresholds decay. Revisit them after any change to size, tick interval,
   or strategy. A daily loss threshold set for a 10,000 account is meaningless on
   a 100,000 one.
+<!-- built by nirholas x.com/nichxbt -->

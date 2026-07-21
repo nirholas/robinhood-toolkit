@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · funding gate (assertFunded)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -37,3 +38,4 @@ export async function assertFunded(publicClient, chain, address, minWei) {
   }
   throw new Error(lines.join('\n'));
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · fork rehearsal transcript for the Uniswap v3 swap module
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -71,3 +72,4 @@ never acceptable on the real chain.
   centralized — no L1 mempool to be sandwiched in, but ordering is a trust
   assumption, not slippage protection.
 - Approve exactly the input amount, never unlimited, to the router you proved.
+<!-- built by nirholas x.com/nichxbt -->

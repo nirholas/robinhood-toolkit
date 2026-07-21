@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · package: bridge — public entry point
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -29,3 +30,4 @@ export {
   estimateWithdrawal,
   estimateDeposit,
 } from './src/withdrawal.js'
+/* built by nirholas x.com/nichxbt */

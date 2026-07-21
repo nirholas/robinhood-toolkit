@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: key management for agents that spend
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -248,3 +249,4 @@ signed a real transaction is not verified.
 - Never log a signed transaction's raw bytes at debug level alongside anything
   else you ship to a log aggregator. It is not the key, but combined with a
   nonce-reuse bug it can be enough.
+<!-- built by nirholas x.com/nichxbt -->

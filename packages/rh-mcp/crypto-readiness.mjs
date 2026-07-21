@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · detect agentic crypto availability at runtime
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -40,3 +41,4 @@ export async function recordReadiness(assessment) {
   const lost = previous?.available === true && !assessment.available;
   return { became, lost, previous };
 }
+/* built by nirholas x.com/nichxbt */

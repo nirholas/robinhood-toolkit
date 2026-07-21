@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · keystore-backed signer with a hard network guard
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -67,3 +68,4 @@ export function walletClientFor(forChain = chain) {
 
 /** Default wallet client for the resolved chain. */
 export const wallet = walletClientFor(chain);
+/* built by nirholas x.com/nichxbt */

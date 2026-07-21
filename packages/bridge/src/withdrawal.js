@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · bridge routes and the seven-day withdrawal cost model
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -119,3 +120,4 @@ export function estimateDeposit({ amount, symbol } = {}) {
       'measured L1→L2 delta from a rehearsal deposit.',
   }
 }
+/* built by nirholas x.com/nichxbt */

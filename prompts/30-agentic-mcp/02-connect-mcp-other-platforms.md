@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: connect the Trading MCP on other platforms
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -190,3 +191,4 @@ it rather than assuming the hosts differ in capability.
 - **Do not put the endpoint behind a proxy you do not control** to "add
   logging". You would be inserting yourself into an OAuth flow and a brokerage
   session. If you need an audit trail, log on your own client side.
+<!-- built by nirholas x.com/nichxbt -->

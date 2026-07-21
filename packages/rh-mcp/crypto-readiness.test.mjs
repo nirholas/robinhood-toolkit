@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · fixture tests proving the MCP crypto lane works on rollout
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -68,3 +69,4 @@ test('reports crypto unavailable for an equities-only surface', () => {
   assert.equal(assessment.available, false);
   assert.deepEqual(assessment.tools, []);
 });
+/* built by nirholas x.com/nichxbt */

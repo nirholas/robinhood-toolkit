@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · wallet package entry
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -9,3 +10,4 @@
  * actually required, so key-free scripts (e.g. fund-testnet) stay runnable.
  */
 export { assertFunded } from './funding.js';
+/* built by nirholas x.com/nichxbt */

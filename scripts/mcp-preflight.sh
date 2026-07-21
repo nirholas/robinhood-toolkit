@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# built by nirholas x.com/nichxbt
 # robinhood-toolkit · verify the Trading MCP endpoint is reachable and speaking MCP
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
 # License: All Rights Reserved (c) 2026 nirholas
@@ -22,3 +23,4 @@ fi
 
 curl -s "https://agent.robinhood.com/.well-known/oauth-protected-resource" \
   | python3 -c 'import json,sys; d=json.load(sys.stdin); print("resource:", d["resource"]); print("scopes:", d["scopes_supported"])'
+# built by nirholas x.com/nichxbt

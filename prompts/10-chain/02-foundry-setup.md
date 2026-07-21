@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: Foundry configured for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -263,3 +264,4 @@ attribution header.
   than redeploying, and check the explorer before assuming failure.
 - Testnet first for anything that spends. Only flip to `deploy-mainnet` after
   the identical script has landed and verified on 46630.
+<!-- built by nirholas x.com/nichxbt -->

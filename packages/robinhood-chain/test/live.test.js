@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · live-chain tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -253,3 +254,4 @@ test('the Blockscout client returns token metadata for WETH', options, async () 
   assert.equal(info.symbol, 'WETH')
   assert.equal(String(info.decimals), '18', 'Blockscout returns decimals as a string')
 })
+/* built by nirholas x.com/nichxbt */

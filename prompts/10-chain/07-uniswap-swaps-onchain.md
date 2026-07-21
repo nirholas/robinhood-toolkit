@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: Uniswap swaps on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -459,3 +460,4 @@ const aapl = await resolveStockToken(publicClient, "AAPL");
 - The sequencer is centralized. There is no public mempool to be sandwiched in
   the L1 sense, but sequencer ordering is a trust assumption, not a protection.
   Set slippage as if you can be front-run.
+<!-- built by nirholas x.com/nichxbt -->

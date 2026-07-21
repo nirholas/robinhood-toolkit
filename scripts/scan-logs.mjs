@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · adaptive log-scan CLI
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -89,3 +90,4 @@ const elapsed = Date.now() - started
 console.log(`\n  ${total.toLocaleString('en-US')} Transfer logs in ${batches} chunks, ${elapsed} ms`)
 console.log(`  ${lastHalvings} halvings ${lastHalvings === 0 ? '(a correctly tuned scan)' : '(chunk exceeded the tier — expected with --chunk 10000)'}`)
 console.log(`  ${(total / (Number(SPAN) * BLOCK_TIME_MS / 1000)).toFixed(1)} transfers per second of chain time\n`)
+/* built by nirholas x.com/nichxbt */

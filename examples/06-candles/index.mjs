@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 06: OHLCV candles in the terminal
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -360,3 +361,4 @@ if (baseToken && quoteToken && CURRENCY === 'token') {
 }
 
 console.log('')
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · wallet status preflight
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -42,3 +43,4 @@ console.log({
   explorer: `${chain.blockExplorers.default.url}/address/${account.address}`,
   faucet: chain.testnet ? 'https://faucet.testnet.chain.robinhood.com' : null,
 });
+/* built by nirholas x.com/nichxbt */

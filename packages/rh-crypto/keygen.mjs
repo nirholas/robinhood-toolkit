@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · Ed25519 keypair generator for Robinhood Crypto API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -13,3 +14,4 @@ const pub = publicKey.export({ format: 'der', type: 'spki' }).subarray(12);
 
 console.log('private (keep secret):', seed.toString('base64'));
 console.log('public  (give to RH) :', pub.toString('base64'));
+/* built by nirholas x.com/nichxbt */

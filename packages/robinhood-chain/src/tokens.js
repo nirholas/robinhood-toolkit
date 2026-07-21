@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-chain · known token constants and the live USDG ticker collision
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -96,3 +97,4 @@ export function isKnownImpostor(address) {
   const normalized = getAddress(address).toLowerCase()
   return KNOWN_IMPOSTORS.some((t) => t.address.toLowerCase() === normalized)
 }
+/* built by nirholas x.com/nichxbt */

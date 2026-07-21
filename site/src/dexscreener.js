@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · DexScreener client and honest series derivation
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -171,3 +172,4 @@ export function formatAge(timestamp) {
   const hours = Math.floor((Date.now() - timestamp) / 3600000)
   return `${Math.max(hours, 0)}h old`
 }
+/* built by nirholas x.com/nichxbt */

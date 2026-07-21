@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: static-first site architecture and build pipeline
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -255,3 +256,4 @@ function escapeHtml(s = '') {
 - Railway and Cloud Run serve whatever your process serves. Configure the static
   server for directory indexes and a `404.html` fallback, or those two hosts
   diverge from the other three on exactly the URLs readers share.
+<!-- built by nirholas x.com/nichxbt -->

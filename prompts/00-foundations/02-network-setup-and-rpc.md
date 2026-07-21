@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · build prompt: network definitions, RPC clients, and failover
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -285,3 +286,4 @@ Expected `0xb626`. Mainnet returns `0x1237`.
 - Nitro exposes Arbitrum precompiles and extra RPC namespaces. Standard
   Ethereum JSON-RPC works, but do not assume L1 gas semantics: fee estimation on
   this stack accounts for an L1 data component.
+<!-- built by nirholas x.com/nichxbt -->

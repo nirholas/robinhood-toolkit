@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · disclosure gate tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -101,3 +102,4 @@ test('severity is conveyed as text, not color alone', () => {
   assert.match(html, /Medium severity/)
   assert.match(html, /Low severity/)
 })
+/* built by nirholas x.com/nichxbt */

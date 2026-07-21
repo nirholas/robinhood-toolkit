@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 <!--
   robinhood-toolkit · package: bridge · deposit & withdrawal runbook
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -75,3 +76,4 @@ request time. See prompt 06.
   `npm run report --workspace bridge` and open each `explorer` URL to confirm the
   contract page matches. Both tokens are proxies — read through to the
   implementation before assuming behavior.
+<!-- built by nirholas x.com/nichxbt -->
