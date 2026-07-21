@@ -1,8 +1,9 @@
 node_modules/
 dist/
 .env
-.env.*
 .env.local
+.env.*.local
+!.env.example
 *.log
 
 # Anything that can hold a private key or signing material — never commit these.

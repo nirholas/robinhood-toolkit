@@ -156,6 +156,83 @@ Pairs carry sizing constraints (`min_order_size`, `asset_increment`,
 the pair list at process start, refresh on an interval, and validate order sizes
 against the cache before hitting the order endpoint.
 
+### `orders.mjs`
+
+Building and validating order bodies before they cost anything, plus the write
+calls themselves. Every builder throws on a bad shape so mistakes surface before
+a network round trip.
+
+- **`buildOrder({ symbol, side, type, config, clientOrderId? })`** — assembles an
+  `AddOrder` body, deriving the `<type>_order_config` key from `type` so it cannot
+  drift. Generates a UUID `client_order_id` when none is given; reuse one id across
+  retries of the same logical order for idempotency.
+- **`marketConfig({ assetQuantity })`** — `market_order_config`. Market orders
+  take `asset_quantity` only; there is no notional field.
+- **`limitConfig({ assetQuantity?, quoteAmount?, limitPrice })`** —
+  `limit_order_config`.
+- **`stopLossConfig({ assetQuantity?, quoteAmount?, stopPrice, timeInForce? })`** —
+  `stop_loss_order_config`. Becomes a market order when the stop triggers, so it
+  can fill well below `stopPrice` in a fast move.
+- **`stopLimitConfig({ assetQuantity?, quoteAmount?, limitPrice, stopPrice, timeInForce? })`**
+  — `stop_limit_order_config`. Bounds the fill price but can fail to fill at all.
+
+  For every config that supports both, **exactly one** of `assetQuantity`
+  (base currency) or `quoteAmount` (quote currency) may be present — the builders
+  enforce this with an XOR rather than letting the API reject the request.
+  `timeInForce` defaults to `'gtc'` and must be one of `TIME_IN_FORCE`
+  (`gtc`, `gfd`, `gfw`, `gfm`). Every price and quantity is coerced to a decimal
+  string, because the API rejects numbers. In v1, `time_in_force` is accepted on
+  the two stop configs only.
+- **`assertStopSane({ side, stopPrice, limitPrice?, lastPrice })`** — refuses a
+  stop that would trigger immediately (sell stop at/above last, buy stop
+  at/below last) and a stop-limit whose limit sits on the wrong side of the stop
+  and may never fill.
+- **`assertTradable(pair, { side, quantity })`** — validates a quantity against a
+  `TradingPair`'s status and min/max bounds.
+- **`roundToIncrement(quantity, increment)`** — floors a quantity to the pair's
+  increment as a fixed-precision string. Rounds **down**, never up, so it cannot
+  push you past `max_order_size` or your buying power.
+- **`placeOrder(rh, body, { dryRun = true })`** — posts the order. **Dry run is
+  the default**; it returns the would-be request without spending. Pass
+  `{ dryRun: false }` to place a real order.
+- **`cancelOrder(rh, orderId)`** — requests a cancel. Returns a success **string**,
+  not an order object; the order may still fill before the cancel lands, so poll
+  afterwards.
+- **`getOrder(rh, orderId)`** / **`waitForTerminal(rh, orderId, { timeoutMs?, intervalMs? })`**
+  — read one order via the `?id=` filter, or poll until terminal.
+
+### `lifecycle.mjs`
+
+Following an order from submission through executions to a terminal state.
+
+- **`isTerminal(state)`** — true only for `filled`, `canceled`, `failed`. Any
+  other state (including v1's `partially_filled` and v2's `pending`, and any state
+  added later) is treated as non-terminal, so an unknown state keeps you polling
+  rather than falsely reporting "done".
+- **`averageFill(order)`** — quantity-weighted average price computed from
+  `executions[]`, as a number, or `null` before the first fill. Prefer this over
+  the order's `average_price`, which is `null` until filled. Execution
+  `effective_price` and `quantity` are decimal **strings**; this coerces with
+  `Number()` — keep the string form for anything you persist, since floats lose
+  precision on large notionals.
+- **`fillRatio(order)`** — fraction filled (0–1) against the requested
+  `asset_quantity`, or **`null`** for a `quote_amount` order that has no asset
+  target. Do not let that `null` collapse to `0` in position sizing.
+- **`track(rh, orderId, { intervalMs?, timeoutMs?, onChange? })`** — polls an
+  order, firing `onChange(order, previous)` whenever `state` or
+  `filled_asset_quantity` moves, and resolves with the final order once terminal
+  or the deadline passes. Do not poll one order per second forever; back off once
+  an order has been open and unchanged for a while (see the rate-limit prompt).
+- **`ordersSince(rh, isoTimestamp, { symbol?, state? })`** — every order updated
+  since a timestamp, following pagination. Use it on startup to reconcile:
+  `gfd`/`gfw`/`gfm` orders expire on Robinhood's clock, so an order that vanished
+  overnight expired, it did not fail.
+
+```sh
+node --env-file=.env examples/rh-bracket.mjs BTC-USD          # dry run
+node --env-file=.env examples/rh-bracket.mjs BTC-USD --live   # spends money
+```
+
 ### `portfolio.mjs`
 
 Balances, holdings, mark-to-market value, and fee tier. Reads only.

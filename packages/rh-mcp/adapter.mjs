@@ -149,7 +149,12 @@ export class RobinhoodMCPAdapter {
    */
   async call(capability, args = {}) {
     const tool = this.resolve(capability);
-    this.validate(tool, args);
+
+    // Strip local convention flags (e.g. __simulated) before validating: they are
+    // not wire fields, and validating them against a strict schema
+    // (additionalProperties: false) would reject the adapter's own convention.
+    const { __simulated, ...toolArgs } = args;
+    this.validate(tool, toolArgs);
 
     if (this.guard && this.writeTools.has(tool.name)) {
       this.guard.check({
@@ -158,11 +163,10 @@ export class RobinhoodMCPAdapter {
         side: args.side,
         notionalUsd: args.notional_usd ?? args.quote_amount ?? args.amount,
         portfolioValueUsd: this.guard.policy.agentic_account_funded_usd,
-        simulated: args.__simulated === true,
+        simulated: __simulated === true,
       });
     }
 
-    const { __simulated, ...toolArgs } = args;
     const result = await this.client.callTool({ name: tool.name, arguments: toolArgs });
 
     if (result.isError) {

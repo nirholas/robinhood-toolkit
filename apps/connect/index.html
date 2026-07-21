@@ -1,0 +1,148 @@
+<!--
+  robinhood-toolkit · browser connect flow (EIP-1193 add/switch chain)
+  Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+  License: MIT (c) 2026 nirholas
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Robinhood Chain · Connect</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #10141a;
+        --muted: #5b6672;
+        --card: #f5f7fa;
+        --border: #d7dee6;
+        --accent: #00c805;
+        --accent-fg: #04140a;
+        --warn: #7a5900;
+        --warn-bg: #fff5d6;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0c0f14;
+          --fg: #e8edf2;
+          --muted: #93a0ad;
+          --card: #151a22;
+          --border: #263140;
+          --accent: #00c805;
+          --accent-fg: #04140a;
+          --warn: #ffd968;
+          --warn-bg: #2a2306;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 1.5rem;
+        font: 15px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+      }
+      main {
+        width: 100%;
+        max-width: 30rem;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1.75rem;
+      }
+      h1 { font-size: 1.25rem; margin: 0 0 0.25rem; }
+      .sub { color: var(--muted); margin: 0 0 1.25rem; }
+      fieldset {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        margin: 0 0 1.25rem;
+        padding: 0.75rem 1rem 1rem;
+      }
+      legend { color: var(--muted); padding: 0 0.4rem; font-size: 0.85rem; }
+      label.radio { display: block; margin: 0.35rem 0; cursor: pointer; }
+      button {
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--accent-fg);
+        background: var(--accent);
+        cursor: pointer;
+      }
+      button:disabled { opacity: 0.5; cursor: not-allowed; }
+      dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem 1rem;
+        margin: 1.25rem 0 0;
+        font-variant-numeric: tabular-nums;
+      }
+      dt { color: var(--muted); }
+      dd { margin: 0; word-break: break-all; }
+      dd a { color: inherit; }
+      #status {
+        margin: 1rem 0 0;
+        min-height: 1.4em;
+        color: var(--muted);
+      }
+      #status.error { color: #e5484d; }
+      .disclaimer {
+        margin: 1.25rem 0 0;
+        padding: 0.75rem 0.9rem;
+        border-radius: 10px;
+        background: var(--warn-bg);
+        color: var(--warn);
+        font-size: 0.85rem;
+      }
+      .hidden { display: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Robinhood Chain · Connect</h1>
+      <p class="sub">Add the network to your browser wallet and read your balance. Testnet first.</p>
+
+      <fieldset>
+        <legend>Network</legend>
+        <label class="radio">
+          <input type="radio" name="network" value="testnet" checked />
+          Testnet — chain 46630 (0xb626)
+        </label>
+        <label class="radio">
+          <input type="radio" name="network" value="mainnet" />
+          Mainnet — chain 4663 (0x1237) · real value
+        </label>
+      </fieldset>
+
+      <button id="connect" type="button">Connect wallet</button>
+
+      <p id="status" role="status" aria-live="polite">No wallet connected.</p>
+
+      <dl id="details" class="hidden">
+        <dt>Address</dt>
+        <dd id="address"></dd>
+        <dt>Chain ID</dt>
+        <dd id="chainId"></dd>
+        <dt>Balance</dt>
+        <dd id="balance"></dd>
+        <dt>Explorer</dt>
+        <dd><a id="explorer" href="#" target="_blank" rel="noopener noreferrer"></a></dd>
+      </dl>
+
+      <p class="disclaimer">
+        A Robinhood <strong>app</strong> balance is not a Robinhood <strong>Chain</strong> balance.
+        Self-custody wallet services run through Robinhood Non-Custodial Ltd, a separate legal entity
+        from the broker-dealer. Moving value between the app and this chain is a real transfer, not an
+        internal ledger entry, and there is no automatic sweep between them.
+      </p>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

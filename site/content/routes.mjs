@@ -12,6 +12,7 @@
 import * as home from './pages/home.mjs'
 import * as start from './pages/start.mjs'
 import * as chain from './pages/chain.mjs'
+import * as risk from './pages/risk.mjs'
 import * as charts from './pages/charts.mjs'
 import * as api from './pages/api.mjs'
 import * as agents from './pages/agents.mjs'
@@ -19,7 +20,7 @@ import * as prompts from './pages/prompts.mjs'
 import * as deploy from './pages/deploy.mjs'
 import * as notFound from './pages/not-found.mjs'
 
-const modules = [home, start, chain, charts, api, agents, prompts, deploy, notFound]
+const modules = [home, start, chain, risk, charts, api, agents, prompts, deploy, notFound]
 
 /** Route metadata only. Safe to import from vite.config.js. */
 export const routes = modules.map((mod) => mod.route)

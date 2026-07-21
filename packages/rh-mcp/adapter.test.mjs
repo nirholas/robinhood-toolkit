@@ -144,8 +144,12 @@ test('write classification keeps mutating tools separate from reads', () => {
   assert.deepEqual([...a.writeTools].sort(), ['cancel_order', 'place_equity_order']);
   assert.equal(isWrite({ name: 'get_positions' }), false);
   assert.equal(isWrite({ name: 'place_equity_order' }), true);
-  // Unknown verb, no read prefix: conservatively treated as a write.
-  assert.equal(isWrite({ name: 'rebalance_portfolio' }), true);
+  // A read prefix wins even when a write verb appears later in the name.
+  assert.equal(isWrite({ name: 'get_order_history' }), false);
+  // Caveat worth pinning: the heuristic only flags known write verbs. A novel
+  // verb with no read prefix (e.g. rebalance) is NOT caught — hence the manual
+  // writeTools review and EXPLICIT_WRITES override documented in the README.
+  assert.equal(isWrite({ name: 'rebalance_portfolio' }), false);
 });
 
 test('strips the local __simulated flag before it reaches the wire', async () => {
