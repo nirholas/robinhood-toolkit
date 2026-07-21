@@ -2,7 +2,7 @@
 /**
  * robinhood-toolkit · MCP server exposing the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * NEVER write to stdout from this process. Stdout is the JSON-RPC channel and a
  * stray console.log corrupts the stream, which the host reports as an unhelpful

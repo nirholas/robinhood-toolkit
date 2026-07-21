@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · rh-first-deploy
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # rh-first-deploy

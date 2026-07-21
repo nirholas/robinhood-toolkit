@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: Uniswap swaps on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 07 · Swap on Uniswap, with addresses resolved not guessed
@@ -66,7 +66,7 @@ npm i viem @uniswap/sdk-core
 /**
  * robinhood-toolkit · resolve Uniswap deployment addresses for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { getAddress, isAddress } from "viem";
 import * as sdkCore from "@uniswap/sdk-core";
@@ -129,7 +129,7 @@ Four checks. All must pass.
 /**
  * robinhood-toolkit · on-chain verification of resolved Uniswap addresses
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { getAddress, parseAbi } from "viem";
 
@@ -231,7 +231,7 @@ QuoterV2 is not a view function. Simulate it rather than calling it as a read.
 /**
  * robinhood-toolkit · Uniswap v3 quote
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { parseAbi } from "viem";
 
@@ -265,7 +265,7 @@ export function applySlippage(amountOut, slippageBps) {
 /**
  * robinhood-toolkit · Uniswap v3 exactInputSingle on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createWalletClient, erc20Abi, formatUnits, getAddress, http, parseAbi, parseUnits } from "viem";
 import { privateKeyToAccount } from "viem/accounts";

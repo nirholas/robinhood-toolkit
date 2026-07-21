@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · on-chain verification of resolved Uniswap addresses
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The two anchors below (WETH, USDG) are addresses this toolkit independently
  * verified on chain 4663 in prompts 04 and 06. They are NOT Uniswap addresses;

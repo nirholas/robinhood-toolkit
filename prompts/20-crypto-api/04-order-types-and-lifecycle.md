@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: order types and lifecycle
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 04 · Order types and lifecycle
@@ -78,7 +78,7 @@ average of all executions and is nullable until the first fill.
 /**
  * robinhood-toolkit · order configuration builders
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export const TIME_IN_FORCE = ['gtc', 'gfd', 'gfw', 'gfm'];
 
@@ -157,7 +157,7 @@ export function assertStopSane({ side, stopPrice, limitPrice, lastPrice }) {
 /**
  * robinhood-toolkit · order lifecycle tracking
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 const TERMINAL = new Set(['filled', 'canceled', 'failed']);
 

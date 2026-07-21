@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: incident response for an autonomous trader
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 05 · Incident response
@@ -99,7 +99,7 @@ deciding at 03:00.
 /**
  * robinhood-toolkit · halt command
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { writeFileSync } from 'node:fs';
 

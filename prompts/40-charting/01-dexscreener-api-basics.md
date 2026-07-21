@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: DexScreener API basics for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 01 · DexScreener API basics
@@ -135,7 +135,7 @@ be a full checksummed address that you verified on the explorer once, by hand.
 /**
  * robinhood-toolkit · DexScreener API client
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Data source: DexScreener (https://dexscreener.com). Called directly from
  * this client. Per DexScreener terms, responses must not be proxied or
@@ -305,7 +305,7 @@ export function deepestPool(pairs) {
 /**
  * robinhood-toolkit · DexScreener client smoke test
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { getPair, getPoolsForToken, getTokens, search, deepestPool, ROBINHOOD }
   from '../src/dexscreener.js';

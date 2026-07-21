@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · keystore-backed signer with a hard network guard
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Loads the private key from process.env.PRIVATE_KEY ONLY — never a literal,
  * never a default, never a fallback to a well-known test key. Fails closed on a

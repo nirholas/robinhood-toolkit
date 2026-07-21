@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: USDG transfers on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 06 · Move USDG safely
@@ -101,7 +101,7 @@ cast interface "$USDG" --rpc-url "$RH_MAINNET_RPC" 2>/dev/null || \
 /**
  * robinhood-toolkit · USDG transfers on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPublicClient, createWalletClient, erc20Abi, formatUnits, getAddress, http, parseUnits } from "viem";
 import { privateKeyToAccount } from "viem/accounts";

@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: first contract deploy on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 01 · Deploy your first contract on Robinhood Chain
@@ -74,7 +74,7 @@ pragma solidity ^0.8.24;
 
 /// robinhood-toolkit · minimal deploy target
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract Beacon {
     string public note;
     address public immutable deployer;

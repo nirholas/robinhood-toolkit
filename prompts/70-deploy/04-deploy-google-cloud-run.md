@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: containerize and deploy to Google Cloud Run
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 04 · Deploy to Google Cloud Run
@@ -50,7 +50,7 @@ Dockerfile rather than buildpacks, for a reason stated below.
 ```dockerfile
 # robinhood-toolkit · Cloud Run container
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 FROM node:22-slim
 WORKDIR /app
 COPY package*.json ./
@@ -72,7 +72,7 @@ CMD ["node", "server/index.mjs"]
 ```
 # robinhood-toolkit · files excluded from the Cloud Run source upload
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 node_modules/
 .git/
 .env

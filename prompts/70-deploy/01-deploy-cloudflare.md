@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: deploy the site to Cloudflare Workers with static assets
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 01 · Deploy to Cloudflare
@@ -49,7 +49,7 @@ layer is needed.
 ```jsonc
 // robinhood-toolkit · Cloudflare Worker + static assets config
 // Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-// License: MIT (c) 2026 nirholas
+// License: All Rights Reserved (c) 2026 nirholas
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "robinhood-toolkit-site",
@@ -73,7 +73,7 @@ layer is needed.
 /**
  * robinhood-toolkit · Cloudflare Worker entry
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { handleApi } from '../api/router.js';
 

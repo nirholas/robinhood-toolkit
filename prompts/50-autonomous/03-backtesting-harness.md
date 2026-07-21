@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: an honest backtesting harness
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 03 · Backtesting harness
@@ -90,7 +90,7 @@ run with a zero cost model unless you explicitly pass
 /**
  * robinhood-toolkit · backtest replayer with explicit cost modeling
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export function createCostModel({
   takerFeeBps = 30,

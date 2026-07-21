@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · verified network constants used across the site
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Every value here was confirmed against a live source rather than copied from
  * documentation. The chain IDs and RPC endpoints were verified by direct

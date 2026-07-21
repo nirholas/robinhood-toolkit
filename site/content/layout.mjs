@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · document shell for every pre-rendered page
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Emits a complete, standalone HTML document per route. No client router, no
  * SPA fallback, no hydration: what the reader receives is the finished page.
@@ -93,7 +93,7 @@ function footer(base) {
   return `<footer class="site-footer">
   <div class="page site-footer__inner">
     <div>
-      <p><strong>${esc(SITE_NAME)}</strong> · MIT © 2026 <a href="https://github.com/nirholas">nirholas</a></p>
+      <p><strong>${esc(SITE_NAME)}</strong> · All Rights Reserved © 2026 <a href="https://github.com/nirholas">nirholas</a></p>
       <p>
         Not affiliated with, endorsed by, or sponsored by Robinhood Markets, Inc. or any of its
         subsidiaries. "Robinhood" is used nominatively to identify the platforms this toolkit targets.
@@ -121,7 +121,7 @@ export function renderDocument({ route, routes, base, body, canonical }) {
 <!--
   robinhood-toolkit · generated page: ${route.path}
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 
   GENERATED FILE. Do not edit. Source: content/pages${route.path === '/' ? '/home' : route.path.replace(/\/$/, '')}.mjs
   Regenerate with: npm run gen

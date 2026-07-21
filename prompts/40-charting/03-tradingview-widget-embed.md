@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: TradingView widget embeds and their hard ceiling
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 03 · TradingView widget embed
@@ -157,7 +157,7 @@ workaround below it.
 /**
  * robinhood-toolkit · TradingView reference widget (centralized exchanges only)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Charts by TradingView (https://www.tradingview.com/). The copyright element
  * rendered below is an attribution condition of free widget use. Do not remove.
@@ -248,7 +248,7 @@ export function mountReferenceWidget(container, symbol, { interval = '60' } = {}
 /**
  * robinhood-toolkit · DexScreener iframe embed
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * UNDOCUMENTED, UNVERSIONED. DexScreener publishes no embed API. These
  * parameters worked on 2026-07-20 and may change without notice. Always
@@ -322,7 +322,7 @@ export function mountDexEmbed(container, pairAddress, opts = {}) {
 /**
  * robinhood-toolkit · chart router: CEX widget vs DEX embed
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { mountReferenceWidget, referenceSymbolFor } from './reference-widget.js';
 import { mountDexEmbed } from './dex-embed.js';

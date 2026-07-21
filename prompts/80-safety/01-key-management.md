@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: key management for agents that spend
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 01 · Key management
@@ -103,7 +103,7 @@ production implementation, and a hot/cold wallet split with an enforced cap.
 /**
  * robinhood-toolkit · signer implementations
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { privateKeyToAccount, toAccount } from 'viem/accounts';
 import { createPublicClient, http, formatEther, serializeTransaction, keccak256 } from 'viem';
@@ -173,7 +173,7 @@ export async function assertHotWalletCap({ address, chain, capWei }) {
 ```sh
 # robinhood-toolkit · pre-commit secret scan
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 # .git/hooks/pre-commit  (chmod +x)
 set -eu
 

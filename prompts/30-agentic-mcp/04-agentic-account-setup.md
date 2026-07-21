@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: Agentic account setup and guardrails
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 04 · Agentic account setup and guardrails
@@ -89,7 +89,7 @@ Save as `config/agent-policy.json`.
 /**
  * robinhood-toolkit · client-side policy guard for agent-initiated writes
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { readFile } from 'node:fs/promises';
 

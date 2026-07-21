@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: API error handling
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 08 · API error handling
@@ -76,7 +76,7 @@ per problem, each naming its `attr`.
 /**
  * robinhood-toolkit · typed errors for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 export class RobinhoodError extends Error {
@@ -208,7 +208,7 @@ if (!res.ok) {
 /**
  * robinhood-toolkit · order submission with actionable error handling
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { RobinhoodError, triage } from '../packages/rh-crypto/errors.mjs';
 
@@ -250,7 +250,7 @@ try {
 /**
  * robinhood-toolkit · safe error logging
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export function logError(error) {
   const record = {

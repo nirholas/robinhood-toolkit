@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: wallet setup, key handling, and testnet funding
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 03 · Wallet setup and funding
@@ -77,7 +77,7 @@ enough gas. Testnet first, always.
 /**
  * robinhood-toolkit · wallet status preflight
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createWalletClient, formatEther, formatGwei, http, isHex } from 'viem';
 import { privateKeyToAccount } from 'viem/accounts';

@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: signal generation from chain and REST market data
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 02 · Signal generation
@@ -74,7 +74,7 @@ strategy never reads a price it could not have known at decision time.
 /**
  * robinhood-toolkit · bar aggregation and indicators
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Shown as one block for readability. Split it as written in steps 1 and 2:
  * createBarAggregator into src/market/bars.mjs, the indicator functions into
@@ -149,7 +149,7 @@ export function zscore(values, n) {
 /**
  * robinhood-toolkit · momentum crossover strategy
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { ema } from '../market/indicators.mjs';
 

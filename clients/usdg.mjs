@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · USDG transfers on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPublicClient, createWalletClient, erc20Abi, formatUnits, getAddress, http, parseUnits } from "viem";
 import { privateKeyToAccount } from "viem/accounts";

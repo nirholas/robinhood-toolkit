@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: multi-pair charting dashboard
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 07 · Multi-pair dashboard
@@ -79,7 +79,7 @@ precision per pair from the price, which the code below does.
 /**
  * robinhood-toolkit · dashboard configuration
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Pools are identified by ADDRESS (v3) or POOL ID (v4). Never by symbol:
  * symbols collide, including on the same chain. See prompt 01.
@@ -149,7 +149,7 @@ One poll for the whole board, one subscription model, no per-tile fetching.
 /**
  * robinhood-toolkit · batched multi-pair store
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * One request per refresh for the whole board, not one per tile.
  */
@@ -301,7 +301,7 @@ which is cheaper and reads better small.
 /**
  * robinhood-toolkit · dashboard tile with sparkline
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Charting by TradingView Lightweight Charts™ (Apache-2.0).
  * TradingView Lightweight Charts™ Copyright (с) 2025 TradingView, Inc.
@@ -422,7 +422,7 @@ export function createTile(row) {
 /**
  * robinhood-toolkit · dashboard grid with sorting and filtering
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createTile } from './tile.js';
 
@@ -624,7 +624,7 @@ export function mountGrid(container, store, { onSelect = () => {} } = {}) {
 /**
  * robinhood-toolkit · dashboard entry
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { BOARD } from './board.js';
 import { createBoardStore } from './store.js';

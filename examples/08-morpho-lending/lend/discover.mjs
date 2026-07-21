@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · discover Morpho markets and vaults on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Market IDs are not looked up, they are computed: id = keccak256(abi.encode(
  * marketParams)). Recomputing every discovered market's id and checking it

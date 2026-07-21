@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · build prompt index page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Nothing on this page is hardcoded. scripts/read-prompts.mjs walks the
  * ../prompts tree at build time, parses each file's H1 and Goal paragraph, and

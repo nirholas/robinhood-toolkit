@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: bridging ETH and ERC-20s to Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 04 · Bridging to Robinhood Chain
@@ -84,7 +84,7 @@ miss in your UI.
 /**
  * robinhood-toolkit · bridged token registry and verifier
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { erc20Abi, getAddress } from 'viem';
 import { publicClientFor, robinhoodMainnet } from '../../network/src/chains.js';

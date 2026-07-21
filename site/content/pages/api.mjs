@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · Robinhood Crypto REST API overview page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Every endpoint path, header name and schema field on this page was taken from
  * the live OpenAPI 3.0.1 spec served at docs.robinhood.com/crypto/trading and

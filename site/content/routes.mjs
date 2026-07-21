@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · route registry
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The single source of truth for what pages exist. The pre-renderer writes one
  * real HTML file per entry, vite.config.js turns the same list into its

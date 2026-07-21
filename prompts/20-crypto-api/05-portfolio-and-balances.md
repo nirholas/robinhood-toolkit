@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: portfolio, holdings, and fee tiers
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 05 · Portfolio and balances
@@ -65,7 +65,7 @@ half your volume then stops counting.
 /**
  * robinhood-toolkit · portfolio and balance reads
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { bestBidAsk } from './marketdata.mjs';
 
@@ -162,7 +162,7 @@ export function concentration(snapshot, assetCode) {
 /**
  * robinhood-toolkit · print a portfolio snapshot
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { RobinhoodCrypto } from '../packages/rh-crypto/client.mjs';
 import { getFeeTier, markToMarket } from '../packages/rh-crypto/portfolio.mjs';

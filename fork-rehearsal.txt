@@ -1,6 +1,6 @@
 robinhood-toolkit · USDG fork rehearsal transcript
 Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-License: MIT (c) 2026 nirholas
+License: All Rights Reserved (c) 2026 nirholas
 
 Recorded 2026-07-21 · anvil/cast 1.7.1 · fork of Robinhood Chain mainnet (chain id 4663)
 Fork RPC: anvil --fork-url https://rpc.mainnet.chain.robinhood.com --chain-id 4663 --port 8545

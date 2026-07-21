@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · MCP round-trip test for the crypto server
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Drives the server with a real MCP client over stdio, which is the only way to
  * prove the wire contract. The server instantiates an authenticated client at

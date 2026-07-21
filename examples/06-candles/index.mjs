@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · example 06: OHLCV candles in the terminal
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Fetch OHLCV bars for a Robinhood Chain pool from GeckoTerminal and draw them
  * as a candlestick chart, then confirm the last close against the pool's live

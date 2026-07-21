@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · agentic trading over MCP page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The endpoint, transport, auth scheme and OAuth metadata below were verified by
  * direct request on 2026-07-20. The tool list is deliberately not printed: it is

@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · package: bridge · deposit & withdrawal runbook
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # Deposit & Withdrawal Runbook

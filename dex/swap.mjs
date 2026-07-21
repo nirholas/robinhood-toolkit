@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · Uniswap v3 exactInputSingle on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * SwapRouter02 has NO deadline parameter. If the deployment you resolved is the
  * older SwapRouter (v1), its exactInputSingle struct includes deadline and the

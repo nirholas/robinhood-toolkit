@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: chart performance and memory
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 08 · Chart performance
@@ -51,7 +51,7 @@ yourself, not by this document.
 /**
  * robinhood-toolkit · chart benchmark harness
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Run in a browser (npm run dev, then open /bench). Canvas rendering needs a
  * real DOM, so a headless Node run measures data handling only.
@@ -157,7 +157,7 @@ refreshes. Batch them.
 /**
  * robinhood-toolkit · frame-coalesced chart updates
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 /**
@@ -224,7 +224,7 @@ An unbounded chart on a live feed grows forever. Trim as you go.
 /**
  * robinhood-toolkit · rolling bar window
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 /**
@@ -273,7 +273,7 @@ nobody is looking at.
 /**
  * robinhood-toolkit · viewport-gated chart mounting
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 /**
@@ -326,7 +326,7 @@ catches in a 30-second manual test. Automate it.
 /**
  * robinhood-toolkit · teardown and leak checks
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import test from 'node:test';
 import assert from 'node:assert/strict';

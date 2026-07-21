@@ -1,6 +1,6 @@
 # robinhood-toolkit · Foundry ignore rules
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 
 # Local env (never commit; holds no private key, but keeps RPC/account local)
 .env

@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · server-side HTML helpers for the pre-renderer
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * These run in Node at build time only. Nothing here ships to the browser.
  */

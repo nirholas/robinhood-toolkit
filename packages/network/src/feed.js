@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · sequencer feed reader (reconnect + gap detection)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Reader for the Arbitrum Nitro broadcaster feed. Reconnects with exponential
  * backoff and jitter. Keys off `sequenceNumber` for ordering: a gap means you

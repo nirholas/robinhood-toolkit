@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · Morpho rate reader
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The APY a UI quotes is a headline, not contract state. The truth is the IRM's
  * borrow rate per second, from which supply APY is derived through utilization

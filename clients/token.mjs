@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · Robinhood Chain definitions for the client modules
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * viem chain definitions shared by the clients/ modules (prompt 04). Values are
  * verified against the live networks: mainnet chain id 4663, testnet 46630.

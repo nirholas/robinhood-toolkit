@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · live market view page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The DOM below is the contract that src/charts.js wires itself to. Every state
  * the module can be in has real markup here: skeleton, error with a retry

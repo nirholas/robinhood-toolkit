@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · network definitions (chains, lookup)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * One definition of each network. No chain ID, RPC URL, or explorer URL
  * literal should appear anywhere else in the repo — import from here.

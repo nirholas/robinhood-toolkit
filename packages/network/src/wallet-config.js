@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · EIP-3085 wallet_addEthereumChain payloads
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Dependency-free on purpose: a browser ES module (apps/connect) imports this
  * file directly. EIP-3085 requires the hex chain ID as a string — `0x1237`,

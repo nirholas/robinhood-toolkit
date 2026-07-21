@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: orient on Robinhood Chain and verify its stack claims
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 01 · What is Robinhood Chain
@@ -68,7 +68,7 @@ write it into a document that someone will act on.
 /**
  * robinhood-toolkit · chain fact prober
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPublicClient, defineChain, http, formatGwei } from 'viem';
 import { mkdir, writeFile } from 'node:fs/promises';

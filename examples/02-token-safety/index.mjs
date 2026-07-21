@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · example 02: the USDG ticker collision, end to end
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Ticker symbols are attacker-chosen strings with no uniqueness guarantee at
  * any layer of this stack. So are token names. This program proves it against

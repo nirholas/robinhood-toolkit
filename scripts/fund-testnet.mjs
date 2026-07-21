@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · testnet funding helper
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Reads the address, checks the balance, and — if it is under the floor —
  * prints the faucet URL plus the address to paste. It does NOT script the

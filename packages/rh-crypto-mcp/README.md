@@ -134,4 +134,4 @@ Confirm the audit lines appear on stderr for every placed order, and that no cre
 
 ## License
 
-MIT © 2026 nirholas
+All Rights Reserved © 2026 nirholas

@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · resting limit buy that arms a stop-loss on fill
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Places a limit buy roughly 20% below market, tracks it to a terminal state,
  * and — once it fills — arms a stop-loss sell for the exact filled quantity at a

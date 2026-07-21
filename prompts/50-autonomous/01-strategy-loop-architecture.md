@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: the autonomous strategy loop skeleton
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 01 · Strategy loop architecture
@@ -78,7 +78,7 @@ an explicit flag flip plus a live-mode preflight.
 /**
  * robinhood-toolkit · autonomous strategy loop
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { existsSync } from 'node:fs';
 
@@ -210,7 +210,7 @@ Wire it up in `src/main.mjs`:
 /**
  * robinhood-toolkit · agent entrypoint
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { loadConfig, createLoop, MODES } from './loop.mjs';
 

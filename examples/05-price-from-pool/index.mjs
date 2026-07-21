@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · example 05: pool price from sqrtPriceX96, in BigInt
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Read a Uniswap v3 pool's slot0, derive the price from sqrtPriceX96 using
  * integer math from end to end, then cross-validate the result against

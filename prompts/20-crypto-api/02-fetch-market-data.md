@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: fetching Robinhood crypto market data
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 02 · Fetch market data
@@ -79,7 +79,7 @@ prices and orders are routed accordingly.
 /**
  * robinhood-toolkit · market data reads for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 /** All tradable pairs, following cursor pagination to exhaustion. */
@@ -149,7 +149,7 @@ export function slippageBps({ topOfBook, sized, side }) {
 /**
  * robinhood-toolkit · print a size-aware quote for a symbol
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { RobinhoodCrypto } from '../packages/rh-crypto/client.mjs';
 import { bestBidAsk, estimatedPrice, listTradingPairs, slippageBps } from '../packages/rh-crypto/marketdata.mjs';

@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: Robinhood Crypto API authentication
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 01 · Crypto API authentication
@@ -69,7 +69,7 @@ string (see Gotchas for why the published signature is not reproducible).
 /**
  * robinhood-toolkit · Ed25519 keypair generator for Robinhood Crypto API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { generateKeyPairSync } from 'node:crypto';
 
@@ -98,7 +98,7 @@ printf 'RH_API_KEY=rh-api-...\nRH_PRIVATE_KEY=...\n' >> .env
 /**
  * robinhood-toolkit · request signer for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPrivateKey, createPublicKey, sign } from 'node:crypto';
 
@@ -147,7 +147,7 @@ export function authHeaders({ apiKey, privateKey, method, path, body = '', times
 /**
  * robinhood-toolkit · authenticated client for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { authHeaders, loadPrivateKey } from './sign.mjs';
 
@@ -237,7 +237,7 @@ export function buildQuery(query) {
 /**
  * robinhood-toolkit · signer tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { strict as assert } from 'node:assert';
 import test from 'node:test';
@@ -290,7 +290,7 @@ test('array query params repeat the key', () => {
 /**
  * robinhood-toolkit · verify Crypto API credentials end to end
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { RobinhoodCrypto } from '../packages/rh-crypto/client.mjs';
 

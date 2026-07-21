@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · enumerate the Robinhood Trading MCP tool surface
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createServer } from 'node:http';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';

@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: Chainlink price feeds on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 09 · Consume Chainlink price feeds
@@ -63,7 +63,7 @@ address.
 /**
  * robinhood-toolkit · resolve Chainlink feed addresses for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { getAddress, isAddress } from "viem";
 
@@ -111,7 +111,7 @@ populates the same interface. Keep env as the override.
 /**
  * robinhood-toolkit · Chainlink feed reader with staleness guards
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { formatUnits, parseAbi } from "viem";
 import { feedAddress, feedHeartbeat } from "./resolve.mjs";
@@ -215,7 +215,7 @@ interface AggregatorV3Interface {
 
 /// robinhood-toolkit · Chainlink consumer with staleness guards
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract PriceConsumer {
     AggregatorV3Interface public immutable feed;
     uint256 public immutable maxAge;
@@ -270,7 +270,7 @@ import {PriceConsumer, AggregatorV3Interface} from "../src/PriceConsumer.sol";
 
 /// robinhood-toolkit · PriceConsumer fork tests
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract PriceConsumerForkTest is Test {
     PriceConsumer internal consumer;
     address internal feedAddr;

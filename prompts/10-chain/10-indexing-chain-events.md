@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: indexing Robinhood Chain events
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 10 · Index chain events
@@ -85,7 +85,7 @@ python3 -c "print('avg block time:', ($B - $A) / 10000, 'seconds')"
 /**
  * robinhood-toolkit · indexer storage
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import Database from "better-sqlite3";
 
@@ -153,7 +153,7 @@ indexer you can never restart with confidence.
 /**
  * robinhood-toolkit · chunked historical backfill
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { parseAbiItem } from "viem";
 
@@ -249,7 +249,7 @@ with bytecode at the address:
 /**
  * robinhood-toolkit · find a contract's deployment block by binary search
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export async function findDeploymentBlock(client, address, { lo = 0n, hi } = {}) {
   let high = hi ?? (await client.getBlockNumber());
@@ -279,7 +279,7 @@ across years of history.
 /**
  * robinhood-toolkit · live tail with reorg handling
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { transferEvent } from "./backfill.mjs";
 
@@ -362,7 +362,7 @@ export async function tail({ client, db, statements, address, stream, confirmati
 /**
  * robinhood-toolkit · indexer entrypoint
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPublicClient, getAddress, http } from "viem";
 import { robinhoodMainnet } from "../clients/token.mjs";

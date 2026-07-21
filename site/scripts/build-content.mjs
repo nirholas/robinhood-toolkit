@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · pre-renderer
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Writes one real HTML file per route into the Vite root, plus the static
  * search index. Vite then treats each file as a multi-page build input, which

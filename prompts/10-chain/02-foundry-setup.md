@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: Foundry configured for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 02 · Foundry setup for Robinhood Chain
@@ -39,7 +39,7 @@ assume `--rpc-url rh_testnet` works.
 ```toml
 # robinhood-toolkit · Foundry config for Robinhood Chain
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 
 [profile.default]
 src = "src"
@@ -89,7 +89,7 @@ chain 4663 today is UNVERIFIED here. Confirm against
 ```sh
 # robinhood-toolkit · environment template
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 RH_MAINNET_RPC=https://rpc.mainnet.chain.robinhood.com
 RH_TESTNET_RPC=https://rpc.testnet.chain.robinhood.com
 RH_ACCOUNT=rh-deployer
@@ -110,7 +110,7 @@ import {Script, console} from "forge-std/Script.sol";
 
 /// robinhood-toolkit · network sanity check
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract Ping is Script {
     function run() external view {
         console.log("chainid   ", block.chainid);
@@ -139,7 +139,7 @@ import {Beacon} from "../src/Beacon.sol";
 
 /// robinhood-toolkit · Beacon deployer
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract DeployBeacon is Script {
     function run() external returns (Beacon beacon) {
         string memory note = vm.envOr("BEACON_NOTE", string("robinhood-toolkit"));
@@ -185,7 +185,7 @@ jq -r '.transactions[] | select(.transactionType=="CREATE")
 ```make
 # robinhood-toolkit · Foundry task runner
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 include .env
 export
 

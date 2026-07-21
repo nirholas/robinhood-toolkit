@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · project readme
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 <h1 align="center">robinhood-toolkit</h1>
@@ -179,4 +179,4 @@ are responsible for anything your code does with your funds.
 
 ## License
 
-MIT © 2026 [nirholas](https://github.com/nirholas)
+All Rights Reserved © 2026 [nirholas](https://github.com/nirholas). See [LICENSE](LICENSE).

@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · live Robinhood Chain market view
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Charting is Lightweight Charts v5 (Apache 2.0, TradingView). The library's
  * license and README require TradingView be credited as the product creator

@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · copy-to-clipboard for code blocks
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Every snippet that would sign or send a transaction is copy-only by design.
  * Nothing in this site executes a write path in the reader's browser, so the

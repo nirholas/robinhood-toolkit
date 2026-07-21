@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · Uniswap v3 quote
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * QuoterV2 is NOT a view function: it reverts to return its answer in the revert
  * data. Simulate it with simulateContract. A plain readContract either fails or

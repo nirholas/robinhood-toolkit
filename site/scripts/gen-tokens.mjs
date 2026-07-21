@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · design token generator and WCAG contrast gate
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Reads src/styles/palette.json, asserts every declared foreground/background
  * pair against its WCAG 2.2 target, and emits src/styles/tokens.css. A failing
@@ -22,7 +22,7 @@ const outPath = join(siteRoot, 'src/styles/tokens.css')
 const HEADER = `/**
  * robinhood-toolkit · generated design tokens
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * GENERATED FILE. Do not edit.
  * Source: src/styles/palette.json · Generator: scripts/gen-tokens.mjs

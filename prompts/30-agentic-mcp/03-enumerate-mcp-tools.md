@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: enumerate the Trading MCP tool surface
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 03 · Enumerate the tool surface at runtime
@@ -85,7 +85,7 @@ npm install @modelcontextprotocol/sdk
 /**
  * robinhood-toolkit · verify Trading MCP OAuth discovery
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import {
   discoverAuthorizationServerMetadata,
@@ -112,7 +112,7 @@ console.log('pkce:', server.code_challenge_methods_supported);
 /**
  * robinhood-toolkit · enumerate the Robinhood Trading MCP tool surface
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createServer } from 'node:http';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
@@ -273,7 +273,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 /**
  * robinhood-toolkit · fail if the MCP tool surface changed since the snapshot
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { readFile } from 'node:fs/promises';
 import { connect, enumerateTools } from './enumerate.mjs';

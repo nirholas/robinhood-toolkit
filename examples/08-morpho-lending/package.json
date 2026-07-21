@@ -1,0 +1,22 @@
+{
+  "name": "@robinhood-toolkit/example-morpho-lending",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Resolve, prove, and query the Morpho lending deployment on Robinhood Chain, read the real supply APY on-chain, and rehearse a USDG supply/redeem on a fork.",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "discover": "node index.mjs --full",
+    "rehearse": "node fork-rehearse.mjs"
+  },
+  "dependencies": {
+    "robinhood-chain": "^0.1.0",
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "SEE LICENSE IN LICENSE"
+}

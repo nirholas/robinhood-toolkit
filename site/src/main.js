@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · site entry, loaded by every pre-rendered page
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Progressive enhancement only. Every page is a real HTML document that reads
  * and navigates correctly with this file blocked; nothing here creates content

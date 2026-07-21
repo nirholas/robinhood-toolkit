@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · funding gate (assertFunded)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The spend preflight. Call it at the top of any script that sends a
  * transaction. It throws with the explorer URL and (on testnet) the faucet URL

@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: ERC-20 deploy on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 04 · Ship an ERC-20 on Robinhood Chain
@@ -62,7 +62,7 @@ import {Ownable2Step, Ownable} from "@openzeppelin/contracts/access/Ownable2Step
 
 /// robinhood-toolkit · capped mintable ERC-20 with permit
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract ToolkitToken is ERC20, ERC20Permit, ERC20Burnable, Ownable2Step {
     uint256 public immutable cap;
 
@@ -104,7 +104,7 @@ import {ToolkitToken} from "../src/ToolkitToken.sol";
 
 /// robinhood-toolkit · ToolkitToken tests
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract ToolkitTokenTest is Test {
     ToolkitToken internal token;
     address internal owner = address(0xA11CE);
@@ -205,7 +205,7 @@ import {ToolkitToken} from "../src/ToolkitToken.sol";
 
 /// robinhood-toolkit · ToolkitToken deployer
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract DeployToken is Script {
     function run() external returns (ToolkitToken token) {
         string memory name = vm.envOr("TOKEN_NAME", string("Toolkit Token"));
@@ -264,7 +264,7 @@ cast send "$TKT" 'transfer(address,uint256)' 0x000000000000000000000000000000000
 /**
  * robinhood-toolkit · ERC-20 reader on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPublicClient, defineChain, http, erc20Abi, formatUnits, getAddress } from "viem";
 

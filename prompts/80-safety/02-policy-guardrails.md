@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: a fail-closed policy engine for agent orders
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 02 · Policy guardrails
@@ -100,7 +100,7 @@ control.
 /**
  * robinhood-toolkit · fail-closed policy engine
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { existsSync } from 'node:fs';
 

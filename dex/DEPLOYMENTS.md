@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · Uniswap deployment audit trail for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # Uniswap deployments on Robinhood Chain — resolved and proven
@@ -36,7 +36,7 @@ developers.uniswap.org:
 The `@uniswap/sdk-core` npm package does **not** carry chain 4663 in its address
 maps (expected — the chain is newer than the published SDK), so
 [dex/resolve.mjs](resolve.mjs) falls back to the env overrides in
-[.env.example](../.env.example), which hold the docs-confirmed values below.
+[dex/.env.example](.env.example), which hold the docs-confirmed values below.
 
 ## Mainnet — chain 4663
 
@@ -90,7 +90,7 @@ against. Both were independently verified on chain 4663 by prompts 04 and 06.
 USDG is 6 decimals, WETH is 18. This is exactly why the swap module reads
 `decimals()` for both tokens at runtime and never assumes an exponent.
 
-## Step-2 on-chain proof (output of `node --env-file=.env dex/check.mjs`)
+## Step-2 on-chain proof (output of `node --env-file=dex/.env dex/check.mjs`)
 
 All checks passed against the live mainnet RPC on 2026-07-21:
 
@@ -132,7 +132,7 @@ What each line proves:
 
 Verified: no Uniswap address appears hardcoded in any `dex/*.mjs` source file.
 resolve.mjs pulls from env (or the SDK); the addresses live only in
-[.env.example](../.env.example) and in this document. The only hardcoded
+[dex/.env.example](.env.example) and in this document. The only hardcoded
 addresses in code are the WETH/USDG anchors in verify.mjs, which are not Uniswap
 addresses.
 
@@ -147,4 +147,5 @@ dex/verify.mjs: USDG_ROBINHOOD_MAINNET = getAddress("0x5fc5360D0400a0Fd4f2af552A
 Uniswap publishes **no** deployment for the Robinhood testnet as of 2026-07-21.
 There is no `v3-robinhood-testnet` docs page and no `46630` row in the v4
 deployments table. `resolveUniswap(46630)` therefore throws by design — do not
-invent testnet addresses. Rehearse on a **mainnet fork** instead (see below).
+invent testnet addresses. Rehearse on a **mainnet fork** instead — see
+[dex/REHEARSAL.md](REHEARSAL.md) for a transcript.

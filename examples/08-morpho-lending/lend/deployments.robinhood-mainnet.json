@@ -1,0 +1,68 @@
+{
+  "_comment": "Verified Morpho deployment record for Robinhood Chain mainnet (chain 4663). DATA, not source: every address here was resolved from an official Morpho source and proven on-chain by lend/verify.mjs. See lend/DEPLOYMENTS.md for the evidence and the resolution date. resolve.mjs reads this only as a convenience; production callers set the env vars explicitly.",
+  "chainId": 4663,
+  "network": "Robinhood Chain",
+  "resolvedAt": "2026-07-21",
+  "source": "https://blue-api.morpho.org/graphql (indexes chain 4663) + https://robinhoodchain.blockscout.com",
+  "morphoBlue": "0x9D53d5E3bd5E8d4Cbfa6DB1ca238AEA02E651010",
+  "adaptiveCurveIrm": "0x2BD3d5965B26B51814AC95127B2b80dD6CcC0fa1",
+  "metaMorphoFactory": null,
+  "usdg": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+  "defaultVault": "0xBeEff033F34C046626B8D0A041844C5d1A5409dd",
+  "deploymentBlockApprox": 287,
+  "verification": {
+    "owner": "0x060595638692de6CcD47Ca04094f1772d3D39728",
+    "domainSeparator": "0xdec2c0a13cb9b2c7a749851d2692c8fd3a7941bf77148fced920e78c99a5fba0",
+    "isIrmEnabled": true,
+    "bytecodeChars": 31166,
+    "blockscoutVerified": true,
+    "blockscoutName": "Morpho"
+  },
+  "verifiedVaults": [
+    {
+      "address": "0xBeEff033F34C046626B8D0A041844C5d1A5409dd",
+      "symbol": "steakUSDG",
+      "name": "Steakhouse USDG",
+      "standard": "MorphoVaultV2",
+      "asset": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+      "curator": "Steakhouse Financial",
+      "note": "Largest curated USDG vault. Verify the curator and its market allocations before supplying."
+    },
+    {
+      "address": "0xbEeFF0fb1Dc19344A87b8479dAb60A2e16160737",
+      "symbol": "ethenaUSDG",
+      "name": "Ethena x Steakhouse USDG",
+      "standard": "MorphoVaultV2",
+      "asset": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+      "curator": "Steakhouse Financial",
+      "note": "Curated USDG vault with material TVL."
+    },
+    {
+      "address": "0xD8722375c8F54C3730212CDA3cdD8EEe722E3EE4",
+      "symbol": "rhUSDG",
+      "name": "RH Yield Vault USDG",
+      "standard": "MorphoVaultV2",
+      "asset": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+      "curator": "unverified",
+      "note": "Robinhood-named vault. Seed TVL at resolution time; identity of curator not independently confirmed here."
+    },
+    {
+      "address": "0xBEEff039907422219Fb367e525954DDC092854d9",
+      "symbol": "groveUSDG",
+      "name": "Grove x Steakhouse USDG",
+      "standard": "MorphoVaultV2",
+      "asset": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+      "curator": "Steakhouse Financial",
+      "note": "Seed TVL at resolution time."
+    },
+    {
+      "address": "0x37788ff0c1d4e45A7FE06BC7e71e0cc00121d0A8",
+      "symbol": "PurintaUSDG",
+      "name": "Purinta USDG",
+      "standard": "MorphoVaultV2",
+      "asset": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+      "curator": "unverified",
+      "note": "Third-party vault. Verify curator before use."
+    }
+  ]
+}

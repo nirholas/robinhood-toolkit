@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: connect the Robinhood Trading MCP to Claude Code
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 01 · Connect the Trading MCP to Claude Code

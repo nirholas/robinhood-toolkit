@@ -2,7 +2,7 @@
 /**
  * robinhood-toolkit · standalone sequencer liveness monitor
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Run:
  *   node scripts/liveness.mjs                 # mainnet, RPC + feed cross-check

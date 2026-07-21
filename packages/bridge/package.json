@@ -51,7 +51,7 @@
     "weth"
   ],
   "author": "nirholas (https://github.com/nirholas)",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "homepage": "https://github.com/nirholas/robinhood-toolkit/tree/main/packages/bridge#readme",
   "repository": {
     "type": "git",

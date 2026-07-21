@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: custom data adapter for Lightweight Charts
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 04 · Custom datafeed adapter
@@ -107,7 +107,7 @@ duplicate timestamps, millisecond timestamps, or nulls at least once.
 /**
  * robinhood-toolkit · OHLCV bar normalisation
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 /** Interval label -> seconds. The one place this mapping lives. */
@@ -234,7 +234,7 @@ export function resample(bars, targetSec) {
 /**
  * robinhood-toolkit · candle source registry
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * A CandleSource implements:
  *   id: string
@@ -280,7 +280,7 @@ interval, live-update, tear down.
 /**
  * robinhood-toolkit · data adapter for Lightweight Charts
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { getSource } from './sources/index.js';
 import { normaliseBars, intervalSeconds, withGaps, bucketStart } from './bars.js';
@@ -419,7 +419,7 @@ source reduces to writing one `fetchBars`.
 /**
  * robinhood-toolkit · deterministic fixture candle source
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { registerSource } from './index.js';
 import { intervalSeconds, bucketStart } from '../bars.js';
@@ -456,7 +456,7 @@ export const fixtureSource = registerSource({
 /**
  * robinhood-toolkit · adapter tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import test from 'node:test';
 import assert from 'node:assert/strict';

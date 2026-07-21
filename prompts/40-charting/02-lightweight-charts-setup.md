@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: Lightweight Charts setup and licensing
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 02 · Lightweight Charts setup
@@ -119,7 +119,7 @@ Do this now, not later. It takes ten seconds and it is the part everyone skips.
 /**
  * robinhood-toolkit · Lightweight Charts factory
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Charting by TradingView Lightweight Charts™ (Apache-2.0).
  * TradingView Lightweight Charts™ Copyright (с) 2025 TradingView, Inc.
@@ -280,7 +280,7 @@ fetching bugs look identical from the outside, so isolate them.
 /**
  * robinhood-toolkit · chart smoke test
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPriceChart } from './chart.js';
 

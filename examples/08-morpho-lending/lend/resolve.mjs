@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · resolve Morpho deployment addresses for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * This resolver deliberately carries NO addresses. Morpho Blue is permissionless
  * and its deployment on chain 4663 is not a constant this toolkit ships. You

@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · DexScreener client and honest series derivation
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * DexScreener indexes Robinhood Chain under the string chain id "robinhood",
  * not the numeric 4663. Both endpoints used here were verified live:

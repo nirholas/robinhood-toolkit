@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: the append-only decision journal
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 04 · Audit logging
@@ -97,7 +97,7 @@ Each entry carries:
 /**
  * robinhood-toolkit · append-only hash-chained decision journal
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { appendFile, mkdir, readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';

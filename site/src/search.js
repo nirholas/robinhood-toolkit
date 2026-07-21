@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · client-side search over the build-time static index
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * No hosted search service and no backend of any kind: scripts/build-content.mjs
  * writes public/search-index.json at build time and this fetches it lazily on

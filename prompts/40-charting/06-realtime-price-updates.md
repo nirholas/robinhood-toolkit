@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: real-time price updates
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 06 · Real-time price updates
@@ -142,7 +142,7 @@ Run both before writing code. The second is what stops you designing around
 /**
  * robinhood-toolkit · Robinhood Chain sequencer feed client
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Emits { blockNumber, timestamp } per sequenced block. Does NOT decode l2Msg:
  * that is compressed Arbitrum batch data. Use this as a low-latency trigger to
@@ -256,7 +256,7 @@ Feed triggers the pull, RPC supplies the truth, DexScreener backstops both.
 /**
  * robinhood-toolkit · live price feed for a Uniswap v3 pool
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Transports, in order of preference:
  *   1. sequencer feed  -> block trigger  -> eth_getLogs for that range
@@ -469,7 +469,7 @@ export function createLiveFeed(spec, opts) {
 /**
  * robinhood-toolkit · connect a live feed to a chart adapter
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createLiveFeed } from './live-feed.js';
 

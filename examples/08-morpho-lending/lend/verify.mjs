@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · on-chain verification of the Morpho deployment
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Resolving an address from a registry is a claim. This module is the proof. An
  * address only becomes MORPHO_BLUE after both owner() and DOMAIN_SEPARATOR()

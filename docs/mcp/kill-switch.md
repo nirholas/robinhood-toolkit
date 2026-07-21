@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · Agentic MCP kill switch — how to stop an agent, in order
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # Kill switch — stopping an agent

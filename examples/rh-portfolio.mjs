@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · print a portfolio snapshot
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { RobinhoodCrypto } from '../packages/rh-crypto/client.mjs';
 import { getFeeTier, markToMarket } from '../packages/rh-crypto/portfolio.mjs';

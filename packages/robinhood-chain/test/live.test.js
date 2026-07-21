@@ -1,7 +1,7 @@
 /**
  * robinhood-chain · live-chain tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * robinhood-toolkit · package: robinhood-chain
  *
@@ -19,6 +19,7 @@ import test from 'node:test'
 import { createPublicClient, http, parseAbiItem } from 'viem'
 
 import {
+  BlockscoutClient,
   MULTICALL3_ADDRESS,
   NotCanonicalTokenError,
   USDG,
@@ -27,9 +28,11 @@ import {
   formatToken,
   hasMulticall3,
   readDecimals,
+  readPortfolio,
   readTokenMetadata,
   robinhoodChain,
   scanLogs,
+  watchHead,
 } from '../index.js'
 
 const LIVE = process.env.RH_LIVE_TESTS === '1'
@@ -185,4 +188,68 @@ test('the matched-log allowance drops one block past a 1001-block span', options
     assert.ok(message.length > 0, 'the rejection carries some message')
     return true
   })
+})
+
+// The WETH contract's own address is a real address that returns a real result
+// without needing a funded wallet, so it doubles as the portfolio smoke test.
+test('readPortfolio batches WETH and USDG with decimals read on-chain', options, async () => {
+  const portfolio = await readPortfolio(client, WETH.address, [WETH.address, USDG.address])
+
+  const weth = portfolio.tokens.find((t) => t.address.toLowerCase() === WETH.address.toLowerCase())
+  const usdg = portfolio.tokens.find((t) => t.address.toLowerCase() === USDG.address.toLowerCase())
+
+  assert.equal(weth.decimals, 18)
+  assert.equal(usdg.decimals, 6, 'decimals came from the contract, not a default')
+  assert.equal(usdg.symbol, 'USDG')
+  assert.ok(/^\d+(\.\d+)?$/.test(portfolio.nativeEth), 'native balance formatted as a decimal')
+})
+
+// The same read routed through the sequential fallback must agree with the
+// multicall path. A stripped chain def with multicallAddress:null forces the
+// ChainDoesNotSupportContract throw that triggers the fallback.
+test('the sequential fallback returns the same balances as the aggregate', options, async () => {
+  const { defineChain } = await import('viem')
+  const stripped = defineChain({ ...robinhoodChain, contracts: {} })
+  const strippedClient = createPublicClient({ chain: stripped, transport: http(RPC, { timeout: 20_000 }) })
+
+  const viaMulticall = await readPortfolio(client, WETH.address, [WETH.address])
+  const viaFallback = await readPortfolio(strippedClient, WETH.address, [WETH.address], { multicallAddress: null })
+
+  assert.equal(viaFallback.tokens[0].decimals, 18)
+  assert.equal(viaMulticall.tokens[0].decimals, viaFallback.tokens[0].decimals)
+  assert.equal(viaMulticall.tokens[0].symbol, viaFallback.tokens[0].symbol)
+})
+
+test('watchHead observes the head advancing at roughly the block rate', options, async () => {
+  const samples = []
+  await new Promise((resolve, reject) => {
+    const timeout = setTimeout(() => reject(new Error('watchHead produced fewer than 3 samples in 6s')), 6000)
+    const stop = watchHead(
+      client,
+      (block) => {
+        samples.push(block)
+        if (samples.length >= 3) {
+          clearTimeout(timeout)
+          stop()
+          resolve()
+        }
+      },
+      { pollingIntervalMs: 1000 },
+    )
+  })
+
+  assert.ok(samples.length >= 3)
+  // ~101ms blocks over ~1s between samples means the head must move forward.
+  assert.ok(samples[samples.length - 1] > samples[0], 'the head advanced across samples')
+})
+
+test('the Blockscout client returns token metadata for WETH', options, async () => {
+  const explorer = new BlockscoutClient({ chain: robinhoodChain })
+  const info = await explorer.tokenInfo(WETH.address)
+
+  // Shapes are unverified by contract; assert only the fields observed live,
+  // and treat symbol as attacker-controlled data, never as a logic key.
+  assert.equal(typeof info, 'object')
+  assert.equal(info.symbol, 'WETH')
+  assert.equal(String(info.decimals), '18', 'Blockscout returns decimals as a string')
 })

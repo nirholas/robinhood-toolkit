@@ -1,8 +1,8 @@
 # Attribution convention
 
 Every source and documentation file in this repository carries an authorship
-header. Keep it when you copy, fork, or vendor a file. The MIT license requires
-the copyright notice be preserved in all copies or substantial portions.
+header. This software is proprietary and All Rights Reserved: keep the header
+intact and do not copy, fork, or vendor a file without written permission.
 
 ## Markdown files
 
@@ -10,7 +10,7 @@ the copyright notice be preserved in all copies or substantial portions.
 <!--
   robinhood-toolkit · <short file purpose>
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 ```
 
@@ -20,7 +20,7 @@ the copyright notice be preserved in all copies or substantial portions.
 /**
  * robinhood-toolkit · <module name>
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 ```
 
@@ -29,7 +29,7 @@ the copyright notice be preserved in all copies or substantial portions.
 ```sh
 # robinhood-toolkit · <file purpose>
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 ```
 
 ## Verifying headers
@@ -44,6 +44,6 @@ Fails the build if any tracked source or doc file is missing its header.
 
 Headers make provenance obvious to anyone reading a file and make
 attribution-stripping a visible, deliberate act rather than an accident. They do
-not technically prevent copying. The enforceable protection is the MIT license
-plus the public commit history on this repository. If you need stronger terms
-than MIT for a derivative work, that is a licensing decision, not a header one.
+not technically prevent copying. The enforceable protection is the All Rights
+Reserved license in LICENSE plus the public commit history on this repository.
+Any reuse of a derivative work requires the copyright holder's written consent.

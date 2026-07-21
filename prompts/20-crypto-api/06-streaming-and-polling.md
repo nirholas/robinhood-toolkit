@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: streaming market and order data
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 06 · Streaming market and order data
@@ -70,7 +70,7 @@ endpoint tables in this track were verified.
 /**
  * robinhood-toolkit · polling stream with a push-style interface
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { EventEmitter } from 'node:events';
 import { bestBidAsk } from './marketdata.mjs';
@@ -220,7 +220,7 @@ export class RobinhoodStream extends EventEmitter {
 /**
  * robinhood-toolkit · tail live quotes and order updates
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { RobinhoodCrypto } from '../packages/rh-crypto/client.mjs';
 import { RobinhoodStream } from '../packages/rh-crypto/stream.mjs';

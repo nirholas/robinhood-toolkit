@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · network · offline unit tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Pure structural checks — no network. The live verification steps (chain IDs
  * over eth_chainId, failover, feed streaming) live in the package README.

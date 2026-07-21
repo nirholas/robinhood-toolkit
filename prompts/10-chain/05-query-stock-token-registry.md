@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: resolving Stock Token addresses at runtime
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 05 · Query the Stock Token registry (never hardcode an address)
@@ -79,7 +79,7 @@ and the token type match what the registry claimed.
 /**
  * robinhood-toolkit · Stock Token registry source configuration
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 /**
@@ -109,7 +109,7 @@ export const REGISTRY_MAX_AGE_MS = Number(process.env.RH_REGISTRY_MAX_AGE_MS ?? 
 /**
  * robinhood-toolkit · Stock Token registry fetch + normalize
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { getAddress, isAddress } from "viem";
 import { registryUrl, REGISTRY_MAX_AGE_MS } from "./config.mjs";
@@ -196,7 +196,7 @@ address is a real, live ERC-20 and that the metadata is consistent. Do both.
 /**
  * robinhood-toolkit · ticker -> verified Stock Token address
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { erc20Abi, getAddress } from "viem";
 import { loadRegistry } from "./fetch.mjs";
@@ -274,7 +274,7 @@ export async function assertCanonicalAddress(client, ticker, addressInput, opts 
 /**
  * robinhood-toolkit · registry CLI
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPublicClient, http } from "viem";
 import { robinhoodMainnet } from "../clients/token.mjs";
@@ -320,7 +320,7 @@ allowlist of verified infrastructure addresses (USDG, WETH):
 ```sh
 # robinhood-toolkit · reject hardcoded token addresses
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 grep -rnoiE '0x[0-9a-f]{40}' --include='*.mjs' --include='*.js' --include='*.ts' src clients registry \
   | grep -viE '0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168|0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73|0x0{40}' \
   && { echo "hardcoded address found, resolve it from the registry instead"; exit 1; } || exit 0

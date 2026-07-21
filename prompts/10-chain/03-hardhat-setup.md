@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: Hardhat configured for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 03 · Hardhat setup for Robinhood Chain
@@ -62,7 +62,7 @@ security posture rather than the intended path.
 /**
  * robinhood-toolkit · Hardhat config for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
@@ -134,7 +134,7 @@ pragma solidity ^0.8.26;
 
 /// robinhood-toolkit · minimal deploy target
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract Beacon {
     string public note;
     address public immutable deployer;
@@ -163,7 +163,7 @@ contract Beacon {
 /**
  * robinhood-toolkit · Beacon deploy script
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { ethers, network } from "hardhat";
 import { mkdir, writeFile } from "node:fs/promises";

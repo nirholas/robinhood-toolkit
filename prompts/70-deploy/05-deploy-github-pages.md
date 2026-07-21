@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: publish the static site to GitHub Pages
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 05 · Deploy to GitHub Pages
@@ -56,7 +56,7 @@ portable design in prompt 06.
 /**
  * robinhood-toolkit · Vite config with deploy-target base path and API origin
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { defineConfig } from 'vite';
 
@@ -78,7 +78,7 @@ export default defineConfig({
 /**
  * robinhood-toolkit · API base resolution
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 const ORIGIN = __API_ORIGIN__; // '' means same-origin
 
@@ -101,7 +101,7 @@ export async function apiFetch(path, init) {
 ```yaml
 # robinhood-toolkit · GitHub Pages build and deploy
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 name: Deploy to GitHub Pages
 
 on:

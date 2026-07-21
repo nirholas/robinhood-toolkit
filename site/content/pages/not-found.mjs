@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · 404 page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Emitted as a real dist/404.html. Cloudflare serves it via not_found_handling,
  * Vercel and GitHub Pages serve it by convention, and scripts/serve.mjs serves

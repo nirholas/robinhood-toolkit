@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · MCP boundary error handling
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Every tool handler runs inside `guard()`. A tool must never throw out of the
  * handler: a thrown error surfaces to the host as a protocol-level failure with

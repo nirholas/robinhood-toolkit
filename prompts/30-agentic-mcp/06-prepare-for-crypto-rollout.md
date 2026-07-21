@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: build the crypto adapter ahead of rollout
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 06 · Build the crypto lane before it ships
@@ -60,7 +60,7 @@ rollout date for any specific account. Every one of these must come from a live
 /**
  * robinhood-toolkit · crypto capability detection for the Trading MCP
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 /** Does this tool's schema look like it accepts a crypto pair such as BTC-USD? */
@@ -98,7 +98,7 @@ works with no other changes.
 /**
  * robinhood-toolkit · detect agentic crypto availability at runtime
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { readFile, writeFile } from 'node:fs/promises';
 
@@ -145,7 +145,7 @@ export async function recordReadiness(assessment) {
 /**
  * robinhood-toolkit · notice when agentic crypto lights up on this account
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { RobinhoodMCPAdapter } from '../packages/rh-mcp/adapter.mjs';
 import { assessCryptoReadiness, recordReadiness } from '../packages/rh-mcp/crypto-readiness.mjs';
@@ -178,7 +178,7 @@ Run it on a schedule (cron, a systemd timer, whatever you already use). Exit cod
 /**
  * robinhood-toolkit · route crypto orders to whichever rail is available
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { RobinhoodCrypto } from '../rh-crypto/client.mjs';
 import { buildOrder } from '../rh-crypto/orders.mjs';

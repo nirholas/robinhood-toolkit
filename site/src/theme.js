@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · theme controller
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Three states, not two: "system" follows prefers-color-scheme, "light" and
  * "dark" are explicit overrides that beat the OS setting in both directions.

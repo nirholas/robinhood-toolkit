@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: static-first site architecture and build pipeline
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 01 · Site architecture
@@ -104,7 +104,7 @@ site/
 /**
  * robinhood-toolkit · site build config
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { defineConfig } from 'vite';
 import { readdirSync, existsSync } from 'node:fs';
@@ -146,7 +146,7 @@ The content build, reduced to its essentials:
 /**
  * robinhood-toolkit · markdown to pre-rendered route HTML
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
 import { join, dirname, basename, relative } from 'node:path';

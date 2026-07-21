@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
 
 import { Test } from "forge-std/Test.sol";
@@ -6,7 +6,7 @@ import { Beacon } from "../src/Beacon.sol";
 
 /// robinhood-toolkit · Beacon tests
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract BeaconTest is Test {
     Beacon internal beacon;
     address internal deployer = address(0xBEAC0);

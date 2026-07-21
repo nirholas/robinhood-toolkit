@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · robinhood-chain-mcp package readme
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # robinhood-chain-mcp
@@ -437,4 +437,4 @@ pool, or contract it reports on.
 
 ## License
 
-MIT © 2026 [nirholas](https://github.com/nirholas)
+All Rights Reserved © 2026 [nirholas](https://github.com/nirholas)

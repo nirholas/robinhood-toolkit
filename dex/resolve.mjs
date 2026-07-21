@@ -1,13 +1,13 @@
 /**
  * robinhood-toolkit · resolve Uniswap deployment addresses for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Nothing here is hardcoded per chain on purpose. Addresses come from the
  * Uniswap SDK's machine-readable maps when it knows the chain, or from env
  * overrides you populated from the official Uniswap deployment docs and then
  * proved on-chain with dex/verify.mjs. See dex/DEPLOYMENTS.md for the audit
- * trail behind the values in .env.example.
+ * trail behind the values in dex/.env.example.
  */
 import { getAddress, isAddress } from "viem";
 

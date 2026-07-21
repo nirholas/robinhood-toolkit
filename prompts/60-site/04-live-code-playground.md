@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: read-only live code playground against Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 04 · Live code playground
@@ -102,7 +102,7 @@ page accepts a private key.
 /**
  * robinhood-toolkit · allowlisted read-only JSON-RPC client for the browser
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Read-only by construction. Every method below reads public chain state.
  * Nothing here can sign or broadcast, and no key ever enters this module.
@@ -183,7 +183,7 @@ The worker. Snippet code never touches the page:
 /**
  * robinhood-toolkit · playground worker
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Workers have no DOM, no cookies, and no access to the site's localStorage.
  * The only capability injected into snippet scope is the read-only rpc().
@@ -263,7 +263,7 @@ The build-time guard that keeps rule 3 true:
 /**
  * robinhood-toolkit · playground write-operation guard
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 const WRITE_SHAPED = [
   /sendRawTransaction/,

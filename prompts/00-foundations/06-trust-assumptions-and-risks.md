@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: trust assumptions, risk disclosure, and liveness monitoring
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 06 · Trust assumptions and risks
@@ -111,7 +111,7 @@ chain before publishing any claim about them.
 /**
  * robinhood-toolkit · trust assumption model
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export const TRUST_MODEL = [
   {
@@ -232,7 +232,7 @@ Liveness monitor:
 /**
  * robinhood-toolkit · sequencer liveness monitor
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { publicClientFor, robinhoodMainnet } from '../../network/src/chains.js';
 

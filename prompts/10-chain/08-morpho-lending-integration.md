@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: Morpho lending integration on Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 08 · Integrate Morpho lending
@@ -61,7 +61,7 @@ Check, in this order:
 /**
  * robinhood-toolkit · resolve Morpho deployment addresses for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { getAddress, isAddress } from "viem";
 
@@ -106,7 +106,7 @@ structure above does not change.
 /**
  * robinhood-toolkit · on-chain verification of the Morpho deployment
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { getAddress, parseAbi } from "viem";
 
@@ -186,7 +186,7 @@ and discover existing markets from `CreateMarket` logs.
 /**
  * robinhood-toolkit · discover Morpho markets and vaults on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { encodeAbiParameters, getAddress, keccak256, parseAbiItem } from "viem";
 import { morphoAbi } from "./verify.mjs";
@@ -268,7 +268,7 @@ borrow rate, utilization, and the market fee.
 /**
  * robinhood-toolkit · Morpho rate reader
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { parseAbi } from "viem";
 
@@ -317,7 +317,7 @@ Two paths. Pick one and be explicit about which.
 /**
  * robinhood-toolkit · supply USDG to a MetaMorpho vault
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createWalletClient, erc20Abi, formatUnits, http, parseUnits } from "viem";
 import { privateKeyToAccount } from "viem/accounts";

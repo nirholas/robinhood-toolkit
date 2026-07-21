@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: sourcing OHLCV candles for Robinhood Chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 05 · Candlesticks from on-chain data
@@ -151,7 +151,7 @@ the second. That is the descending order you must reverse.
 /**
  * robinhood-toolkit · GeckoTerminal OHLCV candle source
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Data by GeckoTerminal (https://www.geckoterminal.com). Public API, no key.
  * Free tier is approximately 30 requests/minute; the limiter below enforces it.
@@ -280,7 +280,7 @@ No third party. This is the one that cannot be taken away from you.
 /**
  * robinhood-toolkit · candles aggregated from Uniswap v3 Swap events
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * No third-party data provider. Reads the chain directly.
  */
@@ -503,7 +503,7 @@ Two independent derivations agreeing is the only real proof either is right.
 /**
  * robinhood-toolkit · cross-validate candle sources
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { geckoTerminalSource } from '../src/sources/geckoterminal.js';
 import { onchainSource } from '../src/sources/onchain.js';

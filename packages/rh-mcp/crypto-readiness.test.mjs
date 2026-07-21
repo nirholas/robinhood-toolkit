@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · fixture tests proving the MCP crypto lane works on rollout
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { strict as assert } from 'node:assert';
 import test from 'node:test';

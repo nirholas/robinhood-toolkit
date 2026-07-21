@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · browser connect flow logic
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * EIP-1193 connect: request accounts, add the network with the EIP-3085 payload
  * from packages/network (prompt 02), switch to it, then render the address and

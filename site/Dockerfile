@@ -1,6 +1,6 @@
 # robinhood-toolkit · container image for Google Cloud Run and Railway
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 #
 # Build:  docker build -t robinhood-toolkit-site site
 # Run:    docker run -p 8080:8080 robinhood-toolkit-site

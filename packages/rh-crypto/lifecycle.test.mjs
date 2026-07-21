@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · unit tests for order lifecycle helpers
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Pure functions only. Runs with no network, no key, no spend:
  *   node --test packages/rh-crypto/lifecycle.test.mjs

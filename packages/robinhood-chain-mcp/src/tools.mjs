@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · MCP tool definitions for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Every tool here is a READ. There is no signing path in this package: no
  * private key is read, no wallet client is constructed, no transaction is ever

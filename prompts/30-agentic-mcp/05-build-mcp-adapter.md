@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: schema-driven MCP adapter
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 05 · Build a schema-driven MCP adapter
@@ -47,7 +47,7 @@ live schema, and fails loudly when no tool satisfies it.
 /**
  * robinhood-toolkit · schema-driven adapter for the Robinhood Trading MCP
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { connect, enumerateTools } from './enumerate.mjs';
 
@@ -233,7 +233,7 @@ export function textOf(result) {
 /**
  * robinhood-toolkit · report which capabilities the live MCP surface satisfies
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { CAPABILITIES, RobinhoodMCPAdapter } from '../packages/rh-mcp/adapter.mjs';
 

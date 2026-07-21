@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · robinhood-chain-mcp stdio round-trip tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Drives the real server binary with a real MCP client over stdio. Nothing here
  * touches the network: every assertion is about the wire contract, or about a

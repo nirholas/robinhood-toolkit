@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · robinhood-chain-mcp live-chain tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * These hit Robinhood Chain mainnet and the DexScreener API for real. They are
  * skipped unless ROBINHOOD_MCP_LIVE=1, so a default `npm test` stays offline,

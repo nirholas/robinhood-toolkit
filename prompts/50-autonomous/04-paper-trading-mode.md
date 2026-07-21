@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: paper trading broker, the default mode
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 04 · Paper trading mode
@@ -66,7 +66,7 @@ Paper mode is where a strategy earns the right to touch real money.
 /**
  * robinhood-toolkit · paper broker
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { readFile, writeFile } from 'node:fs/promises';
 import { createCostModel } from '../backtest/costs.mjs';

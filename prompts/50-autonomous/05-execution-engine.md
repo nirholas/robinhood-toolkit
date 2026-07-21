@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: live execution engine, REST and on-chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 05 · Execution engine
@@ -81,7 +81,7 @@ mode.
 /**
  * robinhood-toolkit · live REST broker
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 // --- venue surface: verify every value below against
 // --- https://docs.robinhood.com/crypto/trading before first live use
@@ -183,7 +183,7 @@ export default function createRestBroker({ signRequest, fetchImpl = fetch, timeo
 /**
  * robinhood-toolkit · on-chain broker for Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPublicClient, createWalletClient, defineChain, http } from 'viem';
 

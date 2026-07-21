@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: reading blocks, balances, logs, and live state
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 05 · Reading chain state
@@ -127,7 +127,7 @@ indexer, dashboard, and strategy loop in the later tracks sits on.
 /**
  * robinhood-toolkit · batched portfolio reads
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { erc20Abi, formatUnits, formatEther, getAddress } from 'viem';
 import { publicClientFor, robinhoodMainnet } from '../../network/src/chains.js';
@@ -216,7 +216,7 @@ Self-tuning log scanner:
 /**
  * robinhood-toolkit · range-adaptive log scanner
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { publicClientFor, robinhoodMainnet } from '../../network/src/chains.js';
 

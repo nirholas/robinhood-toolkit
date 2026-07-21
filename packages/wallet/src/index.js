@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · wallet package entry
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The funding gate is import-safe with no PRIVATE_KEY (it takes an address).
  * The signer is NOT: importing it validates PRIVATE_KEY and fails closed. Pull

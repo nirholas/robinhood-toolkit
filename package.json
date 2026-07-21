@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Build on Robinhood Chain and Robinhood Crypto. Tools, runnable examples, and 64 build prompts.",
   "type": "module",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "author": "nirholas (https://github.com/nirholas)",
   "homepage": "https://github.com/nirholas/robinhood-toolkit",
   "repository": {

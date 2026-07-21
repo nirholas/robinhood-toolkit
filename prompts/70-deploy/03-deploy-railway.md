@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: deploy the Node server to Railway with Railpack
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 03 · Deploy to Railway
@@ -49,7 +49,7 @@ in prompt 04 with no code changes.
 /**
  * robinhood-toolkit · portable Node server: static bundle + api/** on one origin
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createServer } from 'node:http';
 import { createReadStream } from 'node:fs';

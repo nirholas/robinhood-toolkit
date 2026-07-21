@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · quick start page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 import { NETWORKS, CONTRACTS, SELECTORS } from '../constants.mjs'

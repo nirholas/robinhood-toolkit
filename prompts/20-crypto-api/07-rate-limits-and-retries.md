@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: rate limiting and retry policy
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 07 · Rate limits and retries
@@ -68,7 +68,7 @@ exists, prefer it over any client-side estimate.
 /**
  * robinhood-toolkit · client-side token bucket
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export class TokenBucket {
   #tokens;
@@ -162,7 +162,7 @@ export class BucketRegistry {
 /**
  * robinhood-toolkit · retry policy for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 /**
@@ -205,7 +205,7 @@ export function retryAfterMs(headers) {
 /**
  * robinhood-toolkit · rate-limited, retrying request wrapper
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { BucketRegistry } from './limiter.mjs';
 import { backoffMs, isRetryable, retryAfterMs } from './retry.mjs';

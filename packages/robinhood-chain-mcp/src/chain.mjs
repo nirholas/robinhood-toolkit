@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · Robinhood Chain network definitions and read-only clients
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * READ-ONLY BY DESIGN. This module creates viem *public* clients only. It never
  * imports createWalletClient, privateKeyToAccount, or any signing primitive.

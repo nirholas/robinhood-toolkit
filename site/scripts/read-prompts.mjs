@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · build-time reader for the ../prompts tree
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Walks prompts/<track>/<nn>-<slug>.md, parses each file's H1 title and first
  * real paragraph, and returns a grouped structure. Nothing about the prompt

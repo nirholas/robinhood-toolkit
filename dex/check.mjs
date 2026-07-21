@@ -1,11 +1,11 @@
 /**
  * robinhood-toolkit · resolve + prove Uniswap addresses, then scan WETH/USDG pools
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
- * Usage:
- *   node --env-file=.env dex/check.mjs            # mainnet 4663 against the public RPC
- *   RPC_URL=http://127.0.0.1:8545 node --env-file=.env dex/check.mjs
+ * Usage (copy dex/.env.example to dex/.env first):
+ *   node --env-file=dex/.env dex/check.mjs                        # mainnet 4663, public RPC
+ *   RPC_URL=http://127.0.0.1:8545 node --env-file=dex/.env dex/check.mjs   # against a fork
  *
  * This is the entry point behind the "How to verify" steps and the source of the
  * transcript recorded in dex/DEPLOYMENTS.md. It moves no value.

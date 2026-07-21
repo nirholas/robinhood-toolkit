@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · package readme: robinhood-chain
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # robinhood-chain
@@ -224,6 +224,73 @@ if (!result.ok) {
 
 `name` and `symbol` in the returned metadata are attacker-controlled strings. Render them as data, escape them in HTML, never route logic on them, and never interpolate them into a prompt or a shell command.
 
+### Portfolio
+
+| Export | Description |
+|---|---|
+| `readPortfolio(client, address, tokenAddresses?, opts?)` | native ETH plus a balance row per token, batched |
+| `batchRead(client, contracts, opts?)` | Multicall3 with a genuine sequential fallback, viem's `allowFailure` shape from both paths |
+
+One `eth_getBalance` plus one Multicall3 aggregate cover the whole portfolio, regardless of token count. Decimals are read in the **same batch** as the balance, so the two can never disagree — nothing here defaults to 18. `symbol` rides along for display only; identity is the address.
+
+```js
+import { createPublicClient, http } from 'viem'
+import { readPortfolio, robinhoodChain, WETH, USDG } from 'robinhood-chain'
+
+const client = createPublicClient({ chain: robinhoodChain, transport: http() })
+const portfolio = await readPortfolio(client, '0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73', [
+  WETH.address,
+  USDG.address,
+])
+
+console.log(portfolio.nativeEth)          // '21044.62...'
+console.log(portfolio.tokens[1].decimals) // 6  — read on-chain, never assumed
+```
+
+Each token row is `{ address, symbol, decimals, raw, formatted, known }` on success, `{ address, raw, error: 'decimals unavailable' }` when balance read but decimals did not, or `{ address, error: 'balanceOf reverted' }` when the address is not a readable ERC-20 here. One bad token degrades its own row; it never voids the response. `known` is the advisory curated-set match — `null` means "not in our list", never "safe".
+
+`opts.multicallAddress` is `undefined` (use the canonical Multicall3 explicitly, the default), an address, or `null` (omit it, forcing viem to resolve `contracts.multicall3` from the chain definition — which throws `ChainDoesNotSupportContract` when absent, the one condition that reliably exercises the sequential fallback). Try it: `node scripts/portfolio.mjs --fallback` logs the fallback warning and still returns correct balances.
+
+### Head watcher
+
+| Export | Description |
+|---|---|
+| `watchHead(client, onBlock, opts?)` | poll the head at an explicit interval; returns viem's unsubscribe fn |
+| `DEFAULT_POLLING_INTERVAL_MS` (`1000`) | one sample per second, ~10 blocks of movement per tick |
+
+```js
+import { watchHead } from 'robinhood-chain'
+
+const stop = watchHead(client, (block, prev) => {
+  const advanced = prev === undefined ? 0n : block - prev
+  console.log(`head ${block} (+${advanced} since last sample)`)
+})
+// ... later: stop()
+```
+
+At ~101 ms blocks the head advances ~10 blocks per second, so a 1000 ms poll observes ~600 blocks per minute. **Do not poll at the block cadence** to "keep up" — you cannot, and a tight `getBlockNumber` loop generates thousands of requests per minute and trips a rate limit you have not measured. When you need pre-settlement visibility, the sequencer WebSocket feed (`wss://feed.mainnet.chain.robinhood.com`, declared on the chain definition) is lower latency than any poll; treat its data as provisional until confirmed against a settled block.
+
+### Blockscout explorer
+
+| Export | Description |
+|---|---|
+| `BlockscoutClient` / `blockscoutFor(chain?, opts?)` | thin Blockscout v2 REST client |
+| `ExplorerError` | non-retryable explorer HTTP failure; carries `status`, `url`, `body` |
+
+JSON-RPC does not give you verified source, holder lists, decoded address history, or aggregated token metadata. The explorer's REST API (`/api/v2`) does.
+
+```js
+import { BlockscoutClient, robinhoodChain, WETH } from 'robinhood-chain'
+
+const explorer = new BlockscoutClient({ chain: robinhoodChain })
+const info = await explorer.tokenInfo(WETH.address)
+// Observed shape 2026-07-21 (log your own with { debug: true } before trusting it):
+// { address_hash, name, symbol, decimals: '18', holders_count: '206509',
+//   total_supply, exchange_rate, type: 'ERC-20', ... }  — note decimals is a STRING
+```
+
+Methods: `tokenInfo`, `tokenHolders`, `addressTransactions`, `addressInfo`, `contractSource`, and the raw `get(path, params)` they all funnel through. Every request retries on `429` and transient `5xx` with exponential backoff, honoring `Retry-After` when present — the `429` path exists **because whether this instance rate-limits, or requires an API key, is unverified.** Response shapes are likewise unverified per endpoint: this client passes parsed JSON through untouched. Log one real response (`{ debug: true }`) and write your types from what you observed, not from another chain's Blockscout. A token's `name`/`symbol` from these endpoints is as attacker-controlled as it is on-chain.
+
 ### Log scanning
 
 | Export | Description |
@@ -312,14 +379,14 @@ All extend `RobinhoodChainError`, so one `catch` covers the package.
 ## Testing
 
 ```sh
-npm test        # 42 offline tests, no network
+npm test        # 65 offline tests, no network
 npm run test:live   # 12 additional tests against mainnet, read-only
 npm run smoke       # the live smoke script
 ```
 
 Live tests are gated behind `RH_LIVE_TESTS=1` so the default run works offline and in CI. They are read-only: no key, no funded account, no spend. Override the endpoint with `RH_MAINNET_RPC`.
 
-The offline suite includes a stub RPC that reproduces the `eth_getLogs` caps as the endpoint actually implements them: a matched-log allowance tiered by span, plus an independent response-size cap. The stub can reject with either observed wording, and one test asserts the scan result is byte-identical under both, which is the property that let the library survive the live message change untouched. The live suite re-confirms every shipped constant against the chain, probes the 1001/1002 tier boundary directly, and proves the collision is caught for real rather than against a fixture.
+The offline suite includes a stub RPC that reproduces the `eth_getLogs` caps as the endpoint actually implements them: a matched-log allowance tiered by span, plus an independent response-size cap. The stub can reject with either observed wording, and one test asserts the scan result is byte-identical under both, which is the property that let the library survive the live message change untouched. The read layer is covered offline too: `readPortfolio` proves it reads decimals rather than defaulting to 18 and that the sequential fallback fires when the aggregate throws, `watchHead` proves the polling interval is a decision and not the block cadence, and `BlockscoutClient` drives the `429`/`5xx` backoff through an injected fetch. The live suite re-confirms every shipped constant against the chain, probes the 1001/1002 tier boundary directly, and proves the collision is caught for real rather than against a fixture.
 
 ---
 
@@ -361,4 +428,4 @@ Robinhood Chain is centralized today: Robinhood operates both the sequencer and 
 
 ## License
 
-MIT © 2026 [nirholas](https://github.com/nirholas)
+All Rights Reserved © 2026 [nirholas](https://github.com/nirholas)

@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: placing a first Robinhood crypto order
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 03 · Place your first order
@@ -65,7 +65,7 @@ query parameter** on `POST /api/v2/crypto/trading/orders/`. See prompt 05.
 /**
  * robinhood-toolkit · order placement for the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { randomUUID } from 'node:crypto';
 
@@ -151,7 +151,7 @@ export async function waitForTerminal(rh, orderId, { timeoutMs = 30_000, interva
 /**
  * robinhood-toolkit · place one minimum-size market order
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Usage:
  *   node --env-file=.env examples/rh-first-order.mjs BTC-USD          # dry run

@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: scheduling, single-instance leases, restart safety
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 07 · Scheduling and cron
@@ -76,7 +76,7 @@ long-lived process and for a scheduled invocation.
 /**
  * robinhood-toolkit · single-instance lease
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { randomUUID } from 'node:crypto';
 
@@ -150,7 +150,7 @@ Long-lived process, systemd:
 ```sh
 # robinhood-toolkit · agent service unit
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 # /etc/systemd/system/rh-agent.service
 [Unit]
 Description=robinhood-toolkit trading agent
@@ -180,7 +180,7 @@ Scheduled invocation, crontab:
 ```sh
 # robinhood-toolkit · scheduled single-tick invocation
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 CRON_TZ=UTC
 */5 * * * * cd /opt/rh-agent && AGENT_MODE=paper AGENT_MAX_TICKS=1 /usr/bin/node src/main.mjs >> /var/log/rh-agent.log 2>&1
 ```

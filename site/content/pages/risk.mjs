@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · trust & risk page content
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The public risk section renders FROM the same TRUST_MODEL the app's disclosure
  * gate uses (packages/risk). The copy here cannot drift from the model, because

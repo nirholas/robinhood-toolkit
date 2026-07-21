@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: WCAG 2.2 AA conformance and responsive layout
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 06 · Accessibility and responsive
@@ -100,7 +100,7 @@ look deliberate while failing 4.5:1. Make that failure impossible to ship.
 /**
  * robinhood-toolkit · contrast conformance check
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Reads the SAME palette.json that generates tokens.css, so a passing check
  * cannot drift from what ships. Run: npm run check:contrast
@@ -176,7 +176,7 @@ Focus, motion, and target size:
 /**
  * robinhood-toolkit · accessibility base rules
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
@@ -249,7 +249,7 @@ The chart text alternative, plus the reduced-motion and non-drag requirements:
 /**
  * robinhood-toolkit · accessible chart wrapper
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export function makeChartAccessible(container, { label, rows, columns }) {
   // Canvas is opaque to assistive tech. Label it, then give the real data.

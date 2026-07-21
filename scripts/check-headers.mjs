@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · attribution header linter
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 
 import { execFileSync } from 'node:child_process'
@@ -13,7 +13,7 @@ const SKIP = [/^LICENSE$/, /^\.github\//, /(^|\/)node_modules\//, /(^|\/)dist\//
 
 const MARKER = 'robinhood-toolkit ·'
 const AUTHOR = 'Author: nirholas'
-const LICENSE = 'License: MIT (c) 2026 nirholas'
+const LICENSE = 'License: All Rights Reserved (c) 2026 nirholas'
 
 function tracked() {
   return execFileSync('git', ['ls-files'], { encoding: 'utf8' })

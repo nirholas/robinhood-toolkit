@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Hardhat project configured to compile, deploy, and verify on both Robinhood Chain networks (4663 mainnet, 46630 testnet).",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "author": "nirholas (https://github.com/nirholas)",
   "homepage": "https://github.com/nirholas/robinhood-toolkit",
   "scripts": {

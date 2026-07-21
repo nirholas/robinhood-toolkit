@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: network definitions, RPC clients, and failover
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 02 · Network setup and RPC
@@ -101,7 +101,7 @@ chain IDs scattered across a codebase.
 /**
  * robinhood-toolkit · network definitions and client factory
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPublicClient, defineChain, fallback, http } from 'viem';
 
@@ -196,7 +196,7 @@ A minimal feed reader, schema derived at runtime:
 /**
  * robinhood-toolkit · sequencer feed probe
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import WebSocket from 'ws';
 

@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: the tutorial page template and content contract
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 03 · Tutorial page template
@@ -76,7 +76,7 @@ attribution footer.
 8. Load per-page features from the frontmatter flags. The template emits
    `data-chart` and `data-playground` attributes on `<body>`, and the shared entry
    script dynamic-imports only what the attributes ask for.
-9. Footer carries the attribution line and the MIT notice, and links back to the
+9. Footer carries the attribution line and the All Rights Reserved notice, and links back to the
    repo. On chart pages the TradingView attribution is satisfied by the in-chart
    logo, so do not duplicate it in the footer, and do not treat a footer credit as
    a substitute for the logo.
@@ -85,7 +85,7 @@ attribution footer.
 <!--
   robinhood-toolkit · tutorial page template
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 <!doctype html>
 <html lang="en">
@@ -168,7 +168,7 @@ attribution footer.
       <p>
         robinhood-toolkit · Author:
         <a href="https://github.com/nirholas/robinhood-toolkit">nirholas</a> ·
-        MIT (c) 2026 nirholas
+        All Rights Reserved (c) 2026 nirholas
       </p>
     </footer>
   </body>
@@ -181,7 +181,7 @@ Frontmatter validation, wired into the content build from prompt 01:
 /**
  * robinhood-toolkit · tutorial frontmatter contract
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 const REQUIRED = ['title', 'description', 'track', 'order', 'updated'];
 const NETWORKS = new Set(['mainnet', 'testnet']);
@@ -212,7 +212,7 @@ Copy buttons added at build time, so they exist in the pre-rendered HTML:
 /**
  * robinhood-toolkit · code block affordances
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export function decorateCodeBlocks(html) {
   return html.replace(
@@ -228,7 +228,7 @@ export function decorateCodeBlocks(html) {
 /**
  * robinhood-toolkit · page entry, loads only what the page declares
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { initThemeToggle } from './theme.js';
 import { initCopyButtons } from './copy.js';
@@ -249,7 +249,7 @@ if (document.body.dataset.playground === 'true') {
 /**
  * robinhood-toolkit · copy-to-clipboard for code blocks
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export function initCopyButtons(root = document) {
   for (const button of root.querySelectorAll('.code-copy')) {

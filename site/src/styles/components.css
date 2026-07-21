@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · component layer
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Rules this file obeys:
  *  - No raw colors. No raw font sizes. No raw pixel gaps. Tokens only.
@@ -1242,4 +1242,87 @@ input::placeholder {
 input[aria-invalid='true'] {
   border-color: var(--state-error);
   border-width: 2px;
+}
+
+/* Risk page — trust-assumption blocks rendered from TRUST_MODEL.
+   Greyscale by design: severity is carried by the text label and glyph, and
+   reinforced by left-border weight, never by color alone. */
+.risk-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.risk-item {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  background: var(--bg-raised);
+}
+
+.risk-item--high {
+  border-left-width: 6px;
+  border-left-color: var(--fg);
+}
+
+.risk-item--medium {
+  border-left-width: 4px;
+}
+
+.risk-item__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-3);
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+.risk-item__sev {
+  font-weight: var(--weight-bold);
+  font-size: var(--text-xs);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.risk-badge {
+  font-size: var(--text-2xs);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.15em 0.6em;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  color: var(--fg-muted);
+}
+
+.risk-badge--unverified {
+  color: var(--fg);
+  border-color: var(--fg);
+  border-style: dashed;
+}
+
+.risk-item__statement {
+  font-weight: var(--weight-bold);
+  margin: 0 0 var(--space-3);
+  line-height: var(--leading-normal);
+}
+
+.risk-item__affects,
+.risk-item__mitigation {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--fg-muted);
+}
+
+.risk-item__mitigation {
+  margin-bottom: 0;
+  color: var(--fg);
+}
+
+@media (max-width: 360px) {
+  .risk-item {
+    padding: var(--space-3) var(--space-4);
+  }
 }

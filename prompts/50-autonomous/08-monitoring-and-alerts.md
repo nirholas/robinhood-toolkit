@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: monitoring, heartbeats, and alerting
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 08 · Monitoring and alerts
@@ -76,7 +76,7 @@ arbitrary, and route pages to a channel a human actually reads at 03:00.
 /**
  * robinhood-toolkit · minimal metrics registry and health server
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createServer } from 'node:http';
 
@@ -150,7 +150,7 @@ export function startHealthServer({ metrics, getState, port = 9464 }) {
 /**
  * robinhood-toolkit · alert router with dedupe and severity routing
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export function createAlerter({ sinks = {}, dedupeWindowMs = 900_000, fetchImpl = fetch } = {}) {
   const lastSent = new Map();

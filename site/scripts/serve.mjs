@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · static file server for the process-model targets
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Railway and Google Cloud Run both give you a container and expect you to own
  * the HTTP server. This is that server: zero dependencies, serves dist/ with

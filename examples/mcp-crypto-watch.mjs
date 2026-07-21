@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · notice when agentic crypto lights up on this account
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { RobinhoodMCPAdapter } from '../packages/rh-mcp/adapter.mjs';
 import { assessCryptoReadiness, recordReadiness } from '../packages/rh-mcp/crypto-readiness.mjs';

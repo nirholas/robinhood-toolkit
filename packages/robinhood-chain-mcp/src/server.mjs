@@ -2,7 +2,7 @@
 /**
  * robinhood-toolkit · robinhood-chain-mcp entry point
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * A read-only MCP server for Robinhood Chain, speaking stdio.
  *

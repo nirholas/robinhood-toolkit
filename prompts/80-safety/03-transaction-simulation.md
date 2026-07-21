@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: simulate before you send
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 03 · Transaction simulation
@@ -87,7 +87,7 @@ it is submitted. Both produce a diff a human or a policy engine can reject.
 /**
  * robinhood-toolkit · pre-send simulation with asset diffing
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPublicClient, defineChain, http, erc20Abi, formatEther } from 'viem';
 
@@ -212,7 +212,7 @@ export function assertInvariants({ simulation, intent }) {
 /**
  * robinhood-toolkit · REST order preview
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export async function previewOrder({ intent, quotes, broker, costs, minOrderNotional = 1 }) {
   const quote = await quotes.getQuote(intent.symbol);

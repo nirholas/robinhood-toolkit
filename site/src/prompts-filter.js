@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · client-side filter for the prompt index
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The whole index is pre-rendered into the HTML at build time. This only hides
  * and shows what is already there, so the page is complete and readable with

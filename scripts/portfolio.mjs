@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · portfolio CLI over the read layer
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Print a full portfolio — native ETH plus every known token balance — for any
  * address, batched through Multicall3 in two round trips regardless of token
@@ -11,7 +11,7 @@
  *   node scripts/portfolio.mjs                     # WETH contract, a real address with balances
  *   node scripts/portfolio.mjs 0xYourAddress
  *   node scripts/portfolio.mjs 0xYourAddress 0xExtraToken
- *   node scripts/portfolio.mjs --fallback 0xAddr   # force the sequential fallback (bogus multicall addr)
+ *   node scripts/portfolio.mjs --fallback 0xAddr   # force the sequential fallback (chain stripped of multicall3)
  *
  * Env:
  *   RH_RPC   override the mainnet RPC URL

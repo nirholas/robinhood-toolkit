@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · example 01: hello chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The 30-second "it works" example. Opens a read-only viem client against
  * Robinhood Chain mainnet and prints four facts that prove the connection is

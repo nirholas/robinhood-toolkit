@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: your own crypto MCP server
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 07 · Build your own crypto MCP server
@@ -74,7 +74,7 @@ Set `"type": "module"` in the package's `package.json`.
 /**
  * robinhood-toolkit · MCP server exposing the Robinhood Crypto Trading API
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
@@ -335,7 +335,7 @@ Claude Desktop or Cursor, in the JSON config:
 /**
  * robinhood-toolkit · MCP round-trip test for the crypto server
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { strict as assert } from 'node:assert';
 import test from 'node:test';

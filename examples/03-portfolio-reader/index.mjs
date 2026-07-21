@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · example 03: portfolio reader
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Read an address's native ETH balance plus its balance in every known token,
  * batched through Multicall3 so the whole portfolio costs one round trip

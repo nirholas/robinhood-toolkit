@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: one codebase that deploys to all five targets
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 06 · One codebase, five targets
@@ -105,7 +105,7 @@ dist/                # build output, gitignored
 /**
  * robinhood-toolkit · portable API router
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { healthz } from './handlers/healthz.js';
 import { quote } from './handlers/quote.js';
@@ -158,7 +158,7 @@ function cors(response, request) {
 /**
  * robinhood-toolkit · Vercel function shim for /api/quote
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { quote } from './handlers/quote.js';
 export const config = { runtime: 'nodejs' };
@@ -207,7 +207,7 @@ Everything else, all routing, all handlers, all client code, is identical.
 /**
  * robinhood-toolkit · cross-target parity check
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 const TARGETS = Object.entries({
   cloudflare: process.env.URL_CLOUDFLARE,

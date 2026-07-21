@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · place one minimum-size market order
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Usage:
  *   node --env-file=.env examples/rh-first-order.mjs BTC-USD          # dry run

@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: position tracking, reconciliation, and exits
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 06 · Position management
@@ -67,7 +67,7 @@ the strategy that opened the position.
 /**
  * robinhood-toolkit · position book with VWAP entry and reconciliation
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export function createPositionBook() {
   const book = new Map();
@@ -158,7 +158,7 @@ export function reconcile({ local, remote, dustTolerance = 1e-8, maxDriftPct = 1
 /**
  * robinhood-toolkit · independent exit supervisor
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export function createExitSupervisor({
   stopLossPct = 2,

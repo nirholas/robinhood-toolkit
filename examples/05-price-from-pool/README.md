@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · example readme: pool price from sqrtPriceX96
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 05 · Price from a Uniswap v3 pool

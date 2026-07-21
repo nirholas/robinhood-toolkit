@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: static search index and site navigation
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 05 · Search and navigation
@@ -78,7 +78,7 @@ navigation the index feeds, track sidebar, breadcrumbs, prev/next, and a
 /**
  * robinhood-toolkit · shared search index configuration
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Imported by BOTH the build script and the client. MiniSearch.loadJSON must
  * receive the same options used to build the index or results are silently
@@ -101,7 +101,7 @@ export const INDEX_URL = '/search-index.json';
 /**
  * robinhood-toolkit · build the static search index
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { readFile, writeFile, readdir, stat } from 'node:fs/promises';
 import { join, dirname, basename, relative } from 'node:path';
@@ -198,7 +198,7 @@ The client matcher, loaded on first interaction:
 /**
  * robinhood-toolkit · client-side search
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import MiniSearch from 'minisearch';
 import { SEARCH_OPTIONS, INDEX_URL } from './search-options.js';

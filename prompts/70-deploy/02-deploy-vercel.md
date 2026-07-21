@@ -1,7 +1,7 @@
 <!--
   robinhood-toolkit · build prompt: deploy the site to Vercel with filesystem-routed functions
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # 02 · Deploy to Vercel
@@ -56,7 +56,7 @@ dist/               -> static output
 /**
  * robinhood-toolkit · /api/healthz
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 export const config = { runtime: 'nodejs' };
 

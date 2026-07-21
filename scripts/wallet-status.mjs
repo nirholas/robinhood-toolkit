@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · wallet status preflight
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The preflight you run before every spend. Prints the address, the resolved
  * chain, the native balance, the nonce, the current gas price, and the cost of

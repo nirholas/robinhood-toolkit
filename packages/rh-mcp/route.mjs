@@ -1,7 +1,7 @@
 /**
  * robinhood-toolkit · route crypto orders to whichever rail is available
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { RobinhoodCrypto } from '../rh-crypto/client.mjs';
 import { buildOrder } from '../rh-crypto/orders.mjs';

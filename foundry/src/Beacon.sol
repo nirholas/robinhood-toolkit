@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
 
 /// robinhood-toolkit · Beacon
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 ///
 /// Minimal deploy target used to exercise the Foundry pipeline end to end:
 /// broadcast a transaction, write a run artifact, and verify source on the
