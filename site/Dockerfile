@@ -20,7 +20,9 @@ RUN npm run build
 FROM node:22-slim
 WORKDIR /app
 ENV NODE_ENV=production
-ENV PORT=8080
+# Do NOT set PORT here. Cloud Run injects PORT and rejects any image that sets
+# it explicitly; serve.mjs already defaults to 8080 when PORT is absent, so a
+# local `docker run` still binds 8080. EXPOSE below is documentation, not config.
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/scripts/serve.mjs ./scripts/serve.mjs
 EXPOSE 8080

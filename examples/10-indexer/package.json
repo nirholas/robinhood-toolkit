@@ -1,0 +1,21 @@
+{
+  "name": "@robinhood-toolkit/example-indexer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Backfill and tail Robinhood Chain Transfer events into SQLite with a persisted, restart-safe cursor and reorg handling.",
+  "type": "module",
+  "main": "run.mjs",
+  "scripts": {
+    "start": "node run.mjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "robinhood-chain": "^0.1.0",
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT"
+}

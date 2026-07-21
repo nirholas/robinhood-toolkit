@@ -12,7 +12,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "check:contrast": "node scripts/check-contrast.mjs",
+    "test": "node scripts/check-contrast.mjs"
   },
   "dependencies": {
     "lightweight-charts": "^5.2.0"

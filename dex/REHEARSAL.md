@@ -2,7 +2,7 @@
 <!--
   robinhood-toolkit · fork rehearsal transcript for the Uniswap v3 swap module
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-  License: MIT (c) 2026 nirholas
+  License: All Rights Reserved (c) 2026 nirholas
 -->
 
 # Fork rehearsal — swap and slippage revert

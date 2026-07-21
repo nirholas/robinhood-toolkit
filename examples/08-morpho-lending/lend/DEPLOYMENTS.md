@@ -89,6 +89,14 @@ The demo's `MORPHO_USDG_VAULT` default is `steakUSDG` because it is the largest
 curated vault. That is a starting point, not an endorsement — read the curator
 and the vault's market allocations before supplying real funds.
 
+**These Vault V2s gate deposits.** Every curated USDG vault above returns
+`maxDeposit(addr) == 0` for an arbitrary address — deposits are gated (allowlist
+/ cap), so an unwhitelisted account cannot use the ERC-4626 vault path, and
+`depositToVault` correctly refuses before building a tx that would revert. This
+is why the fork rehearsal uses the **direct Morpho Blue path** (`supply` is
+permissionless) rather than the vault path. The vault path is what you use once
+you hold a vault that admits your address.
+
 ## Markets
 
 - **27** markets total on the singleton; **22** have USDG as the loan asset (you

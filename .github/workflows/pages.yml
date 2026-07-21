@@ -1,0 +1,60 @@
+# built by nirholas x.com/nichxbt
+# robinhood-toolkit · GitHub Pages build and deploy
+# Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+# License: All Rights Reserved (c) 2026 nirholas
+#
+# The site is a pre-rendered MPA under site/. It reads ../prompts at build time,
+# so the whole repo is checked out (not just site/). SITE_BASE is the repo name
+# with a leading and trailing slash for a project site served from
+# https://<user>.github.io/<repo>/. Change it to / for a user/org site or a
+# custom domain (and add site/public/CNAME).
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+      - name: Build
+        env:
+          # Leading AND trailing slash. Project site: /<repo>/. Root/custom domain: /.
+          SITE_BASE: /${{ github.event.repository.name }}/
+        run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+# built by nirholas x.com/nichxbt

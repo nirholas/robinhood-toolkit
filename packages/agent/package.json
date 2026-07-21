@@ -1,0 +1,14 @@
+{
+  "name": "@robinhood-toolkit/agent",
+  "version": "0.1.0",
+  "description": "Autonomous strategy loop, signal generation, and honest backtesting harness for Robinhood Chain / Robinhood Crypto.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "author": "nirholas (https://github.com/nirholas)",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "backtest": "node scripts/backtest.mjs",
+    "gen-bars": "node scripts/gen-sample-bars.mjs"
+  }
+}
