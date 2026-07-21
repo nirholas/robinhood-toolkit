@@ -26,13 +26,23 @@ import { livenessMessage } from '../src/liveness-ui.js'
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
+/**
+ * A virtual clock that advances a fixed step on every read. Because the monitor
+ * reads `now()` once per tick, classification becomes a deterministic function of
+ * tick count instead of wall-clock time — so these tests do not flake under load.
+ */
+function stepClock(stepMs) {
+  let t = 0
+  return () => (t += stepMs)
+}
+
 /** Collect statuses from a stubbed monitor for `durationMs`, then stop. */
-async function collect(clientImpl, opts, durationMs = 60) {
+async function collect(clientImpl, opts, durationMs = 200) {
   const out = []
   const stop = monitorLiveness((s) => out.push(s), {
     client: clientImpl,
     feed: false,
-    intervalMs: 3,
+    intervalMs: 10,
     ...opts,
   })
   await sleep(durationMs)
@@ -59,8 +69,9 @@ test('canSubmitIn blocks only stalled/unreachable', () => {
 test('advancing head stays healthy and submittable', async () => {
   let n = 100n
   const client = { getBlockNumber: async () => n++ }
-  const out = await collect(client, {})
-  assert.ok(out.length > 1)
+  // Head advances every tick, so lastAdvanceAt tracks now() and silentFor stays 0.
+  const out = await collect(client, { now: stepClock(1) })
+  assert.ok(out.length >= 1, 'the monitor must emit at least one status')
   assert.ok(
     out.every((s) => s.status === 'healthy' && s.canSubmit === true),
     'an advancing head must never block submission',
@@ -69,7 +80,8 @@ test('advancing head stays healthy and submittable', async () => {
 
 test('frozen head reports stalled and disables submission', async () => {
   const client = { getBlockNumber: async () => 4663n } // never advances
-  const out = await collect(client, { degradedMs: 5, stalledMs: 15 }, 60)
+  // Virtual clock jumps 100ms per tick; past the 15ms stall threshold on the first.
+  const out = await collect(client, { degradedMs: 5, stalledMs: 15, now: stepClock(100) })
   const stalled = out.filter((s) => s.status === 'stalled')
   assert.ok(stalled.length > 0, 'expected the frozen head to be classified stalled')
   for (const s of stalled) {

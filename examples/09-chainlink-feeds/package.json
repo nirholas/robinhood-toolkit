@@ -1,0 +1,21 @@
+{
+  "name": "@robinhood-toolkit/example-chainlink-feeds",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Resolve Chainlink price feeds on Robinhood Chain from Chainlink's own directory, read them with viem behind staleness and sanity guards, and price an asset off the guarded answer.",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "read": "node index.mjs"
+  },
+  "dependencies": {
+    "robinhood-chain": "^0.1.0",
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "UNLICENSED"
+}

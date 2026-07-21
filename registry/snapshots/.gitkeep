@@ -1,0 +1,6 @@
+Snapshots are written here by `node registry/cli.mjs list` as <ISO-date>.json.
+They exist for drift detection only (diff today vs yesterday: an address changed,
+an asset was added, an asset was removed). They are never read as a source of
+truth — production paths resolve from the live registry at runtime. See
+registry/SOURCE.md. A committed snapshot promoted to truth is a hardcoded
+address with extra steps.
