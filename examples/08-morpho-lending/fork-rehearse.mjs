@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · rehearse a USDG supply + withdraw against a forked chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -159,3 +160,4 @@ main().catch((e) => {
   console.error(`\n  fork rehearsal failed: ${e.shortMessage || e.message}\n`)
   process.exit(1)
 })
+/* built by nirholas x.com/nichxbt */

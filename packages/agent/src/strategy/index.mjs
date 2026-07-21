@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+/* built by nirholas x.com/nichxbt */
+>>>>>>> Stashed changes
 /**
  * robinhood-toolkit · strategy port (placeholder)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -15,3 +19,7 @@ export default function createStrategy(_config) {
     },
   };
 }
+<<<<<<< Updated upstream
+=======
+/* built by nirholas x.com/nichxbt */
+>>>>>>> Stashed changes

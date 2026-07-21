@@ -1,7 +1,8 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 10: live tail with reorg handling
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * `confirmations` is how far behind head we index. On an Orbit L2 the sequencer
  * gives soft confirmation almost immediately, but that is a trust assumption,
@@ -87,3 +88,4 @@ export async function tail({
     if (rows.length) console.log(`indexed ${rows.length} events through block ${to}`)
   }
 }
+/* built by nirholas x.com/nichxbt */

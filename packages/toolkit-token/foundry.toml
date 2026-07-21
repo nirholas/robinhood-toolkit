@@ -1,6 +1,7 @@
+# built by nirholas x.com/nichxbt
 # robinhood-toolkit · Foundry config for ToolkitToken
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-# License: MIT (c) 2026 nirholas
+# License: All Rights Reserved (c) 2026 nirholas
 
 [profile.default]
 src = "src"
@@ -23,3 +24,4 @@ rh_mainnet = "https://rpc.mainnet.chain.robinhood.com"
 [etherscan]
 rh_testnet = { key = "blockscout", chain = 46630, url = "https://explorer.testnet.chain.robinhood.com/api/" }
 rh_mainnet = { key = "blockscout", chain = 4663, url = "https://robinhoodchain.blockscout.com/api/" }
+# built by nirholas x.com/nichxbt

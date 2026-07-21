@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · adapter tests
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -92,3 +93,4 @@ test('toSeconds distinguishes seconds from milliseconds', () => {
   assert.equal(toSeconds(1784577600), 1784577600);
   assert.equal(toSeconds(1784577600000), 1784577600);
 });
+/* built by nirholas x.com/nichxbt */

@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+/* built by nirholas x.com/nichxbt */
+>>>>>>> Stashed changes
 /**
  * robinhood-toolkit · minimal metrics registry and health server
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -83,3 +87,7 @@ export function startHealthServer({ metrics, getState, port = 9464, host = '127.
   server.unref();
   return server;
 }
+<<<<<<< Updated upstream
+=======
+/* built by nirholas x.com/nichxbt */
+>>>>>>> Stashed changes

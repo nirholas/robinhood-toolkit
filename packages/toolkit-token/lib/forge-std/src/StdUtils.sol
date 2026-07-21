@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 import {IMulticall3} from "./interfaces/IMulticall3.sol";
 import {StdConstants} from "./StdConstants.sol";
@@ -245,3 +246,4 @@ abstract contract StdUtils {
         _sendLogPayload(abi.encodeWithSignature("log(string,string)", p0, p1));
     }
 }
+// built by nirholas x.com/nichxbt

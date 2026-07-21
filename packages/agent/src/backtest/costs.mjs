@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · backtest cost model (shared by backtester and paper broker)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -29,3 +30,4 @@ export function createCostModel({
     },
   };
 }
+/* built by nirholas x.com/nichxbt */

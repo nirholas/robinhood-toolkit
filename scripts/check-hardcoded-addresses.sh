@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+<<<<<<< Updated upstream
+=======
+# built by nirholas x.com/nichxbt
+>>>>>>> Stashed changes
 # robinhood-toolkit · reject hardcoded token addresses
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
 # License: All Rights Reserved (c) 2026 nirholas
@@ -27,3 +31,7 @@ if [ -n "$hits" ]; then
   exit 1
 fi
 echo "check:addresses ok — no hardcoded token addresses in clients/ or registry/"
+<<<<<<< Updated upstream
+=======
+# built by nirholas x.com/nichxbt
+>>>>>>> Stashed changes

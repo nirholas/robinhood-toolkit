@@ -1,3 +1,4 @@
+<!-- built by nirholas x.com/nichxbt -->
 # Release checklist
 
 This checklist is meant to be used as a guide for the `forge-std` release process.
@@ -10,3 +11,4 @@ This checklist is meant to be used as a guide for the `forge-std` release proces
 - [ ] Push the tag to the repository: `git push --tags`
 - [ ] Create a new GitHub release with the automatically generated changelog and the name set to `v<X.Y.Z>`
 - [ ] Add `## Featured Changes` section to the top of the release notes
+<!-- built by nirholas x.com/nichxbt -->

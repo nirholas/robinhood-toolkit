@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · market data port (placeholder)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -15,3 +16,4 @@ export default function createMarketData(_config) {
     },
   };
 }
+/* built by nirholas x.com/nichxbt */

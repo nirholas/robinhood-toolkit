@@ -1,7 +1,8 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 10: chunked historical backfill
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * The chunking is not reinvented here. It leans on `streamLogs` from the
  * robinhood-chain package, which halves its chunk on ANY error and grows it
@@ -94,3 +95,4 @@ export async function backfill({ client, db, statements, address, stream, fromBl
 }
 
 export { rowsFromLogs }
+/* built by nirholas x.com/nichxbt */

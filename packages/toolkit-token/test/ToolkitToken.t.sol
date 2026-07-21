@@ -1,12 +1,13 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
+// built by nirholas x.com/nichxbt
 
 import {Test} from "forge-std/Test.sol";
 import {ToolkitToken} from "../src/ToolkitToken.sol";
 
 /// robinhood-toolkit · ToolkitToken tests
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract ToolkitTokenTest is Test {
     ToolkitToken internal token;
     address internal owner = address(0xA11CE);
@@ -86,3 +87,4 @@ contract ToolkitTokenTest is Test {
         assertEq(token.allowance(signer, alice), 5 ether);
     }
 }
+// built by nirholas x.com/nichxbt

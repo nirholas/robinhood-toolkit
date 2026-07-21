@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 import {IERC165} from "./IERC165.sol";
 
@@ -70,3 +71,4 @@ interface IERC6909TokenSupply is IERC6909 {
     /// @dev Returns the total supply of the token of type `id`.
     function totalSupply(uint256 id) external view returns (uint256);
 }
+// built by nirholas x.com/nichxbt

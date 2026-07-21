@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · OHLCV bar normalisation
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -118,3 +119,4 @@ export function resample(bars, targetSec) {
   }
   return [...buckets.values()].sort((a, b) => a.time - b.time);
 }
+/* built by nirholas x.com/nichxbt */

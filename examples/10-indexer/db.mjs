@@ -1,7 +1,8 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 10: indexer storage with idempotent writes
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * SQLite with WAL. The whole design turns on one thing: the composite primary
  * key on (tx_hash, log_index). That is what makes re-running a block range
@@ -65,3 +66,4 @@ export function makeStatements(db) {
     ),
   }
 }
+/* built by nirholas x.com/nichxbt */

@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 import {IERC7575} from "./IERC7575.sol";
 
@@ -143,3 +144,4 @@ interface IERC7540Redeem is IERC7540Operator {
 /// @dev Interface of the fully asynchronous Vault interface of ERC7540, as defined in
 /// https://eips.ethereum.org/EIPS/eip-7540
 interface IERC7540 is IERC7540Deposit, IERC7540Redeem, IERC7575 {}
+// built by nirholas x.com/nichxbt

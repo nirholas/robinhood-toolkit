@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 import {IERC20} from "./IERC20.sol";
 
@@ -188,3 +189,4 @@ interface IERC4626 is IERC20 {
     /// Those methods should be performed separately.
     function redeem(uint256 shares, address receiver, address owner) external returns (uint256 assets);
 }
+// built by nirholas x.com/nichxbt

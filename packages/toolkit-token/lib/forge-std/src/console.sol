@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 library console {
     address constant CONSOLE_ADDRESS = 0x000000000000000000636F6e736F6c652e6c6f67;
@@ -1597,3 +1598,4 @@ library console {
         _sendLogPayload(abi.encodeWithSignature("table(string[],bool[])", keys, values));
     }
 }
+// built by nirholas x.com/nichxbt

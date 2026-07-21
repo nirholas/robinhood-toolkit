@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 [profile.default]
 fs_permissions = [{ access = "read-write", path = "./" }]
 optimizer = true
@@ -16,3 +17,4 @@ needs_undefined_env_var = "${UNDEFINED_RPC_URL_PLACEHOLDER}"
 
 [lint]
 lint_on_build = false
+# built by nirholas x.com/nichxbt

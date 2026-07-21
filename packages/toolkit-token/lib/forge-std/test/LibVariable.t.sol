@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity ^0.8.13;
+// built by nirholas x.com/nichxbt
 
 import {Test} from "../src/Test.sol";
 import {Variable, Type, TypeKind, LibVariable} from "../src/LibVariable.sol";
@@ -450,3 +451,4 @@ contract LibVariableHelper {
         return v.toInt8Array();
     }
 }
+// built by nirholas x.com/nichxbt

@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 version: 2
 updates:
   - package-ecosystem: github-actions
@@ -13,3 +14,4 @@ updates:
       ci-weekly:
         patterns:
           - '*'
+# built by nirholas x.com/nichxbt

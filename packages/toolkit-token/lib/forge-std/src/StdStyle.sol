@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 import {VmSafe} from "./Vm.sol";
 
@@ -408,3 +409,4 @@ library StdStyle {
         return inverse(vm.toString(self));
     }
 }
+// built by nirholas x.com/nichxbt

@@ -1,5 +1,6 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
+// built by nirholas x.com/nichxbt
 
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import {ERC20Permit} from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
@@ -8,7 +9,7 @@ import {Ownable2Step, Ownable} from "@openzeppelin/contracts/access/Ownable2Step
 
 /// robinhood-toolkit · capped mintable ERC-20 with permit
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract ToolkitToken is ERC20, ERC20Permit, ERC20Burnable, Ownable2Step {
     uint256 public immutable cap;
 
@@ -30,3 +31,4 @@ contract ToolkitToken is ERC20, ERC20Permit, ERC20Burnable, Ownable2Step {
         _mint(to, amount);
     }
 }
+// built by nirholas x.com/nichxbt

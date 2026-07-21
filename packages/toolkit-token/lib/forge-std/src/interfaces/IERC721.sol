@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 import {IERC165} from "./IERC165.sol";
 
@@ -162,3 +163,4 @@ interface IERC721Enumerable is IERC721 {
     /// (sort order not specified)
     function tokenOfOwnerByIndex(address _owner, uint256 _index) external view returns (uint256);
 }
+// built by nirholas x.com/nichxbt

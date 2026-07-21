@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# built by nirholas x.com/nichxbt
 
 import argparse
 import copy
@@ -634,3 +635,4 @@ class CheatcodesPrinter:
 
 if __name__ == "__main__":
     main()
+# built by nirholas x.com/nichxbt

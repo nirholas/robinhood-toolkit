@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · deterministic fixture candle source
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -30,3 +31,4 @@ export const fixtureSource = registerSource({
     return bars;                                 // descending, on purpose
   },
 });
+/* built by nirholas x.com/nichxbt */

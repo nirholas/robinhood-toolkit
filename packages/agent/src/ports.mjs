@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · agent ports (the four seams)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -110,3 +111,4 @@
  */
 
 export {};
+/* built by nirholas x.com/nichxbt */

@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 /// @notice Abstract contract providing configuration utilities for Forge invariant tests.
 abstract contract StdInvariant {
@@ -159,3 +160,4 @@ abstract contract StdInvariant {
         targetedInterfaces_ = _targetedInterfaces;
     }
 }
+// built by nirholas x.com/nichxbt

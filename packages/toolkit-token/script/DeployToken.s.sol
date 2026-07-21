@@ -1,12 +1,13 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
+// built by nirholas x.com/nichxbt
 
 import {Script, console} from "forge-std/Script.sol";
 import {ToolkitToken} from "../src/ToolkitToken.sol";
 
 /// robinhood-toolkit · ToolkitToken deployer
 /// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
-/// License: MIT (c) 2026 nirholas
+/// License: All Rights Reserved (c) 2026 nirholas
 contract DeployToken is Script {
     function run() external returns (ToolkitToken token) {
         string memory name = vm.envOr("TOKEN_NAME", string("Toolkit Token"));
@@ -24,3 +25,4 @@ contract DeployToken is Script {
         console.log("chainid", block.chainid);
     }
 }
+// built by nirholas x.com/nichxbt

@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 /// @notice Mathematical utility functions for unsigned and signed integers.
 library stdMath {
@@ -66,3 +67,4 @@ library stdMath {
         return absDelta * 1e18 / absB;
     }
 }
+// built by nirholas x.com/nichxbt

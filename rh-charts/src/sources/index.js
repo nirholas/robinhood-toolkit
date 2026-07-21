@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · candle source registry
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -34,3 +35,4 @@ export function getSource(id) {
 export function listSources() {
   return [...registry.keys()];
 }
+/* built by nirholas x.com/nichxbt */

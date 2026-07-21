@@ -1,7 +1,8 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · example 10: indexer entrypoint
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  *
  * Backfill USDG Transfer history into SQLite, then tail the head live. State
  * lives entirely in events.db: kill this at any point and it resumes from the
@@ -100,3 +101,4 @@ process.on('SIGINT', () => {
   process.exit(0)
 })
 await tail({ client, db, statements, address, stream, signal: controller.signal })
+/* built by nirholas x.com/nichxbt */

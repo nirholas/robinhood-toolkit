@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity ^0.8.13;
+// built by nirholas x.com/nichxbt
 
 import {console} from "./console.sol";
 import {StdConfig} from "./StdConfig.sol";
@@ -58,3 +59,4 @@ abstract contract Config is CommonBase {
         console.log("----------");
     }
 }
+// built by nirholas x.com/nichxbt

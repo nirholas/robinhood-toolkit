@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 // 💬 ABOUT
 // Forge Std's default Script.
@@ -26,3 +27,4 @@ abstract contract Script is ScriptBase, StdChains, StdCheatsSafe, StdUtils {
     // Note: IS_SCRIPT() must return true.
     bool public IS_SCRIPT = true;
 }
+// built by nirholas x.com/nichxbt

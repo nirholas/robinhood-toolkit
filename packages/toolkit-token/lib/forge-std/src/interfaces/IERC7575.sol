@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 import {IERC165} from "./IERC165.sol";
 
@@ -239,3 +240,4 @@ interface IERC7575Share is IERC165 {
      */
     function vault(address asset) external view returns (address);
 }
+// built by nirholas x.com/nichxbt

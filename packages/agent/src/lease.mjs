@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+/* built by nirholas x.com/nichxbt */
+>>>>>>> Stashed changes
 /**
  * robinhood-toolkit · single-instance lease
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -100,3 +104,7 @@ export async function crashLoopGuard({ store, key = 'agent:restarts', windowMs =
   }
   return stamps.length;
 }
+<<<<<<< Updated upstream
+=======
+/* built by nirholas x.com/nichxbt */
+>>>>>>> Stashed changes

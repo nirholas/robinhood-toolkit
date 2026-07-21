@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 # robinhood-toolkit · one-shot fork rehearsal runner (anvil up → rehearse → down)
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
 # License: All Rights Reserved (c) 2026 nirholas
@@ -27,3 +28,4 @@ STATUS=$?
 echo
 echo "rehearsal exit: $STATUS"
 exit $STATUS
+# built by nirholas x.com/nichxbt

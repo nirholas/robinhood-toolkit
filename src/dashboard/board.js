@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · dashboard configuration
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -59,3 +60,4 @@ export function formatPct(n) {
   const v = Number(n);
   return `${v >= 0 ? '+' : ''}${v.toFixed(2)}%`;
 }
+/* built by nirholas x.com/nichxbt */

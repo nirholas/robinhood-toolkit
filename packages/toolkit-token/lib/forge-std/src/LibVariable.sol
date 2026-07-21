@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity ^0.8.13;
+// built by nirholas x.com/nichxbt
 
 // Enable globally.
 using LibVariable for Variable global;
@@ -475,3 +476,4 @@ library LibVariable {
         return abi.decode(self.data, (bytes[]));
     }
 }
+// built by nirholas x.com/nichxbt

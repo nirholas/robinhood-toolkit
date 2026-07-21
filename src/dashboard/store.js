@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · batched multi-pair store
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -140,3 +141,4 @@ export function createBoardStore(board, { chainId = ROBINHOOD, refreshMs = 20_00
     },
   };
 }
+/* built by nirholas x.com/nichxbt */

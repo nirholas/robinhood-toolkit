@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · agent entrypoint
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -26,3 +27,4 @@ for (const sig of ['SIGINT', 'SIGTERM']) {
     process.exit(0);
   });
 }
+/* built by nirholas x.com/nichxbt */

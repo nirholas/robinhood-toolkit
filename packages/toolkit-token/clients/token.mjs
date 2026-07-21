@@ -1,7 +1,11 @@
+<<<<<<< Updated upstream
+=======
+/* built by nirholas x.com/nichxbt */
+>>>>>>> Stashed changes
 /**
  * robinhood-toolkit · ERC-20 reader on Robinhood Chain
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
- * License: MIT (c) 2026 nirholas
+ * License: All Rights Reserved (c) 2026 nirholas
  */
 import { createPublicClient, defineChain, http, erc20Abi, formatUnits, getAddress } from "viem";
 
@@ -60,3 +64,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const client = createPublicClient({ chain: robinhoodTestnet, transport: http() });
   console.log(await readToken(client, tokenArg, holderArg));
 }
+<<<<<<< Updated upstream
+=======
+/* built by nirholas x.com/nichxbt */
+>>>>>>> Stashed changes

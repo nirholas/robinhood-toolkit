@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · dashboard grid with sorting and filtering
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -128,3 +129,4 @@ export function mountGrid(container, store, { onSelect = () => {} } = {}) {
     },
   };
 }
+/* built by nirholas x.com/nichxbt */

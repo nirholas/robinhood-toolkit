@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · dashboard tile with sparkline
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -112,3 +113,4 @@ export function createTile(row) {
     },
   };
 }
+/* built by nirholas x.com/nichxbt */

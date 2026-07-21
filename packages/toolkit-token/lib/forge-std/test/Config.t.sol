@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity ^0.8.13;
+// built by nirholas x.com/nichxbt
 
 import {Test} from "../src/Test.sol";
 import {Config} from "../src/Config.sol";
@@ -379,3 +380,4 @@ contract ConfigTest is Test, Config {
         vm.removeFile(badParseConfig);
     }
 }
+// built by nirholas x.com/nichxbt

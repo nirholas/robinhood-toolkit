@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · autonomous strategy loop
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -125,3 +126,4 @@ async function preflightLive({ config, broker }) {
   const balances = await broker.getBalances();
   if (!balances || Object.keys(balances).length === 0) throw new Error('live preflight: no balances returned');
 }
+/* built by nirholas x.com/nichxbt */

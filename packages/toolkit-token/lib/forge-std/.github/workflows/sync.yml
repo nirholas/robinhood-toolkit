@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 name: Sync Release Branch
 
 permissions: {}
@@ -34,3 +35,4 @@ jobs:
           git checkout v1
           git reset --hard ${GITHUB_REF}
           git push --force
+# built by nirholas x.com/nichxbt

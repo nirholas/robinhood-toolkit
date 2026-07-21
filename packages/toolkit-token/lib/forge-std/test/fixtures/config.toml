@@ -1,3 +1,4 @@
+# built by nirholas x.com/nichxbt
 # ------------------------------------------------
 #           EXAMPLE DEPLOYMENT CONFIG
 # ------------------------------------------------
@@ -79,3 +80,4 @@ b_array = ["0xc0ffee", "0xbabe"]
 [optimism.string]
 str = "alice"
 str_array = ["bob", "charlie"]
+# built by nirholas x.com/nichxbt

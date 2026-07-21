@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · data adapter for Lightweight Charts
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -127,3 +128,4 @@ export function createAdapter(view, opts = {}) {
     },
   };
 }
+/* built by nirholas x.com/nichxbt */

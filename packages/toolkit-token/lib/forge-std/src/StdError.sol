@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
+// built by nirholas x.com/nichxbt
 // Panics work for versions >=0.8.0, but we lowered the pragma to make this compatible with Test
 pragma solidity >=0.8.13 <0.9.0;
 
@@ -31,3 +32,4 @@ library stdError {
     /// @notice Panic caused by calling a zero-initialized variable of internal function type (0x51).
     bytes public constant zeroVarError = abi.encodeWithSignature("Panic(uint256)", 0x51);
 }
+// built by nirholas x.com/nichxbt

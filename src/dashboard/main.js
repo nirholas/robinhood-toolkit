@@ -1,3 +1,4 @@
+/* built by nirholas x.com/nichxbt */
 /**
  * robinhood-toolkit · dashboard entry
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -18,3 +19,4 @@ const grid = mountGrid(document.querySelector('#board'), store, {
 store.start();
 
 window.addEventListener('beforeunload', () => { grid.destroy(); store.destroy(); });
+/* built by nirholas x.com/nichxbt */

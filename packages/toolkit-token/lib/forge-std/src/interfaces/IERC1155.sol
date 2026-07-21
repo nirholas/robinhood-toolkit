@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 import {IERC165} from "./IERC165.sol";
 
@@ -103,3 +104,4 @@ interface IERC1155 is IERC165 {
     /// @return True if the operator is approved, false if not
     function isApprovedForAll(address _owner, address _operator) external view returns (bool);
 }
+// built by nirholas x.com/nichxbt

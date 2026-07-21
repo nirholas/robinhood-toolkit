@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 interface IERC165 {
     /// @notice Query if a contract implements an interface
@@ -10,3 +11,4 @@ interface IERC165 {
     /// `interfaceID` is not 0xffffffff, `false` otherwise
     function supportsInterface(bytes4 interfaceID) external view returns (bool);
 }
+// built by nirholas x.com/nichxbt

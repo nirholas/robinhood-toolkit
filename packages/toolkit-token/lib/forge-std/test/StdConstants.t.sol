@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.13 <0.9.0;
+// built by nirholas x.com/nichxbt
 
 import {StdConstants} from "../src/StdConstants.sol";
 import {Test} from "../src/Test.sol";
@@ -36,3 +37,4 @@ contract StdConstantsTest is Test {
 }
 
 contract Dummy {}
+// built by nirholas x.com/nichxbt
