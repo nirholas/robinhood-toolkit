@@ -1,0 +1,13 @@
+# robinhood-toolkit · Codex MCP config for the Robinhood Trading endpoint
+# Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+# Dated: 2026-07-21
+#
+# Codex reads ~/.codex/config.toml. Merge this table into that file.
+#
+# UNVERIFIED: the exact key names and whether your Codex build expects
+# `mcp_servers` or a different table have changed between releases. Confirm
+# against `codex --help` or your installed version's docs before filing a bug.
+# The URL and transport never change; only the host's config syntax does.
+
+[mcp_servers.robinhood-trading]
+url = "https://agent.robinhood.com/mcp/trading"

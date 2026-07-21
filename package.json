@@ -43,5 +43,9 @@
     "check:headers": "node scripts/check-headers.mjs",
     "test:packages": "npm test --workspaces --if-present",
     "test": "npm run check:headers && npm run test:packages"
+  },
+  "dependencies": {
+    "@uniswap/sdk-core": "^7.18.0",
+    "viem": "^2.55.4"
   }
 }

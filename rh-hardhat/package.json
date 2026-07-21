@@ -1,0 +1,25 @@
+{
+  "name": "@robinhood-toolkit/rh-hardhat",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hardhat project configured to compile, deploy, and verify on both Robinhood Chain networks (4663 mainnet, 46630 testnet).",
+  "license": "MIT",
+  "author": "nirholas (https://github.com/nirholas)",
+  "homepage": "https://github.com/nirholas/robinhood-toolkit",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:testnet": "hardhat run scripts/deploy-beacon.ts --network rhTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy-beacon.ts --network rhMainnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

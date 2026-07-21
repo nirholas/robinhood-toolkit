@@ -1,0 +1,62 @@
+{
+  "name": "@robinhood-toolkit/network",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Typed chain definitions, a failover RPC client factory, the sequencer feed reader, and EIP-3085 wallet payloads for Robinhood Chain.",
+  "type": "module",
+  "main": "src/chains.js",
+  "exports": {
+    ".": "./src/chains.js",
+    "./chains": "./src/chains.js",
+    "./client": "./src/client.js",
+    "./wallet-config": "./src/wallet-config.js",
+    "./feed": "./src/feed.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "viem": "^2.21.0",
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:live": "RH_LIVE_TESTS=1 node --test \"test/*.test.js\"",
+    "feed": "node src/feed.js"
+  },
+  "keywords": [
+    "robinhood",
+    "robinhood-chain",
+    "arbitrum-orbit",
+    "arbitrum-nitro",
+    "viem",
+    "layer2",
+    "l2",
+    "ethereum",
+    "evm",
+    "multicall3",
+    "rpc",
+    "failover",
+    "sequencer-feed",
+    "eip-3085",
+    "web3"
+  ],
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT",
+  "homepage": "https://github.com/nirholas/robinhood-toolkit/tree/main/packages/network#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirholas/robinhood-toolkit.git",
+    "directory": "packages/network"
+  },
+  "bugs": {
+    "url": "https://github.com/nirholas/robinhood-toolkit/issues"
+  }
+}

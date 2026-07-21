@@ -37,6 +37,12 @@ export { assertDecimals, formatToken, parseToken, readBalance, readDecimals } fr
 
 export { assertCanonicalToken, readTokenMetadata, verifyToken } from './src/verify.js'
 
+export { batchRead, readPortfolio } from './src/portfolio.js'
+
+export { DEFAULT_POLLING_INTERVAL_MS, watchHead } from './src/watch.js'
+
+export { BlockscoutClient, ExplorerError, blockscoutFor } from './src/explorer.js'
+
 export {
   BLOCK_TIME_MS,
   DEFAULT_CHUNK,

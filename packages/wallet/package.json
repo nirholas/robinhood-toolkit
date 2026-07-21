@@ -1,0 +1,22 @@
+{
+  "name": "@robinhood-toolkit/wallet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Keystore-backed signer with a hard network guard and a funding gate for Robinhood Chain. Testnet by default.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./signer": "./src/signer.js",
+    "./funding": "./src/funding.js"
+  },
+  "dependencies": {
+    "@robinhood-toolkit/network": "0.1.0",
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT"
+}

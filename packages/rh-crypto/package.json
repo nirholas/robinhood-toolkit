@@ -1,0 +1,58 @@
+{
+  "name": "rh-crypto",
+  "version": "0.1.0",
+  "description": "Zero-dependency Ed25519-signed HTTP client for the Robinhood Crypto Trading API. Byte-exact request signing, keypair generation, and a thin authenticated client for any v1/v2 endpoint.",
+  "type": "module",
+  "main": "./client.mjs",
+  "exports": {
+    ".": "./client.mjs",
+    "./sign": "./sign.mjs",
+    "./client": "./client.mjs",
+    "./limiter": "./limiter.mjs",
+    "./retry": "./retry.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "keygen.mjs",
+    "sign.mjs",
+    "client.mjs",
+    "errors.mjs",
+    "orders.mjs",
+    "limiter.mjs",
+    "retry.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "keygen": "node keygen.mjs"
+  },
+  "keywords": [
+    "robinhood",
+    "robinhood-crypto",
+    "robinhood-api",
+    "ed25519",
+    "trading",
+    "crypto",
+    "api-client",
+    "request-signing"
+  ],
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT",
+  "homepage": "https://github.com/nirholas/robinhood-toolkit/tree/main/packages/rh-crypto#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirholas/robinhood-toolkit.git",
+    "directory": "packages/rh-crypto"
+  },
+  "bugs": {
+    "url": "https://github.com/nirholas/robinhood-toolkit/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

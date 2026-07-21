@@ -1,0 +1,23 @@
+{
+  "name": "rh-crypto-mcp",
+  "version": "1.0.0",
+  "description": "MCP server exposing the Robinhood Crypto Trading REST API as tools, with a server-side policy guard. Lets any MCP host trade crypto through an agent today.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "rh-crypto-mcp": "./server.mjs"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test roundtrip.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT"
+}

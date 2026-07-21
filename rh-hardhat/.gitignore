@@ -1,0 +1,15 @@
+# robinhood-toolkit · Hardhat ignore rules
+# Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+# License: MIT (c) 2026 nirholas
+
+node_modules/
+.env
+.env.local
+
+# Hardhat build output
+artifacts/
+cache/
+typechain-types/
+
+# Local-only deployment records (per-network committed JSON is kept on purpose)
+deployments/*.local.json

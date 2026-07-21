@@ -1,0 +1,18 @@
+# robinhood-toolkit · Foundry ignore rules
+# Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+# License: MIT (c) 2026 nirholas
+
+# Local env (never commit; holds no private key, but keeps RPC/account local)
+.env
+
+# Foundry build artifacts
+out/
+cache/
+
+# Broadcast run logs — every run file embeds the sender address.
+# Uncomment the negations below if you deliberately want to track deployments.
+broadcast/
+# !broadcast/**/run-latest.json
+
+# Installed libraries (restored via `forge install` / `make setup`)
+lib/

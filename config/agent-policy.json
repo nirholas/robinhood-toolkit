@@ -1,0 +1,9 @@
+{
+  "agentic_account_funded_usd": 500,
+  "max_order_notional_usd": 50,
+  "max_orders_per_day": 10,
+  "max_position_concentration": 0.25,
+  "allowed_symbols": ["BTC-USD", "ETH-USD"],
+  "require_simulation_before_write": true,
+  "reviewed_on": "2026-07-20"
+}

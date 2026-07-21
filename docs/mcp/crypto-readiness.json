@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-07-21T00:00:00.000Z",
+  "available": false,
+  "capabilities": {
+    "cryptoPlaceOrder": false,
+    "cryptoReviewOrder": false,
+    "cryptoCancelOrder": false,
+    "cryptoPositions": false
+  },
+  "tools": []
+}

@@ -1,0 +1,32 @@
+# robinhood-toolkit · Foundry config for Robinhood Chain
+# Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+# License: MIT (c) 2026 nirholas
+
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.26"
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+bytecode_hash = "none"
+evm_version = "cancun"
+fs_permissions = [{ access = "read-write", path = "./deployments" }]
+
+[profile.ci]
+verbosity = 3
+fuzz = { runs = 512 }
+
+[rpc_endpoints]
+rh_mainnet = "${RH_MAINNET_RPC}"
+rh_testnet = "${RH_TESTNET_RPC}"
+
+[etherscan]
+rh_mainnet = { key = "blockscout", chain = 4663,  url = "https://robinhoodchain.blockscout.com/api/" }
+rh_testnet = { key = "blockscout", chain = 46630, url = "https://explorer.testnet.chain.robinhood.com/api/" }
+
+[fmt]
+line_length = 100
+tab_width = 4
+bracket_spacing = true

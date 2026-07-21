@@ -1,0 +1,67 @@
+{
+  "name": "bridge",
+  "version": "0.1.0",
+  "description": "Bridging helpers for Robinhood Chain (Arbitrum Orbit L2): per-chain bridged-token registry with an on-chain verifier, symbol resolution that refuses to guess, and a withdrawal cost model that surfaces the ~7-day optimistic-rollup challenge period as a required field.",
+  "type": "module",
+  "main": "./index.js",
+  "module": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "src/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:live": "RH_LIVE_TESTS=1 node --test test/live.test.js",
+    "report": "node scripts/report.mjs"
+  },
+  "dependencies": {
+    "robinhood-chain": "0.1.0"
+  },
+  "peerDependencies": {
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "viem": "^2.21.0"
+  },
+  "keywords": [
+    "robinhood",
+    "robinhood-chain",
+    "arbitrum-orbit",
+    "bridge",
+    "orbit-bridge",
+    "withdrawal",
+    "optimistic-rollup",
+    "viem",
+    "erc20",
+    "usdg",
+    "weth"
+  ],
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT",
+  "homepage": "https://github.com/nirholas/robinhood-toolkit/tree/main/packages/bridge#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirholas/robinhood-toolkit.git",
+    "directory": "packages/bridge"
+  },
+  "bugs": {
+    "url": "https://github.com/nirholas/robinhood-toolkit/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

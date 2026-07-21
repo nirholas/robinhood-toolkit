@@ -1,0 +1,70 @@
+robinhood-toolkit · USDG fork rehearsal transcript
+Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+License: MIT (c) 2026 nirholas
+
+Recorded 2026-07-21 · anvil/cast 1.7.1 · fork of Robinhood Chain mainnet (chain id 4663)
+Fork RPC: anvil --fork-url https://rpc.mainnet.chain.robinhood.com --chain-id 4663 --port 8545
+Whale impersonated: 0x2d4d2A025b10C09BDbd794B4FCe4F7ea8C7d7bB4 (from Blockscout token holders)
+No real funds moved: every write below is against the local fork only.
+
+================================================================================
+$ cast chain-id --rpc-url $LOCAL
+4663
+
+$ cast rpc anvil_impersonateAccount $WHALE
+null
+$ cast rpc anvil_setBalance $WHALE 1ether
+null
+
+$ DEC=$(cast call $USDG "decimals()(uint8)")
+DEC=6
+AMT (10 USDG raw) = 10000000
+
+$ cast send $USDG "transfer(address,uint256)" $ME $AMT --from $WHALE --unlocked   # seed anvil acct 0
+  seed tx: 0xfdc943a5608b1f35d8b5a4e5c01d63d042ffc98601a65b07e70b927cf742df61 status: 0x1
+
+$ cast call $USDG "balanceOf(address)(uint256)" $ME   # raw, before module transfer
+10000000 [1e7]
+
+=== module transferUsdg({ dryRun: false }) against the fork ===
+$ node -e "... m.transferUsdg({ chainId:4663, amount:\"1.5\", dryRun:false })"
+{
+  "chainId": 4663,
+  "token": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+  "symbol": "USDG",
+  "decimals": 6,
+  "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "to": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "amount": "1.5",
+  "rawAmount": "1500000",
+  "balanceBefore": "10",
+  "estimatedGas": "65942",
+  "dryRun": false,
+  "hash": "0x73f0b87ba54532891851c84efa555a868c49871fae1cc592053a29bb418b0d24",
+  "gasUsed": "65366",
+  "balanceAfter": "8.5",
+  "senderDelta": "1.5",
+  "recipientBalance": "1.5"
+}
+
+=== independent cast balance reads must agree with the module ===
+$ cast call $USDG "balanceOf(address)(uint256)" $ME    # sender after: expect 8.5 USDG = 8500000
+8500000 [8.5e6]
+$ cast call $USDG "balanceOf(address)(uint256)" $TO    # recipient after: expect 1.5 USDG = 1500000
+1500000 [1.5e6]
+
+=== verify #3: amount above balance throws BEFORE broadcasting ===
+$ transferUsdg({ amount:"999999", dryRun:false })  # only 8.5 USDG left
+  threw (expected): insufficient USDG: have 8.5, need 999999
+
+=== verify #4: wrong chainId (46630) against mainnet-4663 RPC throws on mismatch ===
+$ transferUsdg({ chainId:46630, rpcUrl: <fork=4663> })
+  threw (expected): RPC reports chainId 4663, expected 46630
+
+=== verify #5: receipt carries Transfer(from,to,value) with the raw amount 1500000 ===
+$ cast receipt <module tx hash> --rpc-url $LOCAL   (logs decoded)
+  status: 0x1
+  Transfer topic0: 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+  from: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  to:   0x70997970c51812dc3a010c7d01b50e0d17dc79c8
+  value(raw): 1500000

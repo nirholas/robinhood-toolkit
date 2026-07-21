@@ -1,0 +1,1 @@
+# keep the deployments/ dir so foundry.toml fs_permissions path exists

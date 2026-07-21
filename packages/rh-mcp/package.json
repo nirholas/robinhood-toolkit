@@ -1,0 +1,69 @@
+{
+  "name": "rh-mcp",
+  "version": "0.1.0",
+  "description": "Client-side tooling for a Robinhood Trading MCP connection: enumerate and diff the live tool surface, and enforce policy guardrails on agent-initiated writes before they leave your machine.",
+  "type": "module",
+  "main": "./policy.mjs",
+  "exports": {
+    ".": "./policy.mjs",
+    "./policy": "./policy.mjs",
+    "./enumerate": "./enumerate.mjs",
+    "./adapter": "./adapter.mjs",
+    "./crypto-readiness": "./crypto-readiness.mjs",
+    "./route": "./route.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "enumerate.mjs",
+    "check-drift.mjs",
+    "policy.mjs",
+    "adapter.mjs",
+    "crypto-readiness.mjs",
+    "route.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "crypto-watch": "node ../../examples/mcp-crypto-watch.mjs",
+    "enumerate": "node enumerate.mjs",
+    "check-drift": "node check-drift.mjs",
+    "capabilities": "node ../../examples/mcp-capabilities.mjs"
+  },
+  "keywords": [
+    "robinhood",
+    "robinhood-mcp",
+    "robinhood-trading",
+    "mcp",
+    "model-context-protocol",
+    "tool-discovery",
+    "oauth",
+    "pkce",
+    "ai-agent",
+    "guardrails",
+    "policy",
+    "trading",
+    "risk"
+  ],
+  "author": "nirholas (https://github.com/nirholas)",
+  "license": "MIT",
+  "homepage": "https://github.com/nirholas/robinhood-toolkit/tree/main/packages/rh-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirholas/robinhood-toolkit.git",
+    "directory": "packages/rh-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/nirholas/robinhood-toolkit/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  }
+}

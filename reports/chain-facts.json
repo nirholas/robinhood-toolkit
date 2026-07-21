@@ -1,0 +1,34 @@
+[
+  {
+    "network": "Robinhood Chain",
+    "chainId": 4663,
+    "chainIdHex": "0x1237",
+    "expectedChainId": 4663,
+    "chainIdMatches": true,
+    "head": "15340606",
+    "gasPriceWei": "57846000",
+    "gasPriceGwei": "0.057846",
+    "msPerBlock": 100,
+    "clientVersion": "nitro/v3.11.3-rc.4-4bed0c5/linux-amd64/go1.25.12",
+    "looksLikeNitro": true,
+    "gasToken": "ETH",
+    "sampledBlocks": 1000,
+    "observedAt": "2026-07-21T06:16:34.935Z"
+  },
+  {
+    "network": "Robinhood Chain Testnet",
+    "chainId": 46630,
+    "chainIdHex": "0xb626",
+    "expectedChainId": 46630,
+    "chainIdMatches": true,
+    "head": "91908379",
+    "gasPriceWei": "10000000",
+    "gasPriceGwei": "0.01",
+    "msPerBlock": 246,
+    "clientVersion": "nitro/v3.11.3-rc.4-4bed0c5/linux-amd64/go1.25.12",
+    "looksLikeNitro": true,
+    "gasToken": "ETH",
+    "sampledBlocks": 1000,
+    "observedAt": "2026-07-21T06:16:35.242Z"
+  }
+]

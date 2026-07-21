@@ -167,6 +167,114 @@ export declare function verifyToken(
 ): Promise<VerifyResult>
 
 // ---------------------------------------------------------------------------
+// Portfolio (batched reads)
+// ---------------------------------------------------------------------------
+
+export type MulticallResult<T = unknown> =
+  | { status: 'success'; result: T }
+  | { status: 'failure'; error: Error }
+
+/**
+ * Batch viem contract calls through Multicall3, degrading to sequential
+ * eth_call when the aggregate is unavailable. Returns viem's allowFailure shape
+ * from both paths.
+ */
+export declare function batchRead(
+  client: PublicClient,
+  contracts: readonly unknown[],
+  options?: { multicallAddress?: Address },
+): Promise<MulticallResult[]>
+
+export type PortfolioTokenRow =
+  | {
+      address: Address
+      /** Attacker-controlled string. Display only. */
+      symbol: string
+      decimals: number
+      /** Raw balance as a decimal string (bigint is not JSON-safe). */
+      raw: string
+      formatted: string
+      known: KnownToken | ImpostorToken | null
+    }
+  | { address: Address; raw: string; error: 'decimals unavailable' }
+  | { address: Address; error: 'balanceOf reverted' }
+
+export interface Portfolio {
+  address: Address
+  chainId: number | null
+  nativeEth: string
+  nativeWei: string
+  tokens: PortfolioTokenRow[]
+  explorer: string | null
+}
+
+/** Read native ETH plus every ERC-20 balance/symbol/decimals in as few round trips as possible. */
+export declare function readPortfolio(
+  client: PublicClient,
+  address: Address | string,
+  tokenAddresses?: readonly (Address | string)[],
+  options?: { multicallAddress?: Address },
+): Promise<Portfolio>
+
+// ---------------------------------------------------------------------------
+// Head watcher
+// ---------------------------------------------------------------------------
+
+export declare const DEFAULT_POLLING_INTERVAL_MS: number
+
+/**
+ * Watch the chain head with an explicit polling interval. Returns viem's
+ * unsubscribe function. Do not poll faster than you consume.
+ */
+export declare function watchHead(
+  client: PublicClient,
+  onBlock: (blockNumber: bigint, prevBlockNumber?: bigint) => void,
+  options?: {
+    pollingIntervalMs?: number
+    emitOnBegin?: boolean
+    onError?: (error: Error) => void
+  },
+): () => void
+
+// ---------------------------------------------------------------------------
+// Blockscout explorer client
+// ---------------------------------------------------------------------------
+
+export declare class ExplorerError extends RobinhoodChainError {
+  status?: number
+  url?: string
+  body?: string
+}
+
+export interface BlockscoutClientOptions {
+  chain?: Chain
+  baseUrl?: string
+  apiKey?: string
+  maxRetries?: number
+  baseDelayMs?: number
+  fetch?: typeof fetch
+  debug?: boolean
+}
+
+/**
+ * Thin Blockscout v2 REST client. Retries 429/5xx with backoff. Every response
+ * type is `unknown`: the shapes are UNVERIFIED against this instance — log one
+ * (debug: true) and write your own types.
+ */
+export declare class BlockscoutClient {
+  constructor(options?: BlockscoutClientOptions)
+  baseUrl: string
+  get(path: string, params?: Record<string, unknown>): Promise<unknown>
+  tokenInfo(address: Address | string): Promise<unknown>
+  tokenHolders(address: Address | string, params?: Record<string, unknown>): Promise<unknown>
+  addressTransactions(address: Address | string, params?: Record<string, unknown>): Promise<unknown>
+  addressInfo(address: Address | string): Promise<unknown>
+  contractSource(address: Address | string): Promise<unknown>
+}
+
+export declare function blockscoutFor(chain?: Chain, options?: BlockscoutClientOptions): BlockscoutClient
+
+// ---------------------------------------------------------------------------
 // Log scanning
 // ---------------------------------------------------------------------------
 

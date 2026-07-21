@@ -1,0 +1,29 @@
+{
+  "chainId": 4663,
+  "generatedAt": "2026-07-21T06:20:39.324Z",
+  "source": "live on-chain read via bridge/verifyToken()",
+  "tokens": {
+    "WETH": {
+      "address": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+      "name": "WETH",
+      "symbol": "WETH",
+      "decimals": 18,
+      "totalSupply": "21047035774826839389123",
+      "bytecodeSize": 2202,
+      "chainId": 4663,
+      "explorer": "https://robinhoodchain.blockscout.com/address/0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+      "readAt": "2026-07-21T06:20:39.089Z"
+    },
+    "USDG": {
+      "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+      "name": "Global Dollar",
+      "symbol": "USDG",
+      "decimals": 6,
+      "totalSupply": "287452572341453",
+      "bytecodeSize": 170,
+      "chainId": 4663,
+      "explorer": "https://robinhoodchain.blockscout.com/address/0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+      "readAt": "2026-07-21T06:20:39.323Z"
+    }
+  }
+}
