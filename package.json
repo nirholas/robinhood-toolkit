@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "@uniswap/sdk-core": "^7.18.0",
+    "lightweight-charts": "^5.2.0",
     "viem": "^2.55.4"
   }
 }
