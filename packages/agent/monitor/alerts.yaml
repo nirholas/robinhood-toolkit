@@ -1,0 +1,75 @@
+# robinhood-toolkit · alert rules
+# Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+# License: All Rights Reserved (c) 2026 nirholas
+#
+# Three severities. Prune the `page` tier ruthlessly: anything that pages and is
+# usually noise will get muted, and the mute will still be in place the night it
+# matters. This venue runs 24/7, so a page at 03:00 on a Sunday is normal
+# operation — route it to a channel a human actually reads at that hour.
+#
+# Thresholds decay. Revisit them after any change to size, tick interval, or
+# strategy. A daily-loss threshold set for a 10,000 account is meaningless on a
+# 100,000 one.
+
+defaults:
+  # From the reference facts: mainnet tick expectations. Override per deployment.
+  tick_interval_seconds: 5
+
+rules:
+  # ── PAGE: wake a human ─────────────────────────────────────────────────────
+  page:
+    - rule: no_heartbeat
+      description: Dead-man's switch stopped pinging.
+      condition: absent(agent_heartbeat_last_ping_seconds) for 5m
+      note: >
+        Enforced by the external watchdog, not this process. This is the only
+        check that survives the agent, host, and network all dying.
+
+    - rule: daily_loss_near_stop
+      description: Daily realized loss within 80% of the hard stop.
+      condition: agent_realized_pnl_daily <= 0.8 * -daily_loss_limit
+
+    - rule: position_drift
+      description: Position book diverged from broker truth beyond threshold.
+      condition: abs(agent_position_drift) > position_drift_limit
+
+    - rule: kill_switch_unexpected
+      description: Kill switch engaged without an operator initiating it.
+      condition: kill_switch_engaged and not operator_initiated
+
+    - rule: chain_head_stalled
+      description: Sequencer stalled — RPC answers but block height is frozen.
+      condition: agent_chain_head_lag_seconds > 60
+      note: A flat price series reads as a calm market; strategies size up into it.
+
+    - rule: no_strategy_activity
+      description: Process is live but the strategy has emitted nothing.
+      condition: silent_seconds > 3600
+      note: Absence of expected activity, not an error. Liveness alone lies.
+
+  # ── NOTIFY: read within the hour (this venue has no business hours) ─────────
+  notify:
+    - rule: order_rejection_rate_high
+      description: Broker rejecting orders.
+      condition: rate(agent_orders_total{status="rejected"}[15m]) / rate(agent_orders_total[15m]) > 0.10
+
+    - rule: policy_block_spike
+      description: Policy blocking far more than baseline.
+      condition: rate(agent_policy_blocks_total[15m]) > 3 * baseline_policy_block_rate
+
+    - rule: quote_staleness
+      description: Market quotes going stale.
+      condition: agent_quote_age_seconds > 30
+
+    - rule: tick_duration_slow
+      description: Tick p95 above half the tick interval — risk of overlap/skips.
+      condition: histogram_quantile(0.95, agent_tick_duration_seconds) > 0.5 * tick_interval_seconds
+
+  # ── LOG ONLY: never route to a human ───────────────────────────────────────
+  log:
+    - rule: single_blocked_order
+      condition: increase(agent_policy_blocks_total[1m]) >= 1
+    - rule: single_retry
+      condition: increase(agent_orders_total{status="retried"}[1m]) >= 1
+    - rule: warmup_idle
+      condition: agent_tick_state == "idle" and warming_up

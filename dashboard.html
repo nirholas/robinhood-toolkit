@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Robinhood Chain pairs</title>
+    <style>
+      :root { --bg:#0a0a0a; --fg:#e5e5e5; --dim:#737373; --line:#262626; --up:#d4d4d4; --down:#525252; }
+      * { box-sizing: border-box; }
+      body { margin:0; background:var(--bg); color:var(--fg);
+             font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace; }
+      main { max-width:1400px; margin:0 auto; padding:24px 16px; }
+      h1 { font-size:14px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); }
+      .grid-controls { display:flex; gap:8px; align-items:center; margin:16px 0; flex-wrap:wrap; }
+      input, select { background:#111; color:var(--fg); border:1px solid var(--line);
+                      padding:6px 10px; font:inherit; border-radius:2px; }
+      input:focus-visible, select:focus-visible, .tile:focus-visible {
+        outline:2px solid var(--up); outline-offset:2px; }
+      .grid-status { margin-left:auto; color:var(--dim); font-size:11px; }
+      .grid-status[data-state="error"] { color:#e5e5e5; }
+      .grid { display:grid; gap:12px;
+              grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); }
+      .tile { border:1px solid var(--line); border-radius:3px; padding:12px;
+              background:#0d0d0d; cursor:pointer; transition:border-color .15s, transform .15s; }
+      .tile:hover { border-color:#404040; transform:translateY(-1px); }
+      .tile:active { transform:translateY(0); }
+      .tile[data-flash="up"] { border-color:var(--up); }
+      .tile[data-flash="down"] { border-color:var(--down); }
+      .tile-head { display:flex; justify-content:space-between; align-items:center; }
+      .tile-label { font-weight:500; }
+      .tile-badge { font-size:10px; color:var(--dim); border:1px solid var(--line);
+                    padding:1px 5px; border-radius:2px; }
+      .tile-spark { height:56px; margin:8px 0; }
+      .tile-stats { display:grid; grid-template-columns:1fr 1fr; gap:6px 12px; margin:0; }
+      .tile-stats div { display:flex; justify-content:space-between; gap:8px; }
+      dt { color:var(--dim); font-size:11px; }
+      dd { margin:0; font-variant-numeric:tabular-nums; }
+      .s-change[data-dir="up"] { color:var(--up); }
+      .s-change[data-dir="down"] { color:var(--down); }
+      .grid-empty { color:var(--dim); padding:32px; text-align:center; }
+      footer { padding:24px 16px; color:var(--dim); font-size:11px; }
+      a { color:var(--dim); }
+      .sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+      @media (prefers-reduced-motion: reduce) { * { transition:none !important; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Robinhood Chain · live pairs</h1>
+      <div id="board"></div>
+    </main>
+    <footer>
+      Charting by
+      <a href="https://www.tradingview.com/" target="_blank" rel="noopener">TradingView</a>
+      Lightweight Charts™ · Pair data by
+      <a href="https://dexscreener.com" target="_blank" rel="noopener">DexScreener</a>
+    </footer>
+    <script type="module" src="/src/dashboard/main.js"></script>
+  </body>
+</html>

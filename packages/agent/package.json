@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "test": "node --test",
+    "reconcile": "node scripts/reconcile.mjs",
     "backtest": "node scripts/backtest.mjs",
     "gen-bars": "node scripts/gen-sample-bars.mjs"
   }

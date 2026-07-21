@@ -1,0 +1,29 @@
+# built by nirholas x.com/nichxbt
+# robinhood-toolkit · files excluded from the Cloud Run source upload
+# Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+# License: All Rights Reserved (c) 2026 nirholas
+#
+# Cloud Build reads this from the source root passed to `gcloud run deploy
+# --source site`. Keep the upload small and never carry secrets or build output:
+# the image rebuilds dist/ from source via `npm run build` in the Dockerfile.
+
+.git/
+.gitignore
+node_modules/
+.env
+.env.*
+*.log
+
+# Build output and generated route trees — the Docker build regenerates these.
+dist/
+index.html
+404.html
+/start/
+/chain/
+/charts/
+/api/
+/agents/
+/prompts/
+/deploy/
+src/styles/tokens.css
+public/search-index.json

@@ -70,9 +70,17 @@ Or the bundled runner, which starts and stops anvil for you:
 bash run-fork.sh
 ```
 
-It funds a test account by impersonating a real USDG holder, deposits with
-`dryRun:false`, advances time and accrues interest, confirms
-`convertToAssets(shares)` rose, then redeems and confirms the USDG came back.
+It funds a test account by impersonating a real USDG holder, supplies with
+`dryRun:false`, advances time and calls `accrueInterest`, confirms the position's
+USDG value rose, then withdraws the full share position and confirms principal +
+interest came back.
+
+**Why the direct path, not the vault path:** the curated USDG Vault V2s on this
+chain gate deposits (`maxDeposit` returns `0` for an arbitrary address), so an
+unwhitelisted forked account cannot use the ERC-4626 vault path. Morpho Blue's
+`supply` is permissionless, so that is what the rehearsal exercises. The vault
+path in `lend/vault.mjs` is the one you use once you hold a vault that admits you.
+See [lend/DEPLOYMENTS.md](lend/DEPLOYMENTS.md).
 
 ## What this chain actually looks like (resolved 2026-07-21)
 

@@ -416,6 +416,40 @@ enabled.** Change it in one place, and never mix versions across order placement
 3. Keep re-reading `getFeeTier` rather than caching it — the tier changes as
    volume rolls off the 30-day window.
 
+## Streaming: there is no published socket, so this polls
+
+**There is no published WebSocket or streaming endpoint for the Robinhood Crypto
+Trading API.** Verified 2026-07-20 against the full OpenAPI 3.0.1 spec at
+<https://docs.robinhood.com/crypto/trading>: it declares 14 paths, all HTTP GET
+or POST under `https://trading.robinhood.com`, and contains zero occurrences of
+`websocket`, `wss://`, `stream`, or `subscribe`. No `webhooks` section, no
+callbacks. This is stated plainly here so nobody re-litigates it later.
+
+`RobinhoodStream` (in `stream.mjs`) therefore presents a push-style interface —
+`'quote'` / `'order'` / `'error'` / `'idle'` events plus an async `quotes()`
+iterator — over a poller. Both polls batch, so two endpoints at a 2s interval is
+60 requests/minute total regardless of how many symbols you watch. Quotes
+deduplicate on `timestamp`, orders on state + filled quantity, and every failure
+class backs off exponentially to a ceiling. A future socket can be swapped in
+behind the same interface without touching callers.
+
+Before assuming the poller is still the right answer, confirm the surface has not
+changed:
+
+```sh
+# Does the published spec mention streaming at all?
+curl -s https://docs.robinhood.com/crypto/trading/ \
+  | grep -o '/_next/static/chunks/pages/crypto/trading-[a-f0-9]*\.js'
+# Fetch that chunk and grep it:
+curl -s "https://docs.robinhood.com<chunk path from above>" \
+  | grep -c -e websocket -e 'wss://' -e subscribe
+# A non-zero count means the surface changed. Re-read the docs.
+```
+
+Do not build against an unpublished internal socket found by inspecting app
+traffic: it is not covered by the documented API, can change without notice, and
+using it is a customer-agreement question, not an engineering one.
+
 ## Verify
 
 ```sh
@@ -430,6 +464,9 @@ node --env-file=.env examples/rh-quote.mjs BTC-USD
 
 # Live portfolio snapshot — needs valid credentials in .env.
 node --env-file=.env examples/rh-portfolio.mjs
+
+# Live quote + order stream — needs valid credentials in .env. Ctrl-C to stop.
+node --env-file=.env examples/rh-stream.mjs BTC-USD ETH-USD
 ```
 
 The unit test proves key-loading is correct by deriving Robinhood's published
