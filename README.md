@@ -180,3 +180,10 @@ are responsible for anything your code does with your funds.
 ## License
 
 All Rights Reserved © 2026 [nirholas](https://github.com/nirholas). See [LICENSE](LICENSE).
+
+## Documentation
+
+Full documentation site: **https://nirholas.github.io/robinhood-toolkit/**
+
+- [Getting started](docs/getting-started.md) covers install and first run.
+- [Examples](docs/examples.md) has copy-paste snippets.
