@@ -13,6 +13,8 @@
  * reasoning over attacker-influenced text. Every guardrail lives here in the
  * server, where the agent cannot skip it, not in a system prompt.
  */
+import { fileURLToPath } from 'node:url';
+
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { z } from 'zod';
@@ -23,8 +25,47 @@ import { markToMarket } from '../rh-crypto/portfolio.mjs';
 import { assertTradable, buildOrder, cancelOrder, getOrder, roundToIncrement } from '../rh-crypto/orders.mjs';
 import { loadPolicy, PolicyGuard, PolicyViolation } from '../rh-mcp/policy.mjs';
 
-const rh = new RobinhoodCrypto();
-const policy = await loadPolicy(process.env.RH_POLICY_PATH ?? 'config/agent-policy.json');
+/**
+ * Credentials are resolved on the first tool call, never at import time.
+ * An MCP host starts this process before it has any way to show the user an
+ * error, so throwing here would kill the server with a raw stack trace before
+ * `initialize` is even answered, and the host would report only "server exited".
+ * Failing inside a tool call turns the same problem into a readable tool error
+ * and still lets an unconfigured host list the tool surface.
+ */
+let cachedClient = null;
+function client() {
+  if (cachedClient) return cachedClient;
+  try {
+    cachedClient = new RobinhoodCrypto();
+  } catch (error) {
+    throw new Error(
+      `Robinhood Crypto credentials are not configured (${error.message}). Set RH_API_KEY and RH_PRIVATE_KEY in this server's environment in your MCP host config, then restart the host.`,
+    );
+  }
+  return cachedClient;
+}
+
+/**
+ * The policy file is resolved against this package, not the working directory.
+ * MCP hosts spawn servers with an arbitrary cwd, so a relative default path
+ * loaded the guardrails only when the host happened to start in the repo root.
+ */
+const DEFAULT_POLICY_PATH = fileURLToPath(new URL('../../config/agent-policy.json', import.meta.url));
+const policyPath = process.env.RH_POLICY_PATH ?? DEFAULT_POLICY_PATH;
+
+let policy;
+try {
+  policy = await loadPolicy(policyPath);
+} catch (error) {
+  process.stderr.write(
+    `robinhood-crypto MCP server cannot start: the policy file at ${policyPath} could not be loaded (${error.message}). ` +
+      'Every order this server places is checked against it, so it refuses to run without one. ' +
+      'Point RH_POLICY_PATH at a valid policy file.\n',
+  );
+  process.exit(1);
+}
+
 const guard = new PolicyGuard(policy, { auditLog: (line) => process.stderr.write(`${line}\n`) });
 
 const server = new McpServer({ name: 'robinhood-crypto', version: '1.0.0' });
@@ -39,7 +80,7 @@ server.registerTool(
     description: 'Tradable crypto pairs with size limits and increments. Use before sizing any order.',
     inputSchema: { symbols: z.array(z.string()).optional() },
   },
-  async ({ symbols }) => ok(await listTradingPairs(rh, { symbols })),
+  async ({ symbols }) => ok(await listTradingPairs(client(), { symbols })),
 );
 
 server.registerTool(
@@ -49,7 +90,7 @@ server.registerTool(
     description: 'Best bid and ask for one or more pairs. Ignores order size; use estimate_order_cost for sizing.',
     inputSchema: { symbols: z.array(z.string()).min(1) },
   },
-  async ({ symbols }) => ok(Object.fromEntries(await bestBidAsk(rh, symbols))),
+  async ({ symbols }) => ok(Object.fromEntries(await bestBidAsk(client(), symbols))),
 );
 
 server.registerTool(
@@ -63,7 +104,7 @@ server.registerTool(
       quantities: z.array(z.number().positive()).min(1).max(10),
     },
   },
-  async ({ symbol, side, quantities }) => ok(await estimatedPrice(rh, { symbol, side, quantities })),
+  async ({ symbol, side, quantities }) => ok(await estimatedPrice(client(), { symbol, side, quantities })),
 );
 
 server.registerTool(
@@ -73,7 +114,7 @@ server.registerTool(
     description: 'Cash, holdings, and mark-to-market value of the crypto account.',
     inputSchema: {},
   },
-  async () => ok(await markToMarket(rh)),
+  async () => ok(await markToMarket(client())),
 );
 
 server.registerTool(
@@ -89,7 +130,7 @@ server.registerTool(
     },
   },
   async ({ symbol, side, asset_quantity }) => {
-    const [pair] = await listTradingPairs(rh, { symbols: [symbol] });
+    const [pair] = await listTradingPairs(client(), { symbols: [symbol] });
     if (!pair) return fail(`unknown trading pair: ${symbol}`);
 
     const warnings = [];
@@ -104,7 +145,7 @@ server.registerTool(
       return fail(error.message);
     }
 
-    const quote = await estimatedPrice(rh, {
+    const quote = await estimatedPrice(client(), {
       symbol,
       side: side === 'buy' ? 'ask' : 'bid',
       quantities: [quantity],
@@ -161,7 +202,7 @@ server.registerTool(
     if (confirmed !== true) return fail('confirmed must be true; run review_crypto_order first');
     if (type === 'limit' && limit_price === undefined) return fail('limit orders require limit_price');
 
-    const [pair] = await listTradingPairs(rh, { symbols: [symbol] });
+    const [pair] = await listTradingPairs(client(), { symbols: [symbol] });
     if (!pair) return fail(`unknown trading pair: ${symbol}`);
 
     const quantity = roundToIncrement(asset_quantity, pair.asset_increment);
@@ -171,7 +212,7 @@ server.registerTool(
       return fail(error.message);
     }
 
-    const quote = await estimatedPrice(rh, {
+    const quote = await estimatedPrice(client(), {
       symbol,
       side: side === 'buy' ? 'ask' : 'bid',
       quantities: [quantity],
@@ -204,7 +245,7 @@ server.registerTool(
     const body = buildOrder({ symbol, side, type, config });
 
     try {
-      const order = await rh.post('/api/v1/crypto/trading/orders/', body);
+      const order = await client().post('/api/v1/crypto/trading/orders/', body);
       guard.recordPlaced(intent);
       return ok(order);
     } catch (error) {
@@ -221,7 +262,7 @@ server.registerTool(
     inputSchema: { order_id: z.string().uuid() },
   },
   async ({ order_id }) => {
-    const order = await getOrder(rh, order_id);
+    const order = await getOrder(client(), order_id);
     return order ? ok(order) : fail(`order ${order_id} not found`);
   },
 );
@@ -233,7 +274,7 @@ server.registerTool(
     description: 'Submit a cancel request. Cancellation is requested, not guaranteed; re-check status afterwards.',
     inputSchema: { order_id: z.string().uuid() },
   },
-  async ({ order_id }) => ok({ result: await cancelOrder(rh, order_id) }),
+  async ({ order_id }) => ok({ result: await cancelOrder(client(), order_id) }),
 );
 
 await server.connect(new StdioServerTransport());

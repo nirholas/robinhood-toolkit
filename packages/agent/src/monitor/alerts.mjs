@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
 /**
  * robinhood-toolkit · alert router, dead-man's switch, and chain-lag monitor
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -140,7 +137,4 @@ export function createChainLagMonitor({ publicClient, metrics, alerter, maxLagSe
     return { head: lastHead?.toString(), lagSeconds: lag };
   };
 }
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes

@@ -13,13 +13,13 @@ on a single chain (see the two live `USDG` tokens below). Verify each address on
 the explorer once, by hand, before adding it.
 
 Chain: **Robinhood Chain** · EIP-155 id `4663` · DexScreener slug `robinhood`.
-Explorer base: `https://explorer.robinhood.com/address/`
+Explorer base: `https://robinhoodchain.blockscout.com/address/`
 
 | Symbol | Address | Name | Verified on |
 |---|---|---|---|
-| USDG | `0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168` | Global Dollar (the real stablecoin, ~$1.00) | https://explorer.robinhood.com/address/0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168 |
-| USDG | `0x8218d73C00567A01481495Ad6c5143e00D5BB5b4` | Useless Stupid Degen Gamblers (ticker squatter — NOT the stablecoin) | https://explorer.robinhood.com/address/0x8218d73C00567A01481495Ad6c5143e00D5BB5b4 |
-| WETH | `0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73` | Wrapped Ether | https://explorer.robinhood.com/address/0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73 |
+| USDG | `0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168` | Global Dollar (the real stablecoin, ~$1.00) | https://robinhoodchain.blockscout.com/address/0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168 |
+| USDG | `0x8218d73C00567A01481495Ad6c5143e00D5BB5b4` | Useless Stupid Degen Gamblers (ticker squatter — NOT the stablecoin) | https://robinhoodchain.blockscout.com/address/0x8218d73C00567A01481495Ad6c5143e00D5BB5b4 |
+| WETH | `0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73` | Wrapped Ether | https://robinhoodchain.blockscout.com/address/0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73 |
 
 ## Reference pool
 

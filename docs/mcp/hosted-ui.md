@@ -2,6 +2,7 @@
 <!--
   robinhood-toolkit · ChatGPT and Grok MCP setup (hosted UI)
   Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+  License: All Rights Reserved (c) 2026 nirholas
   Dated: 2026-07-21
 -->
 

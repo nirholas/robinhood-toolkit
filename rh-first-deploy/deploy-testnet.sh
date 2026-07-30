@@ -2,6 +2,7 @@
 # built by nirholas x.com/nichxbt
 # robinhood-toolkit · deploy Beacon to Robinhood Chain testnet (chain 46630)
 # Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+# License: All Rights Reserved (c) 2026 nirholas
 #
 # This is the ONE step that needs your funded key. It uses a Foundry keystore
 # account (encrypted at ~/.foundry/keystores) — never a plaintext key.

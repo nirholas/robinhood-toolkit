@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
 /**
  * robinhood-toolkit · streaming bar aggregation
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -64,7 +61,4 @@ export function createBarAggregator({ bucketMs = 60_000, maxBars = 500 } = {}) {
     },
   };
 }
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes

@@ -57,7 +57,7 @@
     "test:live": "ROBINHOOD_MCP_LIVE=1 node --test \"test/*.test.mjs\""
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@modelcontextprotocol/sdk": "^1.30.0",
     "viem": "^2.55.4",
     "zod": "^4.4.3"
   },

@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
 /**
  * robinhood-toolkit · indicators over closed bars
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -47,7 +44,4 @@ export function zscore(values, n) {
   if (sd === 0) return 0;
   return (values.at(-1) - mean) / sd;
 }
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes

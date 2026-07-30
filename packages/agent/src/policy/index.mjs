@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
 /**
  * robinhood-toolkit · policy port (placeholder)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -19,7 +16,4 @@ export default function createPolicy(_config) {
     },
   };
 }
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes

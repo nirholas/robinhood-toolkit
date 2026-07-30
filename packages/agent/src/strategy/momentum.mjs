@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
 /**
  * robinhood-toolkit · momentum (EMA crossover) strategy
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -66,7 +63,4 @@ export default function createMomentumStrategy({
     },
   };
 }
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes

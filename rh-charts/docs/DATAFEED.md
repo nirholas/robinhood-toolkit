@@ -1,4 +1,9 @@
 <!-- built by nirholas x.com/nichxbt -->
+<!--
+  robinhood-toolkit · why Lightweight Charts has no datafeed protocol
+  Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+  License: All Rights Reserved (c) 2026 nirholas
+-->
 # Datafeed: there isn't one
 
 **Lightweight Charts has no datafeed protocol.** There is no `Datafeed` class, no

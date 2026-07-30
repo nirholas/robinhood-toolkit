@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.24;
 // built by nirholas x.com/nichxbt
+// robinhood-toolkit · Beacon contract tests
+// Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+// License: All Rights Reserved (c) 2026 nirholas
 
 import {Test} from "forge-std/Test.sol";
 import {Beacon} from "../src/Beacon.sol";

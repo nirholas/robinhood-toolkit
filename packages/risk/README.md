@@ -26,11 +26,26 @@ gate, in the site risk section — cannot drift from the model.
 
 ## Install
 
+This package is not published to npm. It ships as part of the
+`robinhood-toolkit` workspace, so you get it by cloning the repository:
+
 ```sh
-npm i robinhood-risk viem
-# ws is a dependency; it enables the sequencer feed cross-check. In a browser or
-# on Node >= 22 the global WebSocket is used and ws is not required.
+git clone https://github.com/nirholas/robinhood-toolkit
+cd robinhood-toolkit
+npm install
 ```
+
+`npm install` links every workspace package, so `import ... from 'robinhood-risk'`
+resolves from anywhere inside the repo. To use it in a project of your own,
+depend on the checkout directly:
+
+```sh
+npm i /path/to/robinhood-toolkit/packages/risk viem
+```
+
+`viem` is a peer dependency and is not installed for you. `ws` is a dependency,
+and it enables the sequencer feed cross-check. In a browser or on Node >= 22 the
+global WebSocket is used and `ws` is not required.
 
 Read-only. Nothing in this package signs or submits a transaction.
 

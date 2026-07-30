@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
 /**
  * robinhood-toolkit · live broker (placeholder)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -25,7 +22,4 @@ export default function createLiveBroker(_config) {
     },
   };
 }
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes

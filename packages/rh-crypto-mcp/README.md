@@ -1,3 +1,9 @@
+<!--
+  robinhood-toolkit · rh-crypto-mcp package readme
+  Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+  License: All Rights Reserved (c) 2026 nirholas
+-->
+
 # rh-crypto-mcp
 
 An MCP server that exposes the [Robinhood Crypto Trading REST API](https://docs.robinhood.com/crypto/trading/) as tools, so any MCP host — Claude Code, Claude Desktop, Cursor, ChatGPT, Codex, Grok — can trade crypto through an agent **today**, without waiting for agentic crypto to land on Robinhood's own MCP server.

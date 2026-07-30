@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
 /**
  * robinhood-toolkit · paper broker (placeholder)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -25,7 +22,4 @@ export default function createPaperBroker(_config) {
     },
   };
 }
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes

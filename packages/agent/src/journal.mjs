@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes
 /**
  * robinhood-toolkit · journal sink (placeholder)
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
@@ -21,7 +18,4 @@ export default function createJournal(_config) {
     async flush() {},
   };
 }
-<<<<<<< Updated upstream
-=======
 /* built by nirholas x.com/nichxbt */
->>>>>>> Stashed changes

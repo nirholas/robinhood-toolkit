@@ -10,7 +10,20 @@ import { readFileSync } from 'node:fs'
 import { extname } from 'node:path'
 
 const CHECKED = new Set(['.md', '.js', '.mjs', '.ts', '.tsx', '.jsx', '.sol', '.sh', '.yaml', '.yml', '.toml', '.css'])
-const SKIP = [/^LICENSE$/, /^\.github\//, /(^|\/)node_modules\//, /(^|\/)dist\//, /^CHANGELOG\.md$/]
+
+// Vendored third-party sources are skipped, and that is not a convenience.
+// forge-std and openzeppelin-contracts arrive under a Foundry `lib/` directory
+// carrying their own MIT headers. Stamping "All Rights Reserved (c) nirholas"
+// onto them would be a false copyright claim over someone else's work, so the
+// linter must never ask for it. Only first-party files are checked.
+const SKIP = [
+  /^LICENSE$/,
+  /(^|\/)\.github\//,
+  /(^|\/)node_modules\//,
+  /(^|\/)dist\//,
+  /(^|\/)lib\/(forge-std|openzeppelin-contracts|solmate|ds-test|solady)\//,
+  /^CHANGELOG\.md$/,
+]
 
 const MARKER = 'robinhood-toolkit ·'
 const AUTHOR = 'Author: nirholas'
