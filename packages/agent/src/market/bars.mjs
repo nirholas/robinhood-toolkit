@@ -39,7 +39,9 @@ export function createBarAggregator({ bucketMs = 60_000, maxBars = 500 } = {}) {
           high: price,
           low: price,
           close: price,
-          volume: size,
+          // Seeded empty: the accumulate step below folds in this first tick,
+          // exactly as it does for `ticks`. Seeding with `size` counts it twice.
+          volume: 0,
           ticks: 0,
         };
       }
