@@ -26,7 +26,7 @@
 
 import { createPublicClient, http } from 'viem'
 
-import { robinhoodChain, robinhoodTestnet } from '../../robinhood-chain/src/chains.js'
+import { robinhoodChain, robinhoodTestnet } from 'robinhood-chain'
 
 export { robinhoodChain, robinhoodTestnet }
 

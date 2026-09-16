@@ -39,6 +39,7 @@
     }
   },
   "dependencies": {
+    "robinhood-chain": "^0.1.0",
     "ws": "^8.18.0"
   },
   "devDependencies": {

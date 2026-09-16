@@ -1,3 +1,9 @@
+<!-- built by nirholas x.com/nichxbt -->
+<!--
+  robinhood-toolkit · Getting started guide
+  Author: nirholas · https://github.com/nirholas/robinhood-toolkit
+  License: All Rights Reserved (c) 2026 nirholas
+-->
 # Getting started with robinhood-toolkit
 
 Build on Robinhood Chain and Robinhood Crypto. Tools, runnable examples, and 64 build prompts.
