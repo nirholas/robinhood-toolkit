@@ -1,5 +1,5 @@
 {
-  "name": "rh-mcp",
+  "name": "@nirholas/rh-mcp",
   "version": "0.1.0",
   "description": "Client-side tooling for a Robinhood Trading MCP connection: enumerate and diff the live tool surface, and enforce policy guardrails on agent-initiated writes before they leave your machine.",
   "type": "module",

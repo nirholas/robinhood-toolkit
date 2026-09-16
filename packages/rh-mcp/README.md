@@ -4,7 +4,7 @@
   License: All Rights Reserved (c) 2026 nirholas
 -->
 
-# rh-mcp
+# @nirholas/rh-mcp
 
 Client-side tooling for a **Robinhood Trading MCP** connection. Two concerns
 live here:
@@ -15,6 +15,16 @@ live here:
 - **Policy guardrails** — [policy.mjs](policy.mjs) and [adapter.mjs](adapter.mjs)
   enforce client-side limits on agent-initiated writes. See the guardrails
   section below.
+
+## Install
+
+```bash
+npm install @nirholas/rh-mcp @modelcontextprotocol/sdk
+```
+
+```js
+import { loadPolicy, guardClient } from "@nirholas/rh-mcp";
+```
 
 This document is primarily about regenerating the tool snapshot.
 
@@ -142,7 +152,7 @@ Application code asks for a capability and gets back whichever concrete tool the
 server currently advertises for it:
 
 ```js
-import { RobinhoodMCPAdapter } from 'rh-mcp/adapter';
+import { RobinhoodMCPAdapter } from '@nirholas/rh-mcp/adapter';
 
 const adapter = await RobinhoodMCPAdapter.open({ guard });
 
