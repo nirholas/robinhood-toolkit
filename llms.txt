@@ -1,0 +1,28 @@
+# robinhood-toolkit
+
+> Build on Robinhood Chain and Robinhood Crypto: verified network constants, a chain SDK, a read-only MCP server, runnable examples, and 64 build prompts.
+
+robinhood-toolkit is an open-source repository by nirholas, part of the three.ws ecosystem.
+
+## Docs
+
+- [README](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/README.md): install, usage and reference
+- [Why this exists](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/README.md#why-this-exists)
+- [Network parameters](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/README.md#network-parameters)
+- [Quick start](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/README.md#quick-start)
+- [Packages](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/README.md#packages)
+- [Build prompts](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/README.md#build-prompts)
+- [Deploy](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/README.md#deploy)
+- [Things worth knowing before you build](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/README.md#things-worth-knowing-before-you-build)
+- [Contributing](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/README.md#contributing)
+- [AGENTS.md](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/AGENTS.md): guidance for coding agents
+- [Full text for LLMs](https://github.com/nirholas/robinhood-toolkit/blob/HEAD/llms-full.txt): the README inlined
+
+## Project
+
+- [Source](https://github.com/nirholas/robinhood-toolkit)
+- [Issues](https://github.com/nirholas/robinhood-toolkit/issues)
+- [Discussions](https://github.com/nirholas/robinhood-toolkit/discussions)
+- [Homepage](https://nirholas.github.io/robinhood-toolkit/)
+- [three.ws](https://three.ws): the platform this is part of
+- [All repositories by nirholas](https://github.com/nirholas/nirholas#readme)
