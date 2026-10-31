@@ -13,3 +13,6 @@ typechain-types/
 
 # Local-only deployment records (per-network committed JSON is kept on purpose)
 deployments/*.local.json
+
+# Generated ethers contract types (hardhat compile)
+types/

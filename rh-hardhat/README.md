@@ -6,10 +6,10 @@
 
 # rh-hardhat · Hardhat for Robinhood Chain
 
-A Hardhat (TypeScript) project that compiles, deploys, and verifies contracts on
+A Hardhat 3 (TypeScript) project that compiles, deploys, and verifies contracts on
 both Robinhood Chain networks. Blockscout is not a built-in Hardhat network, so
-this project carries working `customChains` entries for
-`@nomicfoundation/hardhat-verify` on chain IDs **4663** and **46630**.
+this project carries `chainDescriptors` entries (with Blockscout API URLs) for
+Hardhat's Blockscout verifier on chain IDs **4663** and **46630**.
 
 Use this track if your team is TypeScript-first or already runs Hardhat. Foundry
 (prompt 02) is the default elsewhere in the toolkit.
@@ -23,7 +23,7 @@ Use this track if your team is TypeScript-first or already runs Hardhat. Foundry
 
 Both networks are Arbitrum Orbit (Nitro), fully EVM compatible, gas token ETH
 (around 0.055 gwei), around 101 ms blocks, permissionless deployment. The
-`etherscan.customChains` `apiURL` points at Blockscout's Etherscan-compatible
+`chainDescriptors` `apiUrl` points at Blockscout's Etherscan-compatible
 API at `<host>/api` — no trailing slash, unlike Foundry's `--verifier-url`.
 
 ## Setup
@@ -39,10 +39,12 @@ Store the deployer key encrypted (preferred):
 npx hardhat keystore set RH_DEPLOYER_KEY
 ```
 
-If your Hardhat version predates the keystore plugin, copy `.env.example` to
-`.env`, set `RH_DEPLOYER_KEY`, and confirm `.env` is gitignored before your first
-commit. Treat that as a known downgrade in security posture, not the intended
-path.
+Hardhat 3 does not load `.env` files. If you do not use the keystore, export
+`RH_DEPLOYER_KEY` in your shell for the session instead. The config reads it
+lazily, so compile and test never need a key. Treat the plain env var as a known
+downgrade in security posture, not the intended path.
+
+Requires Node 22.10 or newer (Hardhat 3, ESM only).
 
 ## Compile
 
@@ -54,6 +56,15 @@ npm run compile        # hardhat compile, solc 0.8.26
 unverified here — check <https://docs.robinhood.com/chain/> and drop to
 `shanghai` in [hardhat.config.ts](hardhat.config.ts) if a deploy reverts with an
 invalid opcode.
+
+## Test
+
+```sh
+npm test               # hardhat test mocha, on the in-process simulated network
+npm run typecheck      # compiles, then type-checks config, scripts and tests
+```
+
+Tests never touch a real chain and never sign with a real key.
 
 ## Deploy
 
@@ -78,7 +89,7 @@ npm run deploy:mainnet
 ## Verify
 
 ```sh
-npx hardhat verify --network rhTestnet <ADDRESS> "robinhood-toolkit"
+npx hardhat verify blockscout --network rhTestnet <ADDRESS> "robinhood-toolkit"
 ```
 
 Constructor args must match exactly, including the string in
@@ -90,7 +101,7 @@ Constructor args must match exactly, including the string in
 2. `npm run deploy:testnet` prints an address and writes `deployments/rhTestnet.json`.
 3. The chain ID guard fires: point `rhTestnet.url` at the mainnet RPC temporarily
    and confirm the script throws instead of deploying.
-4. `npx hardhat verify --network rhTestnet <ADDRESS> "robinhood-toolkit"` reports
+4. `npx hardhat verify blockscout --network rhTestnet <ADDRESS> "robinhood-toolkit"` reports
    success, and the explorer address page shows verified source.
 5. `npx hardhat console --network rhTestnet` then
    `await (await ethers.getContractAt("Beacon", "<ADDRESS>")).note()` returns the
@@ -98,9 +109,9 @@ Constructor args must match exactly, including the string in
 
 ## Gotchas
 
-- `etherscan.apiKey` map keys are the Hardhat network names (`rhTestnet`), not
-  chain IDs. A mismatch produces an unhelpful "chain is not supported" error.
-- `apiURL` has no trailing slash in Hardhat's `customChains`. Foundry's
+- `chainDescriptors` keys are chain IDs (`4663`, `46630`); `networks` keys are the
+  Hardhat network names (`rhTestnet`). A mismatch produces an unhelpful "chain is not supported" error.
+- `apiUrl` has no trailing slash in Hardhat's `chainDescriptors`. Foundry's
   `--verifier-url` wants `/api/`. Do not copy one into the other.
 - `sourcify` is disabled. Leave it off unless you know Sourcify indexes chain
   4663 — otherwise every verify run gains a failing step.
@@ -115,7 +126,7 @@ Constructor args must match exactly, including the string in
 
 ## Files
 
-- [hardhat.config.ts](hardhat.config.ts) — both networks and both `customChains` verification entries
+- [hardhat.config.ts](hardhat.config.ts) — both networks and both `chainDescriptors` Blockscout entries
 - [contracts/Beacon.sol](contracts/Beacon.sol) — minimal deploy target
 - [scripts/deploy-beacon.ts](scripts/deploy-beacon.ts) — deploy with the chain ID guard
 - [deployments/](deployments/) — per-network JSON record (written on deploy)

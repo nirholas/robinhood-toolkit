@@ -4,7 +4,7 @@
  * Author: nirholas · https://github.com/nirholas/robinhood-toolkit
  * License: All Rights Reserved (c) 2026 nirholas
  */
-import { ethers, network } from "hardhat";
+import { network } from "hardhat";
 import { mkdir, writeFile } from "node:fs/promises";
 
 const EXPECTED_CHAIN_IDS: Record<string, bigint> = {
@@ -13,11 +13,12 @@ const EXPECTED_CHAIN_IDS: Record<string, bigint> = {
 };
 
 async function main() {
+  const { ethers, networkName } = await network.connect();
   const net = await ethers.provider.getNetwork();
-  const expected = EXPECTED_CHAIN_IDS[network.name];
+  const expected = EXPECTED_CHAIN_IDS[networkName];
   if (expected !== undefined && net.chainId !== expected) {
     throw new Error(
-      `network ${network.name} expected chainId ${expected}, RPC reported ${net.chainId}`,
+      `network ${networkName} expected chainId ${expected}, RPC reported ${net.chainId}`,
     );
   }
 
@@ -36,7 +37,7 @@ async function main() {
 
   await mkdir("deployments", { recursive: true });
   await writeFile(
-    `deployments/${network.name}.json`,
+    `deployments/${networkName}.json`,
     JSON.stringify(
       {
         contract: "Beacon",
