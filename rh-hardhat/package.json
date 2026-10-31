@@ -12,10 +12,10 @@
     "deploy:mainnet": "hardhat run scripts/deploy-beacon.ts --network rhMainnet"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^7.0.0",
+    "@nomicfoundation/hardhat-verify": "^3.1.4",
     "dotenv": "^16.4.5",
-    "hardhat": "^2.22.0",
+    "hardhat": "^3.21.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.0"
   },
