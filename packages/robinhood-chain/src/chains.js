@@ -42,7 +42,6 @@ export const robinhoodChain = /* @__PURE__ */ defineChain({
   rpcUrls: {
     default: {
       http: ['https://rpc.mainnet.chain.robinhood.com'],
-      webSocket: ['wss://feed.mainnet.chain.robinhood.com'],
     },
   },
   blockExplorers: {
@@ -74,7 +73,6 @@ export const robinhoodTestnet = /* @__PURE__ */ defineChain({
   rpcUrls: {
     default: {
       http: ['https://rpc.testnet.chain.robinhood.com'],
-      webSocket: ['wss://feed.testnet.chain.robinhood.com'],
     },
   },
   blockExplorers: {

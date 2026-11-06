@@ -268,7 +268,11 @@ const stop = watchHead(client, (block, prev) => {
 // ... later: stop()
 ```
 
-At ~101 ms blocks the head advances ~10 blocks per second, so a 1000 ms poll observes ~600 blocks per minute. **Do not poll at the block cadence** to "keep up" — you cannot, and a tight `getBlockNumber` loop generates thousands of requests per minute and trips a rate limit you have not measured. When you need pre-settlement visibility, the sequencer WebSocket feed (`wss://feed.mainnet.chain.robinhood.com`, declared on the chain definition) is lower latency than any poll; treat its data as provisional until confirmed against a settled block.
+At ~101 ms blocks the head advances ~10 blocks per second, so a 1000 ms poll observes ~600 blocks per minute. **Do not poll at the block cadence** to "keep up" - you cannot, and a tight `getBlockNumber` loop generates thousands of requests per minute and trips a rate limit you have not measured.
+
+For JSON-RPC subscriptions, pass a provider's WebSocket RPC URL explicitly to viem's `webSocket` transport. Neither chain definition supplies a default WebSocket RPC URL; calling `webSocket()` without a URL fails during client construction. The default HTTP RPC URLs are unchanged, and `watchHead` still forces polling.
+
+The [official connection guide](https://docs.robinhood.com/chain/connecting/#public-endpoints) lists `wss://feed.mainnet.chain.robinhood.com` and `wss://feed.testnet.chain.robinhood.com` as **Sequencer Feed** endpoints. They use the [Arbitrum broadcast-message protocol](https://docs.arbitrum.io/run-a-node/sequencer/read-sequencer-feed), not JSON-RPC `eth_subscribe`, and need a feed-specific consumer. Treat feed data as provisional until confirmed against a settled block.
 
 ### Blockscout explorer
 

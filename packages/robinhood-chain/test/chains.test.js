@@ -9,6 +9,7 @@
 
 import assert from 'node:assert/strict'
 import test from 'node:test'
+import { createPublicClient, http, UrlRequiredError, webSocket } from 'viem'
 
 import {
   CHAINS,
@@ -35,6 +36,21 @@ test('testnet is chain 46630 and flagged as a testnet', () => {
   assert.equal(robinhoodTestnet.testnet, true)
   assert.equal(robinhoodTestnet.rpcUrls.default.http[0], 'https://rpc.testnet.chain.robinhood.com')
 })
+
+for (const chain of CHAINS) {
+  test(`${chain.name} requires an explicit WebSocket RPC URL`, () => {
+    assert.throws(
+      () => createPublicClient({ chain, transport: webSocket() }),
+      UrlRequiredError,
+      'the sequencer feed must not be selected as a JSON-RPC WebSocket endpoint',
+    )
+  })
+
+  test(`${chain.name} still resolves the default HTTP RPC without a URL`, () => {
+    const client = createPublicClient({ chain, transport: http() })
+    assert.equal(client.transport.url, chain.rpcUrls.default.http[0])
+  })
+}
 
 // This is the assertion that keeps viem's multicall() working. A chain
 // definition without contracts.multicall3 makes client.multicall() throw
