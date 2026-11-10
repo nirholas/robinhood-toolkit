@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "robinhood-chain": {
+      "command": "npx",
+      "args": ["-y", "robinhood-chain-mcp"]
+    }
+  }
+}
