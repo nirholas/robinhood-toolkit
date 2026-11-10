@@ -1,0 +1,17 @@
+{
+  "name": "robinhood-toolkit",
+  "version": "0.1.0",
+  "description": "Read-only Robinhood Chain MCP server, a verified chain SDK, and a library of 64 build prompts for Robinhood Chain and Crypto.",
+  "author": {
+    "name": "nirholas"
+  },
+  "repository": "https://github.com/nirholas/robinhood-toolkit",
+  "homepage": "https://nirholas.github.io/robinhood-toolkit/",
+  "keywords": [
+    "robinhood-chain",
+    "mcp",
+    "sdk",
+    "usdg",
+    "build-prompts"
+  ]
+}
