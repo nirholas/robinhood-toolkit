@@ -48,5 +48,8 @@
     "@uniswap/sdk-core": "^7.18.0",
     "lightweight-charts": "^5.2.0",
     "viem": "^2.55.4"
+  },
+  "overrides": {
+    "proxy-addr@>=1.1.0 <2.0.8": "^2.0.8"
   }
 }

@@ -64,5 +64,14 @@
   "publishConfig": {
     "access": "public"
   },
-  "mcpName": "io.github.nirholas/robinhood-chain-mcp"
+  "mcpName": "io.github.nirholas/robinhood-chain-mcp",
+  "overrides": {
+    "hono@>=4.12.4 <4.13.11": "^4.13.11",
+    "hono@<4.13.7": "^4.13.11",
+    "hono@<4.13.5": "^4.13.11",
+    "hono@>=3.8.0 <4.12.34": "^4.13.11",
+    "hono@>=4.7.0 <4.12.34": "^4.13.11",
+    "hono@>=4.12.0 <4.12.34": "^4.13.11",
+    "hono@<4.12.34": "^4.13.11"
+  }
 }
