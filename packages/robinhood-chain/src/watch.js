@@ -9,11 +9,11 @@
  * At approximately 101 ms block times, Robinhood Chain mainnet produces around
  * 10 blocks per second. Do NOT poll at that cadence: a tight getBlockNumber loop
  * generates thousands of requests per minute and trips a rate limit you have not
- * measured. Poll no faster than you consume, and if you need pre-settlement
- * visibility, prefer the sequencer WebSocket feed (wss://feed.mainnet.chain.robinhood.com)
- * declared on the chain definition — it emits sequenced batches before
- * settlement and is lower latency than any poll. Treat feed data as provisional
- * until it is confirmed against a settled block.
+ * measured. Poll no faster than you consume. For JSON-RPC subscriptions, supply
+ * a provider WebSocket RPC URL explicitly. The sequencer feed uses a separate
+ * broadcast protocol and needs a feed-specific consumer, not viem's
+ * webSocket() transport. Treat feed data as provisional until it is confirmed
+ * against a settled block.
  */
 
 import { RobinhoodChainError } from './errors.js'
